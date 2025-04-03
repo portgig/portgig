@@ -3,8 +3,8 @@ import Image from "next/image";
 import { Buttons } from "../export_cmponents";
 const HeroSection = () => {
   return (
-    <main className=" bg-primary rounded-3xl flex justify-between text-white gap-2 ">
-      <div className="my-5 md:my-20 ml-10 xl:ml-20 flex flex-col max-lg:gap-10 gap-10 text-6xl  ">
+    <main className="sm:mx-3 2xl:mx-auto 2xl:w-[1300px] bg-primary md:rounded-3xl flex justify-between text-white gap-2 ">
+      <div className="my-5 md:my-20 ml-5 md:ml-10 xl:ml-20 flex flex-col max-lg:gap-10 gap-10 text-6xl  ">
         <div className="flex flex-col gap-3">
           {" "}
           <h1 className="">Connect.</h1>
@@ -34,14 +34,15 @@ const HeroSection = () => {
           alt="Portgig Logo"
           width={300}
           height={300}
-          className=" max-lg:hidden"
+          className="max-lg:hidden "
         />
         <Image
           src="/assets/hero-man.png"
           alt="Portgig Logo"
           width={300}
-          height={300}
-          className="  "
+				  height={300}
+				  
+     
         />
       </div>
     </main>

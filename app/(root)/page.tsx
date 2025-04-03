@@ -1,10 +1,11 @@
 import React from "react";
-import { HeroSection } from "@/components/export_cmponents";
+import { HeroSection, Banner } from "@/components/export_cmponents";
 
 const Home = () => {
   return (
     <main>
-      <HeroSection />
+		  <HeroSection />
+		  <Banner/>
     </main>
   );
 };

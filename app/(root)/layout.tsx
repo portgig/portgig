@@ -4,7 +4,7 @@ import React from "react";
 const layout = ({ children }: { children: React.ReactNode }) => {
   return (
     <div className="text-whit">
-      <div className="bodyContent">
+      <div className="">
         <NavigationBar />
         {children}
       </div>

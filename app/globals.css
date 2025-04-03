@@ -33,8 +33,7 @@ body {
 
 @layer base {
   h1 {
-	@apply font-bold   text-4xl sm:text-5xl lg:text-6xl
-   
+    @apply font-bold   text-4xl sm:text-5xl lg:text-6xl;
   }
 }
 @layer utilities {
@@ -43,5 +42,9 @@ body {
   }
   .background-linear-gradient {
     @apply bg-gradient-to-r from-primary to-secondary;
+  }
+
+  .shadow {
+    @apply shadow-[0px_0px_5px_3px_rgba(0,0,0,0.1)];
   }
 }
