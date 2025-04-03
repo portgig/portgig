@@ -1,5 +1,5 @@
 import React from "react";
-import HeroSection from "./HeroSection";
+import { HeroSection } from "@/components/export_cmponents";
 
 const Home = () => {
   return (

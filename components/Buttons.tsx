@@ -7,7 +7,12 @@ interface buttonProps{
 }
 
 const Buttons = ({ className,label}:buttonProps) => {
-  return <button className={`${className} py-2 px-5 `}>{label}</button>;
+  return (
+    <button
+      className={`${className} bg-white rounded-full py-2 px-5 `}>
+      {label}
+    </button>
+  );
 }
 
 export default Buttons
