@@ -3,8 +3,8 @@ import { Buttons } from "../export_cmponents";
 
 const Banner = () => {
   return (
-    <div className="bodyContent my-8 px-5 max-md:hidden">
-      <div className="px-8 py-4 bg-primary rounded-full md:rounded-4xl flex items-center justify-between">
+    <section className="bodyMargin my-8 px-5 max-md:hidden ">
+      <div className="px-8 py-4 bg-primary rounded-full md:rounded-4xl flex items-center justify-between shadow">
         {/* creatuve */}
         <div className="flex items-center justify-center  gap-5">
           <h2 className="font-bold">Create your portfolio</h2>
@@ -22,7 +22,7 @@ const Banner = () => {
           />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

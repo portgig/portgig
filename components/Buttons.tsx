@@ -1,19 +1,17 @@
-import React from 'react'
+"use client";
+import React from "react";
 
-
-interface buttonProps{
-	className: string;
-	label: string;
+interface buttonProps {
+  className: string;
+  label: string;
 }
 
-const Buttons = ({ className,label}:buttonProps) => {
+const Buttons = ({ className, label }: buttonProps) => {
   return (
-    <button
-      className={`${className} bg-white rounded-full py-2 px-5 `}>
+    <button className={`${className} bg-white rounded-full py-2 px-5 `}>
       {label}
     </button>
   );
-}
+};
 
-export default Buttons
-
+export default Buttons;

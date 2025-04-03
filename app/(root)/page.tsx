@@ -1,11 +1,21 @@
 import React from "react";
-import { HeroSection, Banner } from "@/components/export_cmponents";
+import {
+  HeroSection,
+  Banner,
+  AboutSection,
+  HowToSection,
+  CommunitySection,
+} from "@/components/export_cmponents";
 
 const Home = () => {
   return (
     <main>
-		  <HeroSection />
-		  <Banner/>
+      <HeroSection />
+      <Banner />
+      <AboutSection />
+      <HowToSection />
+		  <Banner />
+		  <CommunitySection/>
     </main>
   );
 };

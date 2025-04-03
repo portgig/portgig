@@ -15,12 +15,14 @@ const HeroSection = () => {
         </div>
         <div className="flex flex-col gap-5">
           <p className="text-sm sm:text-[16px]  font-medium max-sm:hidden ">
-            Get a stunning portfolio that speaks for you. Showcase your <br />{" "}
-            skills, impress recruiters, and land your next big opportunity.
+            Get a stunning portfolio that speaks for you. <br />
+            Showcase your skills, impress recruiters, and <br />
+            land your next big opportunity.
           </p>
           <p className="text-sm sm:text-lg font-extrabold  ">
             Showcase your skills, land dream projects,{" "}
-            <br className="max-md:hidden" /> hire top talent, all in one place
+            <br className="max-sm:hidden" />
+            hire top talent, all in one place
           </p>
         </div>
         <Buttons
@@ -40,9 +42,7 @@ const HeroSection = () => {
           src="/assets/hero-man.png"
           alt="Portgig Logo"
           width={300}
-				  height={300}
-				  
-     
+          height={300}
         />
       </div>
     </main>
