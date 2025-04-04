@@ -1,12 +1,23 @@
-import React from 'react'
+import React from "react";
+import {
+  HeroSection,
+  Banner,
+  AboutSection,
+  HowToSection,
+  CommunitySection,
+} from "@/components/export_cmponents";
 
-const Page = () => {
+const Home = () => {
   return (
-	<div>
-	  home
-	</div>
-  )
-}
+    <main>
+      <HeroSection />
+      <Banner />
+      <AboutSection />
+      <HowToSection />
+      <Banner />
+      <CommunitySection />
+    </main>
+  );
+};
 
-export default Page
-
+export default Home;

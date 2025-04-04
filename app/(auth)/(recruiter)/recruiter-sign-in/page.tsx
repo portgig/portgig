@@ -1,12 +1,9 @@
-import React from 'react'
+import AuthForm from "../../AuthForm";
 
-const page = () => {
+export default function SignInPage() {
   return (
-	<div>
-	  recruiter sign in
-	</div>
-  )
+    <div className="authStyles  bg-primary max-lg:mb-5    max-lg:rounded-4xl max-lg:mx-3">
+      <AuthForm type="recruiter-sign-in" />
+    </div>
+  );
 }
-
-export default page
-

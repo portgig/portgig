@@ -1,13 +1,14 @@
-import React from 'react'
+import { NavigationBar, Footer } from "@/components/export_cmponents";
+import React from "react";
 
-const layout = ({children}:  {children: React.ReactNode
-})  => {
+const layout = ({ children }: { children: React.ReactNode }) => {
   return (
-	<div className='text-white'>
-	  {children}
-	</div>
-  )
-}
+    <div className="">
+      <NavigationBar />
+      {children}
+      <Footer />
+    </div>
+  );
+};
 
-export default layout
-
+export default layout;
