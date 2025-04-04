@@ -125,7 +125,6 @@ const AuthForm = ({ type }: AuthFormProps) => {
           alt="Portgig Logo"
           width={150} // Fixed width
           height={150} // Fixed height
-          className=""
         />
       </div>
       {/* page label */}
@@ -180,7 +179,7 @@ const AuthForm = ({ type }: AuthFormProps) => {
           </label>
           <input
             type="text"
-            id="name"
+            id="username"
             name="username"
             value={formData.username}
             onChange={handleChange}
@@ -402,8 +401,8 @@ const AuthForm = ({ type }: AuthFormProps) => {
           <div className="flex items-center space-x-2 text-white">
             <input
               type="checkbox"
-              id="keepLoggedIn"
-              name="keepLoggedIn"
+              id="terms"
+              name="terms"
               className="w-4 h-4 text-secondary focus:ring-white rounded"
             />
             <label
@@ -416,7 +415,7 @@ const AuthForm = ({ type }: AuthFormProps) => {
 
           {/* button */}
           <AuthButton className="border border-white  text-white mt-2  py-3 px-4  rounded-lg ">
-            <p className="max-sm:text-[12px] lg:text-[text-14px]">Sign In</p>
+            <p className="max-sm:text-[12px] lg:text-[text-14px]">Sign up</p>
           </AuthButton>
         </div>
       )}
