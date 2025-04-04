@@ -21,6 +21,79 @@ export const navigationItems = [
   },
 ];
 
+export const footerInfo = [
+  {
+    label: "About us",
+    link: "/",
+  },
+  {
+    label: "Jobs",
+    link: "/",
+  },
+  {
+    label: "FAQ",
+    link: "/",
+  },
+  {
+    label: "Blog",
+    link: "/",
+  },
+  {
+    label: "Free Resources",
+    link: "/",
+  },
+  {
+    label: "Community",
+    link: "/",
+  },
+];
+
+export const footerSupport = [
+  {
+    label: "Help centre",
+    link: "/",
+  },
+  {
+    label: "FAQ",
+    link: "/",
+  },
+  {
+    label: "Blog",
+    link: "/",
+  },
+  {
+    label: "Contact",
+    link: "/",
+  },
+  {
+    label: "Status",
+    link: "/",
+  },
+];
+
+export const socialMedia = [
+  {
+    label: "Facebook",
+    link: "/",
+  },
+  {
+    label: "Instagram",
+    link: "/",
+  },
+  {
+    label: "Linkedin",
+    link: "/",
+  },
+  {
+    label: "Tiktok",
+    link: "/",
+  },
+  {
+    label: "X",
+    link: "/",
+  },
+];
+
 export const creativeProcess = [
   "Sign up and create your profile.",
 

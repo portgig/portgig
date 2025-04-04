@@ -23,10 +23,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={` antialiased text-white bg-white `}
-      >
+    <html lang="en" className="h-full ">
+      <body className={` antialiased bg-white`} cz-shortcut-listen="true">
         {children}
       </body>
     </html>

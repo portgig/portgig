@@ -14,8 +14,8 @@ const Home = () => {
       <Banner />
       <AboutSection />
       <HowToSection />
-		  <Banner />
-		  <CommunitySection/>
+      <Banner />
+      <CommunitySection />
     </main>
   );
 };

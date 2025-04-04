@@ -1,6 +1,7 @@
 import { creativeProcess, recruiterProcess } from "@/constants";
 import React from "react";
 import Image from "next/image";
+import { FaRegSquareCheck } from "react-icons/fa6";
 
 const HowToSection = () => {
   return (
@@ -13,10 +14,11 @@ const HowToSection = () => {
           <h2 className="text-primary text-lg md:text-xl lg:text-2xl font-black mt-5 text-center">
             For creatives
           </h2>
-          <div className="bg-primary py-5 px-5 rounded-lg h-62">
+          <div className="bg-primary py-5 px-5 rounded-lg h-72">
             <ul>
               {creativeProcess.map((item, index) => (
-                <li key={index} className="flex gap-2 mb-2">
+                <li key={index} className="flex  items-baseline gap-2 mb-2">
+                  <FaRegSquareCheck />
                   <p className="text-lg  font-bold">{item}</p>{" "}
                 </li>
               ))}
@@ -28,10 +30,11 @@ const HowToSection = () => {
           <h2 className="text-primary text-lg md:text-xl lg:text-2xl font-black mt-5 text-center">
             For Recruiters
           </h2>
-          <div className="bg-primary py-5 px-5 rounded-lg h-62">
+          <div className="bg-primary py-5 px-5 rounded-lg h-72">
             <ul>
               {recruiterProcess.map((item, index) => (
-                <li key={index} className="flex gap-2  mb-2">
+                <li key={index} className="flex items-baseline gap-2  mb-2">
+                  <FaRegSquareCheck />
                   <p className="text-lg  font-bold">{item}</p>{" "}
                 </li>
               ))}
@@ -43,7 +46,7 @@ const HowToSection = () => {
       <div className="md:hidden flex justify-around gap-5 mt-5">
         <div className="flex flex-col gap-10">
           <div className="flex flex-col gap-3">
-            <h2 className="text-xl font-black text-textColor">
+            <h2 className="text-xl sm:text-2xl font-black text-textColor">
               Create your portfolio
             </h2>
             <div className="h-15 bg-primary w-fit flex justify-center items-center">
@@ -54,7 +57,7 @@ const HowToSection = () => {
             </div>
           </div>
           <div className="flex flex-col gap-3">
-            <h2 className="text-xl font-black text-textColor">
+            <h2 className="text-xl sm:text-2xl font-black text-textColor">
               Create your portfolio
             </h2>
             <div className="h-15 bg-primary w-fit flex justify-center items-center">

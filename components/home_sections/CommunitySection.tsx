@@ -12,19 +12,19 @@ const CommunitySection = () => {
           </p>
         </div>
         <div className="flex flex-col gap-3">
-          <h2 className="text-primary text-lg md:text-xl lg:text-2xl font-black">
+          <h2 className="text-primary text-xl lg:text-2xl font-black">
             I bet it’s not just you, Join your community
           </h2>
-          <p className="text-textColor text-sm md:text-lg leading-6 ">
+          <p className="text-textColor text-sm md:text-sm leading-6 ">
             Get inspired by like-minded individuals, exchange ideas, <br /> and
             build meaningful connections that propel your career forward.
           </p>
         </div>
         <div className="flex flex-col gap-3">
-          <h2 className="text-primary text-lg md:text-xl lg:text-2xl font-black">
+          <h2 className="text-primary text-xl lg:text-2xl font-black">
             What’s inside?
           </h2>
-          <p className="text-textColor text-sm md:text-lg leading-6 ">
+          <p className="text-textColor text-sm md:text-sm leading-6 ">
             Private forums tailored to your creative field. Networking <br />
             opportunities with top professionals. <br /> Access to exclusive
             events, workshops, and job postings.
@@ -37,7 +37,7 @@ const CommunitySection = () => {
           <Buttons className="!bg-primary !rounded-none text-white w-fit shadow" label="Click here" />
         </div>
       </div>
-      <div className="flex justify-center items-center bg-amber-400 w-full max-md:hidden ">
+      <div className="flex justify-center items-center  w-full max-md:hidden ">
         <Image
           src="/assets/women-group.png"
           alt="Ellipse-woman.png"
