@@ -53,4 +53,21 @@ body {
   .subHeading {
     @apply text-2xl md:text-3xl lg:text-4xl font-black;
   }
+
+  .authStyles{
+	@apply min-h-screen flex flex-col justify-center
+  }
+}
+
+
+/* Hide arrows in number input for Chrome, Safari, Edge, Opera */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Hide arrows in Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
 }
