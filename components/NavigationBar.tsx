@@ -8,8 +8,7 @@ import { useRouter } from "next/navigation";
 const NavigationBar = () => {
   const navigate = useRouter();
   return (
-
-    <nav className=" bodyMargin h-[56px]  mt-[20px] flex items-center justify-between text-primary">
+    <nav className="bodyMargin sticky top-0 z-50 bg-white h-[56px]  mt-[20px] flex items-center justify-between text-textColor">
       <div className="flex items-center gap-4">
         {/* Mobile Menu Icon */}
         <Image
