@@ -55,7 +55,7 @@ body {
   }
 
   .authStyles{
-	@apply h-screen flex flex-col justify-center 
+	@apply flex flex-col justify-center 
   }
 }
 

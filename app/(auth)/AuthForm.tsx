@@ -199,7 +199,7 @@ const AuthForm = ({ type }: AuthFormProps) => {
           Email Address
         </label>
         <input
-          type="text"
+          type="email"
           id="email"
           name="email"
           value={formData.email}
@@ -309,7 +309,7 @@ const AuthForm = ({ type }: AuthFormProps) => {
           Password
         </label>
         <input
-          type="text"
+          type="password"
           id="password"
           name="password"
           value={formData.password}
@@ -343,7 +343,7 @@ const AuthForm = ({ type }: AuthFormProps) => {
             Confirm password
           </label>
           <input
-            type="text"
+            type="password"
             id="confirmPassword"
             name="confirmPassword"
             value={formData.confirmPassword}
