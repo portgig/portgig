@@ -361,7 +361,9 @@ const AuthForm = ({ type }: AuthFormProps) => {
       )}
       {/* sign in button */}
       {(isSignin || isRecruiterSignin) && (
-        <AuthButton className="bg-white w-full text-primary mt-2  py-3  rounded-lg ">
+        <AuthButton
+          type="submit"
+          className="bg-white w-full text-primary mt-2  py-3  rounded-lg ">
           <p className="max-md:text-lg text-2xl font-bold">Sign In</p>
         </AuthButton>
       )}
@@ -374,7 +376,9 @@ const AuthForm = ({ type }: AuthFormProps) => {
       )}
       {/* google sign in */}
       {(isSignin || isRecruiterSignin) && (
-        <AuthButton className="border-2 border-white w-full text-white mt-2  py-3 px-10 rounded-lg ">
+        <AuthButton
+          onClick={()=>{}}
+          className="border-2 border-white w-full text-white mt-2  py-3 px-10 rounded-lg ">
           <div className="flex justify-center items-center gap-3">
             <p className="max-md:text-sm text-2xl">Continue with google</p>
 
@@ -414,7 +418,9 @@ const AuthForm = ({ type }: AuthFormProps) => {
           </div>
 
           {/* button */}
-          <AuthButton className="border border-white  text-white mt-2  py-3 px-4  rounded-lg ">
+          <AuthButton
+            type="submit"
+            className="border border-white  text-white mt-2  py-3 px-4  rounded-lg ">
             <p className="max-sm:text-[12px] lg:text-[text-14px]">Sign up</p>
           </AuthButton>
         </div>

@@ -42,7 +42,8 @@ const NavigationBar = () => {
       <div>
         <Buttons
           className="!bg-primary text-white rounded-full text-center text-sm max-sm:text-[10px]  "
-          label="Sign up/ Log in"
+				  label="Sign up/ Log in"
+				  onClick={()=>{}}
         />
       </div>
     </nav>

@@ -26,9 +26,8 @@ export const AuthLayout = ({ children }: { children: React.ReactNode }) => {
         <Image
           src="/assets/portgig-2.png"
           alt="Portgig Logo"
-				  width={150} // Fixed width
-				  
-          height={150} // Fixed height
+          width={150}
+          height={150}
           //   className="max-lg:w-[80px] max-lg:h-[80px] "
         />
       </div>
