@@ -18,7 +18,7 @@ export const AuthLayout = ({ children }: { children: React.ReactNode }) => {
   }
 
   return (
-    <div className="text-white flex ">
+    <div className="text-white flex h-screen">
       <div
         className="w-full bg-cover p-20 max-lg:hidden lg:block"
         style={{ backgroundImage: `url('${bgImage}')` }}>

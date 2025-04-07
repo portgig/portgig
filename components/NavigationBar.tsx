@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import { navigationItems } from "@/constants/index";
@@ -42,8 +43,8 @@ const NavigationBar = () => {
       <div>
         <Buttons
           className="!bg-primary text-white rounded-full text-center text-sm max-sm:text-[10px]  "
-				  label="Sign up/ Log in"
-				  onClick={()=>{}}
+          label="Sign up/ Log in"
+          onClick={() => {}}
         />
       </div>
     </nav>
