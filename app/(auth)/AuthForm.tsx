@@ -1,8 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
-"use client";
+"use client"; 
 
 import React, { useState } from "react";
 import Image from "next/image";
+
 
 import {
   signInSchema,
@@ -36,6 +37,7 @@ interface AuthFormProps {
 }
 
 const AuthForm = ({ type }: AuthFormProps) => {
+
   const [formData, setFormData] = useState<FormData>({
     fullName: "",
     email: "",
@@ -89,9 +91,20 @@ const AuthForm = ({ type }: AuthFormProps) => {
       // Login or sign up logic
       if (isSignin || isRecruiterSignin) {
         handleSignIn(formData);
+        if (isSignin) {
+        // sign-in
+        } else if (isRecruiterSignin) {
+        //   sign in
+        }
       } else {
         handleSignUp(formData);
+        if (isSignup) {
+        //   sign up
+        } else if (isRecruiterSignup) {
+         //sign up
+        }
       }
+
       setFormData({
         fullName: "",
         email: "",
@@ -377,7 +390,7 @@ const AuthForm = ({ type }: AuthFormProps) => {
       {/* google sign in */}
       {(isSignin || isRecruiterSignin) && (
         <AuthButton
-          onClick={()=>{}}
+          onClick={() => {}}
           className="border-2 border-white w-full text-white mt-2  py-3 px-10 rounded-lg ">
           <div className="flex justify-center items-center gap-3">
             <p className="max-md:text-sm text-2xl">Continue with google</p>

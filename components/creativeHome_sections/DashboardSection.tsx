@@ -7,14 +7,17 @@ import { Buttons } from "@/components/export_cmponents";
 const DashboardSection = () => {
   const creative = creatives[0];
   return (
-    <div className="flex flex-col gap-5 my-10">
+    <section className="flex flex-col gap-5 my-10">
       <div className="h-15 bg-linear-gradient w-full flex justify-center items-center">
-        <h2 className="heading"> How it works?</h2>
+        <h2 className="heading">
+          {" "}
+          Your Portfolio, Your Stage – Take Control Now!
+        </h2>
       </div>
       {/*  */}
       <div className="flex flex-col lg:flex-row gap-10 bodyMargin">
         {" "}
-        <div className="flex-2/3 w-full  bg-primary p-5 ">
+        <div className="flex-2/3   bg-primary  rounded-lg p-10 flex justify-center items-center ">
           <p className="text-center text-xl sm:text-2xl lg:text-4xl 2xl:text-5xl  font-bold">
             {" "}
             Access your dashboard to showcase your work, track job applications,
@@ -61,7 +64,15 @@ const DashboardSection = () => {
           ; ;
         </div>
       </div>
-    </div>
+      <div className="bodyMargin flex justify-end">
+        {" "}
+        <Buttons
+          label="Go to Dashboard"
+          className=" !bg-primary w-fit self-end rounded-lg font-bold text-xl"
+          onClick={() => {}}
+        />
+      </div>
+    </section>
   );
 };
 

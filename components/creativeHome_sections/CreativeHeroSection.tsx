@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const CreativeHeroSection = () => {
   return (
-    <section className="bodyMargin  h-96 bg-primary my-5 rounded-2xl ">
+    <section className="bodyMargin  h-fit bg-primary my-5 rounded-2xl ">
       <div className="bodyMargin h-full flex">
         <div className="flex-1/2 flex flex-col justify-center gap-10 text-center py-5">
           <h2 className="text-xl ">Welcome to Portgig </h2>

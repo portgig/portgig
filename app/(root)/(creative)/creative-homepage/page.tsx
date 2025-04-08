@@ -5,6 +5,7 @@ import {
   DiscoverMore,
   ExploreCreative,
   DashboardSection,
+  Community,
 } from "@/components/export_cmponents";
 import React from "react";
 
@@ -17,6 +18,7 @@ const CreativeHomePage = () => {
       <DiscoverMore />
       <ExploreCreative />
       <DashboardSection />
+      <Community />
     </main>
   );
 };

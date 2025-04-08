@@ -16,5 +16,7 @@ export { default as ExploreJob } from "./creativeHome_sections/ExploreJob";
 export { default as DiscoverMore } from "./creativeHome_sections/DiscoverMore";
 export { default as ExploreCreative } from "./creativeHome_sections/ExploreCreative";
 export { default as DashboardSection } from "./creativeHome_sections/DashboardSection";
+export { default as Community } from "./creativeHome_sections/Community";
 
-
+//recruiter sections
+export { default as RecruiterHeroSection } from "./recruiterHome_sections/RecruiterHeroSection";
