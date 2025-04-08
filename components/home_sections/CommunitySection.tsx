@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import Buttons from "../Buttons";
@@ -34,7 +35,11 @@ const CommunitySection = () => {
           <h2 className="text-primary text-lg md:text-xl lg:text-2xl font-black">
             Join the Community
           </h2>
-          <Buttons className="!bg-primary !rounded-none text-white w-fit shadow" label="Click here" />
+          <Buttons
+            className="!bg-primary !rounded-none text-white w-fit shadow"
+            label="Click here"
+            onClick={() => {}}
+          />
         </div>
       </div>
       <div className="flex justify-center items-center  w-full max-md:hidden ">

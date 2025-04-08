@@ -1,9 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
-"use client"; 
+"use client";
 
 import React, { useState } from "react";
 import Image from "next/image";
-
+import { useRouter } from "next/navigation";
 
 import {
   signInSchema,
@@ -37,6 +37,7 @@ interface AuthFormProps {
 }
 
 const AuthForm = ({ type }: AuthFormProps) => {
+  const navigate = useRouter();
 
   const [formData, setFormData] = useState<FormData>({
     fullName: "",
@@ -92,16 +93,16 @@ const AuthForm = ({ type }: AuthFormProps) => {
       if (isSignin || isRecruiterSignin) {
         handleSignIn(formData);
         if (isSignin) {
-        // sign-in
+          navigate.push("/creative-homepage");
         } else if (isRecruiterSignin) {
-        //   sign in
+          navigate.push("/recruiter-homepage");
         }
       } else {
         handleSignUp(formData);
         if (isSignup) {
-        //   sign up
+          navigate.push("/creative-homepage");
         } else if (isRecruiterSignup) {
-         //sign up
+          navigate.push("/recruiter-homepage");
         }
       }
 
@@ -131,14 +132,17 @@ const AuthForm = ({ type }: AuthFormProps) => {
     <form
       onSubmit={handleSubmit}
       className="px-5 md:px-30 lg:px-10 xl:px-20 2xl:px-30 space-y-5 flex flex-col">
-      <div className="max-lg:block lg:hidden self-center w-fit ">
+      <div className="max-lg:block lg:hidden self-center w-fit cursor-pointer ">
         {/* Logo */}
-        <Image
-          src="/assets/portgig-2.png"
-          alt="Portgig Logo"
-          width={150} // Fixed width
-          height={150} // Fixed height
-        />
+        <Link href="/">
+          {" "}
+          <Image
+            src="/assets/portgig-2.png"
+            alt="Portgig Logo"
+            width={150} // Fixed width
+            height={150} // Fixed height
+          />
+        </Link>
       </div>
       {/* page label */}
       <div className="space-y-4">

@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import { Buttons } from "../export_cmponents";
+import { Buttons } from "../export_components";
 const Community = () => {
   return (
     <section className=" my-10 flex flex-col gap-5">
@@ -34,14 +34,13 @@ const Community = () => {
           </div>
         </div>
 
-          <div className=" max-md:hidden h-96 w-full ">
-            <Image
-              src="/assets/two-woman.png"
-              alt="Discover more creatives"
-              width={500}
-              height={450}
-            />
-     
+        <div className=" max-md:hidden h-96 w-full ">
+          <Image
+            src="/assets/two-woman.png"
+            alt="Discover more creatives"
+            width={500}
+            height={450}
+          />
         </div>
       </div>
     </section>

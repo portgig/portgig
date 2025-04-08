@@ -2,7 +2,7 @@
 import { jobs } from "@/constants";
 import React from "react";
 import Image from "next/image";
-import { Buttons } from "@/components/export_cmponents";
+import { Buttons } from "@/components/export_components";
 const ExploreJob = () => {
   return (
     <section className="bodyMargin flex flex-col gap-5">

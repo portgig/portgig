@@ -2,7 +2,7 @@
 import { creatives } from "@/constants";
 import React from "react";
 import Image from "next/image";
-import { Buttons } from "@/components/export_cmponents";
+import { Buttons } from "@/components/export_components";
 
 const DashboardSection = () => {
   const creative = creatives[0];
@@ -39,10 +39,10 @@ const DashboardSection = () => {
                 {creative.level}
               </div>
             </div>
-            <h2 className="text-primary font-bold text-xl px-5">
+            <h2 className="text-primaey font-bold text-xl px-5">
               {creative.name} ({creative.username})
             </h2>
-            <h2 className="text-primary font-extralight  text-xl px-5 line-clamp-1">
+            <h2 className="text-primaey font-extralight  text-xl px-5 line-clamp-1">
               {creative.field} / {creative.location}
             </h2>
             <div className=" bg-gray100 h-20 ml-2 p-1 border border-secondary text-sm line-clamp-3">

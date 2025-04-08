@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import { Buttons } from "../export_cmponents";
+import { Buttons } from "../export_components";
 const HeroSection = () => {
   return (
     <main className="sm:mx-3 2xl:mx-auto 2xl:w-[1300px] bg-primary md:rounded-3xl flex justify-between text-white gap-2 ">

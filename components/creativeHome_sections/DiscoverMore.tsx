@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { Buttons } from "../export_cmponents";
+import { Buttons } from "../export_components";
 import Image from "next/image";
 const DiscoverMore = () => {
   return (

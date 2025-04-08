@@ -1,5 +1,6 @@
+"use client";
 import React from "react";
-import { Buttons } from "../export_cmponents";
+import { Buttons } from "../export_components";
 
 const Banner = () => {
   return (

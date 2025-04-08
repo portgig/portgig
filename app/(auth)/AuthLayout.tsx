@@ -4,6 +4,7 @@
 import React from "react";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
+import Link from "next/link";
 
 export const AuthLayout = ({ children }: { children: React.ReactNode }) => {
   const pathname = usePathname();
@@ -20,16 +21,18 @@ export const AuthLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <div className="text-white flex h-screen">
       <div
-        className="w-full bg-cover p-20 max-lg:hidden lg:block"
+        className="w-full bg-cover p-20 max-lg:hidden lg:block cursor-pointer "
         style={{ backgroundImage: `url('${bgImage}')` }}>
         {/* Logo */}
-        <Image
-          src="/assets/portgig-2.png"
-          alt="Portgig Logo"
-          width={150}
-          height={150}
-          //   className="max-lg:w-[80px] max-lg:h-[80px] "
-        />
+        <Link href="/">
+          <Image
+            src="/assets/portgig-2.png"
+            alt="Portgig Logo"
+            width={150}
+            height={150}
+            //   className="max-lg:w-[80px] max-lg:h-[80px] "
+          />
+        </Link>
       </div>
 
       <div

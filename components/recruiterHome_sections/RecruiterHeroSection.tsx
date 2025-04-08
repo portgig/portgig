@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import { Buttons } from "../export_cmponents";
+import { Buttons } from "../export_components";
 const RecruiterHeroSection = () => {
   return (
     <section className="bodyMargin  h-fit bg-primary my-5  rounded-2xl gap-5">
@@ -16,7 +16,7 @@ const RecruiterHeroSection = () => {
 
           <Buttons
             label="Post Jobs"
-            className="text-primary w-fit"
+            className="text-primary lg:text-xl lg:font-bold w-fit"
             onClick={() => {}}
           />
         </div>

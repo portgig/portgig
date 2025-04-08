@@ -1,10 +1,13 @@
 "use client";
 
 import React from "react";
-import { Buttons } from "@/components/export_cmponents";
+import { Buttons } from "@/components/export_components";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
+
 
 const Page = () => {
+  const navigate = useRouter();
   return (
     <div className="flex h-[100dvh]">
       <div
@@ -25,7 +28,9 @@ const Page = () => {
           <h1 className="max-sm:!text-3xl">Creative</h1>
           <Buttons
             label="Get Started"
-            onClick={() => {}}
+            onClick={() => {
+              navigate.push('/sign-up');
+            }}
             className="text-black text-xl sm:text-3xl !rounded-xl w-96 sm:w-[500px] h-16 sm:h-20"
           />
         </div>
@@ -35,7 +40,9 @@ const Page = () => {
           <h1>Recruiter</h1>
           <Buttons
             label="Get Started"
-            onClick={() => {}}
+            onClick={() => {
+              navigate.push('/recruiter-sign-up');
+            }}
             className="text-black text-xl sm:text-3xl !rounded-xl w-96 sm:w-[500px] h-16 sm:h-20"
           />
         </div>

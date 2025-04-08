@@ -3,7 +3,7 @@ import Link from "next/link";
 import React from "react";
 import { FaFacebook, FaLinkedin, FaInstagram, FaYoutube } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa6";
-import { Buttons } from "@/components/export_cmponents";
+import { Buttons } from "@/components/export_components";
 const Footer = () => {
   return (
     <div className="bg-primary">

@@ -6,7 +6,7 @@ import {
   ExploreCreative,
   DashboardSection,
   Community,
-} from "@/components/export_cmponents";
+} from "@/components/export_components";
 import React from "react";
 
 const CreativeHomePage = () => {
