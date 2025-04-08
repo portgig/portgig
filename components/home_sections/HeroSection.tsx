@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import { Buttons } from "../export_cmponents";
@@ -26,6 +27,7 @@ const HeroSection = () => {
           </p>
         </div>
         <Buttons
+          onClick={() => {}}
           label="Get started"
           className="self-center text-black font-medium text-sm sm:text-lg xl:text-2xl w-fit "
         />

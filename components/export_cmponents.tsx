@@ -9,4 +9,12 @@ export { default as AboutSection } from "./home_sections/AboutSection";
 export { default as HowToSection } from "./home_sections/HowToSection";
 export { default as CommunitySection } from "./home_sections/CommunitySection";
 
+// creativeHome sections
+export { default as CreativeHeroSection } from "./creativeHome_sections/CreativeHeroSection";
+export { default as CreativeBanner } from "./creativeHome_sections/CreativeBanner";
+export { default as ExploreJob } from "./creativeHome_sections/ExploreJob";
+export { default as DiscoverMore } from "./creativeHome_sections/DiscoverMore";
+export { default as ExploreCreative } from "./creativeHome_sections/ExploreCreative";
+export { default as DashboardSection } from "./creativeHome_sections/DashboardSection";
+
 
