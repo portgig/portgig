@@ -2,23 +2,23 @@
 import React from "react";
 import {
   SearchSection,
-  CreativeHero,
+  JobHero,
   Community,
-  Creatives,
-  CreativeFilter,
+  Jobs,
+  JobFilters,
 } from "@/components/export_components";
 
-const CreativeHub = () => {
+const JobHub = () => {
   return (
     <main>
-      <CreativeHero />
+      <JobHero />
       <SearchSection />
       <div className="flex gap-5 bodyMargin ">
         <div className="flex-2/7 max-md:hidden">
-          <CreativeFilter />
+          <JobFilters />
         </div>
         <div className="flex-5/7 ">
-          <Creatives />
+          <Jobs />
         </div>
       </div>
       <Community />
@@ -26,4 +26,4 @@ const CreativeHub = () => {
   );
 };
 
-export default CreativeHub;
+export default JobHub;

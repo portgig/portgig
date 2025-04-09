@@ -191,7 +191,7 @@ const AuthForm = ({ type }: AuthFormProps) => {
       {/* username field  for sign ups */}
       {(isSignup || isRecruiterSignup) && (
         <div className="text-white">
-          <label htmlFor="name" className="labelStyles">
+          <label htmlFor="name" className={`${labelStyles}`}>
             Username
           </label>
           <input
@@ -212,7 +212,7 @@ const AuthForm = ({ type }: AuthFormProps) => {
       {/* email */}
 
       <div className="text-white">
-        <label htmlFor="name" className="labelStyles">
+        <label htmlFor="name" className={`${labelStyles}`}>
           Email Address
         </label>
         <input
@@ -233,7 +233,7 @@ const AuthForm = ({ type }: AuthFormProps) => {
       {/* phone field  for sign ups */}
       {(isSignup || isRecruiterSignup) && (
         <div className="text-white">
-          <label htmlFor="name" className="labelStyles">
+          <label htmlFor="name" className={`${labelStyles}`}>
             Phone number
           </label>
           <input
@@ -254,7 +254,7 @@ const AuthForm = ({ type }: AuthFormProps) => {
       {/* industry/niche for sign ups */}
       {(isSignup || isRecruiterSignup) && (
         <div className="text-white">
-          <label htmlFor="name" className="labelStyles">
+          <label htmlFor="name" className={`${labelStyles}`}>
             Industry/ Niche
           </label>
           <select
@@ -277,7 +277,7 @@ const AuthForm = ({ type }: AuthFormProps) => {
       {/* experience years  for sign ups */}
       {(isSignup || isRecruiterSignup) && (
         <div className="text-white">
-          <label htmlFor="name" className="labelStyles">
+          <label htmlFor="name" className={`${labelStyles}`}>
             Years of experience
           </label>
           <input
@@ -301,7 +301,7 @@ const AuthForm = ({ type }: AuthFormProps) => {
 
       {(isSignup || isRecruiterSignup) && (
         <div className="text-white">
-          <label htmlFor="name" className="labelStyles">
+          <label htmlFor="name" className={`${labelStyles}`}>
             Location
           </label>
           <input
@@ -322,7 +322,7 @@ const AuthForm = ({ type }: AuthFormProps) => {
       {/* password */}
 
       <div className="text-white">
-        <label htmlFor="name" className="labelStyles">
+        <label htmlFor="name" className={`${labelStyles}`}>
           Password
         </label>
         <input
@@ -348,7 +348,7 @@ const AuthForm = ({ type }: AuthFormProps) => {
             name="keepLoggedIn"
             className="w-4 h-4 text-secondary focus:ring-secondary rounded"
           />
-          <label htmlFor="keepLoggedIn" className="labelStyles">
+          <label htmlFor="keepLoggedIn" className={`${labelStyles}`}>
             Keep me logged in
           </label>
         </div>
@@ -356,7 +356,7 @@ const AuthForm = ({ type }: AuthFormProps) => {
       {/* confirm password */}
       {(isSignup || isRecruiterSignup) && (
         <div className="text-white ">
-          <label htmlFor="name" className="labelStyles">
+          <label htmlFor="name" className={`${labelStyles}`}>
             Confirm password
           </label>
           <input

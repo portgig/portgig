@@ -344,3 +344,20 @@ export const creatives = [
       "Designing intuitive user experiences one pixel at a time. Happy to connect!",
   },
 ];
+
+export const experienceLevels = [
+  { id: 1, level: "Beginner (0-1)" },
+  { id: 2, level: "Intership (2-3)" },
+  { id: 3, level: "Intermediate (4-6)" },
+  { id: 4, level: "Professional (7-10)" },
+  { id: 5, level: "Expert (11+)" },
+];
+
+export const employmentTypes = [
+  { id: 1, type: "Full Time" },
+  { id: 2, type: "Part Time" },
+  { id: 3, type: "Freelancing" },
+  { id: 4, type: "One off Projects" },
+  { id: 5, type: "Remote" },
+  { id: 6, type: "Hybrid" },
+];

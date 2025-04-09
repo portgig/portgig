@@ -1,7 +1,9 @@
 export { default as Buttons } from "./Buttons";
 export { default as Footer } from "@/components/Footer";
 export { default as NavigationBar } from "@/components/NavigationBar";
-export { default as ExploreCreative } from "./ExploreCreative";
+export { default as ExploreCreative } from "./creativeHome_sections/ExploreCreative";
+export { default as SearchSection } from "./SearchSection";
+export { default as Community } from "./Community";
 // Home sections
 export { default as HeroSection } from "./home_sections/HeroSection";
 export { default as Banner } from "./home_sections/Banner";
@@ -16,9 +18,17 @@ export { default as ExploreJob } from "./creativeHome_sections/ExploreJob";
 export { default as DiscoverMore } from "./creativeHome_sections/DiscoverMore";
 
 export { default as DashboardSection } from "./creativeHome_sections/DashboardSection";
-export { default as Community } from "./creativeHome_sections/Community";
 
 //recruiter sections
 export { default as RecruiterHeroSection } from "./recruiterHome_sections/RecruiterHeroSection";
-export { default as SearchSection } from "./recruiterHome_sections/SearchSection";
 export { default as HowItWorks } from "./recruiterHome_sections/HowItWorks";
+
+//creatve hub
+export { default as CreativeHero } from "./creative-hub/CreativeHero";
+export { default as Creatives } from "./creative-hub/Creatives";
+export { default as CreativeFilter } from "./creative-hub/CreativeFilter";
+
+//Job hub
+export { default as JobHero } from "./Job-hub/JobHero";
+export { default as Jobs } from "./Job-hub/Jobs";
+export { default as JobFilters } from "./Job-hub/JobFilters";

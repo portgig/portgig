@@ -3,8 +3,9 @@ import { creatives } from "@/constants";
 import React from "react";
 import Image from "next/image";
 import { Buttons } from "@/components/export_components";
-
+import { useRouter } from "next/navigation";
 const ExploreCreative = () => {
+  const navigate = useRouter();
   return (
     <section className="bodyMargin flex flex-col gap-5">
       <div className="flex justify-between text-secondary">
@@ -18,12 +19,15 @@ const ExploreCreative = () => {
             key={creative.id}
             className="flex flex-col gap-3 pb-5 pr-2 rounded-lg border-2 border-secondary text-secondary">
             <div className="flex justify-between items-center">
-              <Image
-                src={creative.creativeImage}
-                alt={creative.name}
-                width={150}
-                height={150}
-              />
+              <div className="h-[150px] w-[150px] overflow-hidden">
+                <Image
+                  src={creative.creativeImage}
+                  alt={creative.name}
+                  width={150}
+                  height={150}
+                  className="object-cover h-full w-full"
+                />
+              </div>
               <div className="bg-secondary/80 text-white py-2 px-5">
                 {creative.level}
               </div>
@@ -55,7 +59,9 @@ const ExploreCreative = () => {
       <Buttons
         label="Visit Creatives Hub"
         className="!bg-primary w-fit self-end rounded-lg font-bold text-xl"
-        onClick={() => {}}
+        onClick={() => {
+          navigate.push("/creative-hub");
+        }}
       />
     </section>
   );

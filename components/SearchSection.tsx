@@ -2,7 +2,7 @@
 import React from "react";
 import { AiOutlineSearch } from "react-icons/ai";
 
-import { Buttons } from "../export_components";
+import { Buttons } from "./export_components";
 const SearchSection = () => {
   return (
     <section className="bodyMargin  border border-gray flex max-lg:hidden">

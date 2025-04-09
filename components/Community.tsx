@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import { Buttons } from "../export_components";
+import { Buttons } from "./export_components";
 const Community = () => {
   return (
     <section className=" my-10 flex flex-col gap-5">
@@ -27,7 +27,7 @@ const Community = () => {
           <div className="flex flex-col gap-5">
             <h2 className="text-xl font-bold">Join the Community</h2>
             <Buttons
-              label="Visit creative Hub"
+              label="Click here"
               className="rounded-lg text-black lg:text-xl w-fit font-bold"
               onClick={() => {}}
             />

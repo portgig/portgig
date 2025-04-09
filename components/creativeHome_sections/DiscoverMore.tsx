@@ -2,7 +2,10 @@
 import React from "react";
 import { Buttons } from "../export_components";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
+
 const DiscoverMore = () => {
+  const navigate = useRouter();
   return (
     <section className=" md:flex gap-10 bodyMargin  bg-primary my-5 p-8 rounded-2xl text-white">
       <div className="flex-2/3 flex flex-col gap-5 ">
@@ -15,7 +18,9 @@ const DiscoverMore = () => {
         <Buttons
           label="Visit creative Hub"
           className="rounded-lg text-black lg:text-xl w-fit font-bold"
-          onClick={() => {}}
+          onClick={() => {
+            navigate.push("/creative-hub");
+          }}
         />
       </div>
 

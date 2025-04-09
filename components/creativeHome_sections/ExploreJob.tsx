@@ -3,7 +3,10 @@ import { jobs } from "@/constants";
 import React from "react";
 import Image from "next/image";
 import { Buttons } from "@/components/export_components";
+import { useRouter } from "next/navigation";
+
 const ExploreJob = () => {
+  const navigate = useRouter();
   return (
     <section className="bodyMargin flex flex-col gap-5">
       <div className="flex justify-between text-secondary">
@@ -53,7 +56,9 @@ const ExploreJob = () => {
       <Buttons
         label="Find more Jobs"
         className="!bg-primary w-fit self-end rounded-lg font-bold text-xl"
-        onClick={() => {}}
+        onClick={() => {
+          navigate.push("/job-hub");
+        }}
       />
     </section>
   );
