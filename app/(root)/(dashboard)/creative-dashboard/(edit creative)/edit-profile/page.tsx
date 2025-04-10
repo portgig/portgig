@@ -2,14 +2,16 @@
 import React from "react";
 import Image from "next/image";
 import { Buttons } from "@/components/export_components";
-const editProfile = () => {
+import { useRouter } from "next/navigation";
+const EditProfile = () => {
+  const navigate = useRouter();
   return (
     <main className="flex flex-col text-black gap-5 ">
       <h2 className="subHeading">Edit profile</h2>
       {/* profile image */}
       <div className="w-full bg-white p-3 rounded-lg shadow">
         <div className=" flex items-center gap-5 px-3 py-3">
-          <div className="h-30 w-30 rounded-full bg-red-500">
+          <div className="h-30 w-30 rounded-full border border-secondary">
             <Image
               src="/assets/creativeImage.png"
               alt="profile image"
@@ -91,13 +93,15 @@ const editProfile = () => {
           />
         </div>
         <Buttons
-          label="Save chnages"
+          label="Save changes"
           className="!bg-primary w-fit text-white self-end rounded-sm"
-          onClick={() => {}}
+          onClick={() => {
+            navigate.push("/creative-dashboard/profile-saved");
+          }}
         />
       </div>
     </main>
   );
 };
 
-export default editProfile;
+export default EditProfile;
