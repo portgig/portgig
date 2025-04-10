@@ -1,4 +1,4 @@
-import { NavigationBar, Footer } from "@/components/export_cmponents";
+import { NavigationBar, Footer } from "@/components/export_components";
 import React from "react";
 
 const layout = ({ children }: { children: React.ReactNode }) => {

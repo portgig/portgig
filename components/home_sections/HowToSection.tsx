@@ -11,7 +11,7 @@ const HowToSection = () => {
       </div>
       <div className="flex flex-col lg:flex-row gap-5 justify-evenly">
         <div className="flex flex-col">
-          <h2 className="text-primary text-lg md:text-xl lg:text-2xl font-black mt-5 text-center">
+          <h2 className="text-textColor text-lg md:text-xl lg:text-2xl font-black mt-5 text-center">
             For creatives
           </h2>
           <div className="bg-primary py-5 px-5 rounded-lg h-72">
@@ -27,7 +27,7 @@ const HowToSection = () => {
         </div>
 
         <div className="flex flex-col">
-          <h2 className="text-primary text-lg md:text-xl lg:text-2xl font-black mt-5 text-center">
+          <h2 className="text-textColor text-lg md:text-xl lg:text-2xl font-black mt-5 text-center">
             For Recruiters
           </h2>
           <div className="bg-primary py-5 px-5 rounded-lg h-72">

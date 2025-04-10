@@ -1,12 +1,12 @@
 import React from 'react'
 
-const page = () => {
+const editCV = () => {
   return (
 	<div>
-	  job-hub
+	  edit cv
 	</div>
   )
 }
 
-export default page
+export default editCV
 

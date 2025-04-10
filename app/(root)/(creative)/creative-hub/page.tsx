@@ -1,12 +1,29 @@
-import React from 'react'
+"use client";
+import React from "react";
+import {
+  SearchSection,
+  CreativeHero,
+  Community,
+  Creatives,
+  CreativeFilter,
+} from "@/components/export_components";
 
-const page = () => {
+const CreativeHub = () => {
   return (
-	<div>
-	  creative-hub
-	</div>
-  )
-}
+    <main>
+      <CreativeHero />
+      <SearchSection />
+      <div className="flex gap-5 bodyMargin ">
+        <div className="flex-2/7 max-md:hidden">
+          <CreativeFilter />
+        </div>
+        <div className="flex-5/7 ">
+          <Creatives />
+        </div>
+      </div>
+      <Community />
+    </main>
+  );
+};
 
-export default page
-
+export default CreativeHub;

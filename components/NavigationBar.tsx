@@ -1,11 +1,15 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import { navigationItems } from "@/constants/index";
-import { Buttons } from "@/components/export_cmponents";
+import { Buttons } from "@/components/export_components";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 const NavigationBar = () => {
+  const navigate = useRouter();
   return (
-    <nav className="bodyMargin sticky top-0 z-50 bg-white h-[56px]  mt-[20px] flex items-center justify-between text-textColor">
+
+    <nav className=" bodyMargin h-[56px]  mt-[20px] flex items-center justify-between text-primary">
       <div className="flex items-center gap-4">
         {/* Mobile Menu Icon */}
         <Image
@@ -25,7 +29,7 @@ const NavigationBar = () => {
           className="max-md:w-[80px] max-md:h-[80px] "
         />
       </div>
-      <div className="max-lg:hidden w-[700px]   text-textColor text-[18px]">
+      <div className="max-lg:hidden w-[700px]   text-primary text-[18px]">
         {" "}
         <ul className="flex justify-between">
           {navigationItems.map((navigationItem) => (
@@ -41,8 +45,11 @@ const NavigationBar = () => {
 
       <div>
         <Buttons
-          className="!bg-primary text-white rounded-full text-center text-sm max-sm:text-[10px]  "
+          className="!bg-primary text-white rounded-full text-center text-sm max-sm:text-[10px] cursor-pointer  "
           label="Sign up/ Log in"
+          onClick={() => {
+            navigate.push("/onboarding");
+          }}
         />
       </div>
     </nav>

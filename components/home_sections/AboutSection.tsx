@@ -2,15 +2,15 @@ import React from "react";
 import Image from "next/image";
 const AboutSection = () => {
   return (
-    <section className="bodyMargin my-5 text-primary">
+    <section className="bodyMargin my-5 text-textColor">
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 sm:gap-0 mt-3">
         <div className="flex flex-col">
           <h1 className="text-textColor heading">What is this all about?</h1>
           <hr className="border-3 border-primary w-45 mt-2" />
-          <h2 className="text-lg md:text-xl lg:text-2xl font-black mt-5">
+          <h2 className="text-lg md:text-xl lg:text-2xl 2xl:text-3xl font-black mt-5 text-primary">
             Redefining How Creatives Present Themselves
           </h2>
-          <p className="text-sm md:text-lg leading-6 my-2">
+          <p className="text-sm md:text-lg leading-6 my-2 text-primary">
             We understand the struggles creatives face in presenting their
             skills. Generic CVs don’t cut it anymore. That’s why we’re here to
             help you create a professional portfolio tailored to your craft.
@@ -35,7 +35,7 @@ const AboutSection = () => {
       {/* share */}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 sm:gap-10 mt-3 ">
         <div className="flex flex-col">
-          <h2 className="text-lg md:text-xl lg:text-4xl font-black ">
+          <h2 className="text-lg md:text-xl lg:text-4xl font-black text-primary">
             All your works in one place, easy to share. easy to impress.
           </h2>
           <hr className="border-3 border-primary w-45 my-3" />
@@ -51,7 +51,7 @@ const AboutSection = () => {
         <div className="flex sm:flex-col items-start sm:justify-center gap-2">
           <div>
             {" "}
-            <h2 className="subHeading  mt-5">Find Jobs That Fit You</h2>
+            <h2 className="subHeading  mt-5 text-primary">Find Jobs That Fit You</h2>
             <p className="text-sm md:text-lg leading-6 my-2">
               Discover gigs and job postings that match your expertise. <br />
               With just one click, apply using your comprehensive portfolio,{" "}

@@ -5,7 +5,7 @@ import {
   AboutSection,
   HowToSection,
   CommunitySection,
-} from "@/components/export_cmponents";
+} from "@/components/export_components";
 
 const Home = () => {
   return (

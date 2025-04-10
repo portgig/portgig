@@ -29,6 +29,7 @@ body {
   --color-primary: #0a1754;
   --color-secondary: #00489a;
   --color-textColor: #00489a;
+  --color-gray100: #f3f4f6;
 }
 
 @layer base {
@@ -55,7 +56,7 @@ body {
   }
 
   .authStyles{
-	@apply h-screen flex flex-col justify-center 
+	@apply flex flex-col justify-center 
   }
 }
 
