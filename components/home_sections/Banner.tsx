@@ -1,5 +1,6 @@
+"use client";
 import React from "react";
-import { Buttons } from "../export_cmponents";
+import { Buttons } from "../export_components";
 
 const Banner = () => {
   return (
@@ -11,6 +12,7 @@ const Banner = () => {
           <Buttons
             label="Sign up/ Log in"
             className=" text-black font-medium text-sm not-odd:w-fit !py-2"
+            onClick={() => {}}
           />
         </div>
         {/* hire */}
@@ -19,6 +21,7 @@ const Banner = () => {
           <Buttons
             label="Sign up/ Log in"
             className=" text-black font-medium text-sm not-odd:w-fit !py-2"
+            onClick={() => {}}
           />
         </div>
       </div>

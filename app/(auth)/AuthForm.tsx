@@ -3,6 +3,7 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 import {
   signInSchema,
@@ -36,6 +37,8 @@ interface AuthFormProps {
 }
 
 const AuthForm = ({ type }: AuthFormProps) => {
+  const navigate = useRouter();
+
   const [formData, setFormData] = useState<FormData>({
     fullName: "",
     email: "",
@@ -89,9 +92,20 @@ const AuthForm = ({ type }: AuthFormProps) => {
       // Login or sign up logic
       if (isSignin || isRecruiterSignin) {
         handleSignIn(formData);
+        if (isSignin) {
+          navigate.push("/creative-homepage");
+        } else if (isRecruiterSignin) {
+          navigate.push("/recruiter-homepage");
+        }
       } else {
         handleSignUp(formData);
+        if (isSignup) {
+          navigate.push("/creative-homepage");
+        } else if (isRecruiterSignup) {
+          navigate.push("/recruiter-homepage");
+        }
       }
+
       setFormData({
         fullName: "",
         email: "",
@@ -118,14 +132,17 @@ const AuthForm = ({ type }: AuthFormProps) => {
     <form
       onSubmit={handleSubmit}
       className="px-5 md:px-30 lg:px-10 xl:px-20 2xl:px-30 space-y-5 flex flex-col">
-      <div className="max-lg:block lg:hidden self-center w-fit ">
+      <div className="max-lg:block lg:hidden self-center w-fit cursor-pointer ">
         {/* Logo */}
-        <Image
-          src="/assets/portgig-2.png"
-          alt="Portgig Logo"
-          width={150} // Fixed width
-          height={150} // Fixed height
-        />
+        <Link href="/">
+          {" "}
+          <Image
+            src="/assets/portgig-2.png"
+            alt="Portgig Logo"
+            width={150} // Fixed width
+            height={150} // Fixed height
+          />
+        </Link>
       </div>
       {/* page label */}
       <div className="space-y-4">
@@ -174,7 +191,7 @@ const AuthForm = ({ type }: AuthFormProps) => {
       {/* username field  for sign ups */}
       {(isSignup || isRecruiterSignup) && (
         <div className="text-white">
-          <label htmlFor="name" className="labelStyles">
+          <label htmlFor="name" className={`${labelStyles}`}>
             Username
           </label>
           <input
@@ -195,11 +212,11 @@ const AuthForm = ({ type }: AuthFormProps) => {
       {/* email */}
 
       <div className="text-white">
-        <label htmlFor="name" className="labelStyles">
+        <label htmlFor="name" className={`${labelStyles}`}>
           Email Address
         </label>
         <input
-          type="text"
+          type="email"
           id="email"
           name="email"
           value={formData.email}
@@ -216,7 +233,7 @@ const AuthForm = ({ type }: AuthFormProps) => {
       {/* phone field  for sign ups */}
       {(isSignup || isRecruiterSignup) && (
         <div className="text-white">
-          <label htmlFor="name" className="labelStyles">
+          <label htmlFor="name" className={`${labelStyles}`}>
             Phone number
           </label>
           <input
@@ -237,7 +254,7 @@ const AuthForm = ({ type }: AuthFormProps) => {
       {/* industry/niche for sign ups */}
       {(isSignup || isRecruiterSignup) && (
         <div className="text-white">
-          <label htmlFor="name" className="labelStyles">
+          <label htmlFor="name" className={`${labelStyles}`}>
             Industry/ Niche
           </label>
           <select
@@ -260,7 +277,7 @@ const AuthForm = ({ type }: AuthFormProps) => {
       {/* experience years  for sign ups */}
       {(isSignup || isRecruiterSignup) && (
         <div className="text-white">
-          <label htmlFor="name" className="labelStyles">
+          <label htmlFor="name" className={`${labelStyles}`}>
             Years of experience
           </label>
           <input
@@ -284,7 +301,7 @@ const AuthForm = ({ type }: AuthFormProps) => {
 
       {(isSignup || isRecruiterSignup) && (
         <div className="text-white">
-          <label htmlFor="name" className="labelStyles">
+          <label htmlFor="name" className={`${labelStyles}`}>
             Location
           </label>
           <input
@@ -305,11 +322,11 @@ const AuthForm = ({ type }: AuthFormProps) => {
       {/* password */}
 
       <div className="text-white">
-        <label htmlFor="name" className="labelStyles">
+        <label htmlFor="name" className={`${labelStyles}`}>
           Password
         </label>
         <input
-          type="text"
+          type="password"
           id="password"
           name="password"
           value={formData.password}
@@ -331,7 +348,7 @@ const AuthForm = ({ type }: AuthFormProps) => {
             name="keepLoggedIn"
             className="w-4 h-4 text-secondary focus:ring-secondary rounded"
           />
-          <label htmlFor="keepLoggedIn" className="labelStyles">
+          <label htmlFor="keepLoggedIn" className={`${labelStyles}`}>
             Keep me logged in
           </label>
         </div>
@@ -339,11 +356,11 @@ const AuthForm = ({ type }: AuthFormProps) => {
       {/* confirm password */}
       {(isSignup || isRecruiterSignup) && (
         <div className="text-white ">
-          <label htmlFor="name" className="labelStyles">
+          <label htmlFor="name" className={`${labelStyles}`}>
             Confirm password
           </label>
           <input
-            type="text"
+            type="password"
             id="confirmPassword"
             name="confirmPassword"
             value={formData.confirmPassword}
@@ -361,7 +378,9 @@ const AuthForm = ({ type }: AuthFormProps) => {
       )}
       {/* sign in button */}
       {(isSignin || isRecruiterSignin) && (
-        <AuthButton className="bg-white w-full text-primary mt-2  py-3  rounded-lg ">
+        <AuthButton
+          type="submit"
+          className="bg-white w-full text-primary mt-2  py-3  rounded-lg ">
           <p className="max-md:text-lg text-2xl font-bold">Sign In</p>
         </AuthButton>
       )}
@@ -374,7 +393,9 @@ const AuthForm = ({ type }: AuthFormProps) => {
       )}
       {/* google sign in */}
       {(isSignin || isRecruiterSignin) && (
-        <AuthButton className="border-2 border-white w-full text-white mt-2  py-3 px-10 rounded-lg ">
+        <AuthButton
+          onClick={() => {}}
+          className="border-2 border-white w-full text-white mt-2  py-3 px-10 rounded-lg ">
           <div className="flex justify-center items-center gap-3">
             <p className="max-md:text-sm text-2xl">Continue with google</p>
 
@@ -414,7 +435,9 @@ const AuthForm = ({ type }: AuthFormProps) => {
           </div>
 
           {/* button */}
-          <AuthButton className="border border-white  text-white mt-2  py-3 px-4  rounded-lg ">
+          <AuthButton
+            type="submit"
+            className="border border-white  text-white mt-2  py-3 px-4  rounded-lg ">
             <p className="max-sm:text-[12px] lg:text-[text-14px]">Sign up</p>
           </AuthButton>
         </div>

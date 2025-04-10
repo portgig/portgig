@@ -4,11 +4,16 @@ import React from "react";
 interface buttonProps {
   className: string;
   label: string;
+  type?: "submit" | "button" | "reset";
+  onClick: () => void;
 }
 
-const Buttons = ({ className, label }: buttonProps) => {
+const Buttons = ({ className, label, type, onClick }: buttonProps) => {
   return (
-    <button className={`${className} bg-white rounded-full py-2 px-5 `}>
+    <button
+      type={type}
+      className={`${className} bg-white rounded-full py-2 px-5 `}
+      onClick={onClick}>
       {label}
     </button>
   );
