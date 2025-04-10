@@ -16,10 +16,10 @@ const Actions = () => {
   ];
 
   const buttonStyles =
-    "border border-black max-md:px-2 rounded-lg max-md:w-fit md:w-full max-md:text-[10px] sm:text-sm cursor-pointer";
+    "border border-black max-md:px-2 rounded-lg max-md:w-fit md:w-full max-md:text-[10px] sm:text-sm md:text-lg cursor-pointer";
 
   return (
-    <aside className="flex max-md:justify-between max-md:items-center max-md:gap-5 md:mx-5 md:my-10 md:flex-col gap-5 text-primary">
+    <aside className="flex max-md:justify-between max-md:items-center max-md:gap-5   md:flex-col gap-5 text-primary">
       {links.map((link) => (
         <Buttons
           key={link.path}
