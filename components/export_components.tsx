@@ -4,6 +4,7 @@ export { default as NavigationBar } from "@/components/NavigationBar";
 export { default as ExploreCreative } from "./creativeHome_sections/ExploreCreative";
 export { default as SearchSection } from "./SearchSection";
 export { default as Community } from "./Community";
+export { default as Actions } from "./Actions";
 // Home sections
 export { default as HeroSection } from "./home_sections/HeroSection";
 export { default as Banner } from "./home_sections/Banner";
@@ -32,3 +33,12 @@ export { default as CreativeFilter } from "./creative-hub/CreativeFilter";
 export { default as JobHero } from "./Job-hub/JobHero";
 export { default as Jobs } from "./Job-hub/Jobs";
 export { default as JobFilters } from "./Job-hub/JobFilters";
+
+//creative dashboard
+export { default as CreativeDashboardHero } from "./creative-dashboard/CreativeDashboardHero";
+export { default as ProfileAnalytics } from "./creative-dashboard/ProfileAnalytics";
+export { default as JobApplied } from "./creative-dashboard/JobApplied";
+export { default as CreativeCommunity } from "./creative-dashboard/CreativeCommunity";
+
+//edit profile
+

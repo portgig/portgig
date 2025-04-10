@@ -3,8 +3,10 @@ import { creatives } from "@/constants";
 import React from "react";
 import Image from "next/image";
 import { Buttons } from "@/components/export_components";
+import { useRouter } from "next/navigation";
 
 const DashboardSection = () => {
+	const navigate = useRouter();
   const creative = creatives[0];
   return (
     <section className="flex flex-col gap-5 my-10">
@@ -69,7 +71,9 @@ const DashboardSection = () => {
         <Buttons
           label="Go to Dashboard"
           className=" !bg-primary w-fit self-end rounded-lg font-bold text-xl"
-          onClick={() => {}}
+				  onClick={() => {
+			  navigate.push('/creative-dashboard')
+		  }}
         />
       </div>
     </section>
