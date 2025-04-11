@@ -3,10 +3,57 @@ import React from "react";
 import Image from "next/image";
 import { Buttons } from "@/components/export_components";
 import { useRouter } from "next/navigation";
+import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import * as z from "zod";
+
+const formSchema = z.object({
+  fullName: z.string().min(1, "Full name is required"),
+  email: z.string().email("Invalid email address"),
+  phone: z.string().min(5, "Phone number is required"),
+  location: z.string().min(1, "Location is required"),
+  niche: z.string().min(1, "Niche/Industry is required"),
+  instagram: z.string().url().optional(),
+  linkedin: z.string().url().optional(),
+  website: z.string().url().optional(),
+  xHandle: z.string().url().optional(),
+  about: z.string().max(1000, "Max 1000 characters"),
+});
+
+type FormData = z.infer<typeof formSchema>;
+
 const RecruiterEditProfile = () => {
   const navigate = useRouter();
+
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm<FormData>({
+    resolver: zodResolver(formSchema),
+    defaultValues: {
+      fullName: "",
+      email: "",
+      phone: "",
+      location: "",
+      niche: "",
+      instagram: "",
+      linkedin: "",
+      website: "",
+      xHandle: "",
+      about: "",
+    },
+  });
+
+  const onSubmit = (data: FormData) => {
+    console.log(data);
+    navigate.push("");
+  };
+
   return (
-    <main className="flex flex-col text-black gap-5 ">
+    <form
+      onSubmit={handleSubmit(onSubmit)}
+      className="flex flex-col text-black gap-5">
       <h2 className="subHeading">Edit profile</h2>
       {/* profile image */}
       <div className="w-full bg-white p-3 rounded-lg shadow">
@@ -23,8 +70,14 @@ const RecruiterEditProfile = () => {
           <div className="flex flex-col gap-2 items-start">
             <Buttons
               label="Upload New Photo"
-              className="rounded-2xl text-sm"
+              className="rounded-2xl text-sm "
               onClick={() => {}}
+            />
+            <input
+              name="profileImage"
+              type="file"
+              accept="image/*"
+              className="text-xs"
             />
             <p className="text-[8px]">
               At least 800x 800 px is recommended JPG or PNG
@@ -50,19 +103,41 @@ const RecruiterEditProfile = () => {
               <h2 className="text-[10px] lg:text-sm font-extralight">
                 Full name
               </h2>
-              <div className="text-sm bg-white p-2">Isaac Adeshinor</div>
+              <input
+                {...register("fullName")}
+                type="text"
+                className="text-sm bg-white p-2 border border-gray-300 rounded"
+                placeholder="Full Name"
+              />
+              {errors.fullName && (
+                <p className="text-red-500 text-xs">{errors.fullName.message}</p>
+              )}
             </div>
             <div className="flex flex-col gap-2">
               <h2 className="text-[10px] lg:text-sm font-extralight">Email</h2>
-              <div className="text-sm bg-white p-2">
-                IssacAdeshinor@gmail.com
-              </div>
+              <input
+                {...register("email")}
+                type="email"
+                className="text-sm bg-white p-2 border border-gray-300 rounded"
+                placeholder="Email"
+              />
+              {errors.email && (
+                <p className="text-red-500 text-xs">{errors.email.message}</p>
+              )}
             </div>
             <div className="flex flex-col gap-2">
               <h2 className="text-[10px] lg:text-sm font-extralight">
                 Phone number
               </h2>
-              <div className="text-sm bg-white p-2">+867775567890</div>
+              <input
+                {...register("phone")}
+                type="tel"
+                className="text-sm bg-white p-2 border border-gray-300 rounded"
+                placeholder="Phone Number"
+              />
+              {errors.phone && (
+                <p className="text-red-500 text-xs">{errors.phone.message}</p>
+              )}
             </div>
           </div>
         </div>
@@ -73,19 +148,45 @@ const RecruiterEditProfile = () => {
               <h2 className="text-[10px] lg:text-sm font-extralight">
                 Location
               </h2>
-              <div className="text-sm bg-white p-2 w-44">Logos, Nigeria</div>
+              <input
+                {...register("location")}
+                type="text"
+                className="text-sm bg-white p-2 w-44 border border-gray-300 rounded"
+                placeholder="Location"
+              />
+              {errors.location && (
+                <p className="text-red-500 text-xs">{errors.location.message}</p>
+              )}
             </div>
             <div className="flex flex-col gap-2">
               <h2 className="text-[10px] lg:text-sm font-extralight">
                 Niche/ Industry
               </h2>
-              <div className="text-sm bg-white p-2 w-44 ">Graphic, design</div>
+              <input
+                {...register("niche")}
+                type="text"
+                className="text-sm bg-white p-2 w-44 border border-gray-300 rounded"
+                placeholder="Niche/Industry"
+              />
+              {errors.niche && (
+                <p className="text-red-500 text-xs">{errors.niche.message}</p>
+              )}
             </div>
             <div className="flex flex-col gap-2">
               <h2 className="text-[10px] lg:text-sm font-extralight">
                 Instagram handle
               </h2>
-              <div className="text-sm bg-white p-2 w-44">paste here</div>
+              <input
+                {...register("instagram")}
+                type="url"
+                className="text-sm bg-white p-2 w-44 border border-gray-300 rounded"
+                placeholder="Instagram URL"
+              />
+              {errors.instagram && (
+                <p className="text-red-500 text-xs">
+                  {errors.instagram.message}
+                </p>
+              )}
             </div>
           </div>
           {/* 2nd line */}
@@ -94,19 +195,45 @@ const RecruiterEditProfile = () => {
               <h2 className="text-[10px] lg:text-sm font-extralight">
                 Linkedin handle
               </h2>
-              <div className="text-sm bg-white p-2 w-44">write here</div>
+              <input
+                {...register("linkedin")}
+                type="url"
+                className="text-sm bg-white p-2 w-44 border border-gray-300 rounded"
+                placeholder="LinkedIn URL"
+              />
+              {errors.linkedin && (
+                <p className="text-red-500 text-xs">
+                  {errors.linkedin.message}
+                </p>
+              )}
             </div>
             <div className="flex flex-col gap-2">
               <h2 className="text-[10px] lg:text-sm font-extralight">
                 Website link
               </h2>
-              <div className="text-sm bg-white p-2 w-44">write here</div>
+              <input
+                {...register("website")}
+                type="url"
+                className="text-sm bg-white p-2 w-44 border border-gray-300 rounded"
+                placeholder="Website URL"
+              />
+              {errors.website && (
+                <p className="text-red-500 text-xs">{errors.website.message}</p>
+              )}
             </div>
             <div className="flex flex-col gap-2">
               <h2 className="text-[10px] lg:text-sm font-extralight">
                 X handle
               </h2>
-              <div className="text-sm bg-white p-2 w-44">write here</div>
+              <input
+                {...register("xHandle")}
+                type="url"
+                className="text-sm bg-white p-2 w-44 border border-gray-300 rounded"
+                placeholder="X (Twitter) URL"
+              />
+              {errors.xHandle && (
+                <p className="text-red-500 text-xs">{errors.xHandle.message}</p>
+              )}
             </div>
           </div>
         </div>
@@ -114,20 +241,22 @@ const RecruiterEditProfile = () => {
         <div className="p-3 w-full rounded-lg flex flex-col gap-5 bg-gray100">
           <h2>About</h2>
           <textarea
+            {...register("about")}
             maxLength={1000}
             className="resize-none min-h-60 w-full p-2 border border-primary rounded outline-none focus:ring-0 focus:outline-none"
-            placeholder="Tell us about yourelf (1000 characters max)"
+            placeholder="Tell us about yourself (1000 characters max)"
           />
+          {errors.about && (
+            <p className="text-red-500 text-xs">{errors.about.message}</p>
+          )}
         </div>
         <Buttons
+          type="submit"
           label="Save changes"
           className="!bg-primary w-fit text-white self-end rounded-sm"
-          onClick={() => {
-            navigate.push("/creative-dashboard/profile-saved");
-          }}
         />
       </div>
-    </main>
+    </form>
   );
 };
 
