@@ -41,7 +41,6 @@ const NavigationBar = () => {
           ))}
         </ul>
       </div>
-
       <div>
         <Buttons
           className="!bg-primary text-white rounded-full text-center text-sm max-sm:text-[10px] cursor-pointer  "
