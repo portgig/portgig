@@ -5,6 +5,7 @@ export { default as ExploreCreative } from "./creativeHome_sections/ExploreCreat
 export { default as SearchSection } from "./SearchSection";
 export { default as Community } from "./Community";
 export { default as Actions } from "./Actions";
+export { default as RecruiterActions } from "./RecruiterActions";
 // Home sections
 export { default as HeroSection } from "./home_sections/HeroSection";
 export { default as Banner } from "./home_sections/Banner";

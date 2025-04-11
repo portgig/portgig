@@ -3,7 +3,7 @@ import React from "react";
 import Image from "next/image";
 import { Buttons } from "@/components/export_components";
 import { useRouter } from "next/navigation";
-const EditProfile = () => {
+const RecruiterEditProfile = () => {
   const navigate = useRouter();
   return (
     <main className="flex flex-col text-black gap-5 ">
@@ -73,19 +73,46 @@ const EditProfile = () => {
               <h2 className="text-[10px] lg:text-sm font-extralight">
                 Location
               </h2>
-              <div className="text-sm bg-white p-2">Logos, Nigeria</div>
+              <div className="text-sm bg-white p-2 w-44">Logos, Nigeria</div>
             </div>
             <div className="flex flex-col gap-2">
               <h2 className="text-[10px] lg:text-sm font-extralight">
                 Niche/ Industry
               </h2>
-              <div className="text-sm bg-white p-2">Graphic, design</div>
+              <div className="text-sm bg-white p-2 w-44 ">Graphic, design</div>
+            </div>
+            <div className="flex flex-col gap-2">
+              <h2 className="text-[10px] lg:text-sm font-extralight">
+                Instagram handle
+              </h2>
+              <div className="text-sm bg-white p-2 w-44">paste here</div>
+            </div>
+          </div>
+          {/* 2nd line */}
+          <div className="flex flex-wrap justify-between">
+            <div className="flex flex-col gap-2">
+              <h2 className="text-[10px] lg:text-sm font-extralight">
+                Linkedin handle
+              </h2>
+              <div className="text-sm bg-white p-2 w-44">write here</div>
+            </div>
+            <div className="flex flex-col gap-2">
+              <h2 className="text-[10px] lg:text-sm font-extralight">
+                Website link
+              </h2>
+              <div className="text-sm bg-white p-2 w-44">write here</div>
+            </div>
+            <div className="flex flex-col gap-2">
+              <h2 className="text-[10px] lg:text-sm font-extralight">
+                X handle
+              </h2>
+              <div className="text-sm bg-white p-2 w-44">write here</div>
             </div>
           </div>
         </div>
         {/* bio */}
         <div className="p-3 w-full rounded-lg flex flex-col gap-5 bg-gray100">
-          <h2>bio</h2>
+          <h2>About</h2>
           <textarea
             maxLength={1000}
             className="resize-none min-h-60 w-full p-2 border border-primary rounded outline-none focus:ring-0 focus:outline-none"
@@ -104,4 +131,4 @@ const EditProfile = () => {
   );
 };
 
-export default EditProfile;
+export default RecruiterEditProfile;
