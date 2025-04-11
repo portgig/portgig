@@ -12,12 +12,17 @@ export const AuthLayout = ({ children }: { children: React.ReactNode }) => {
   //   Determine background image based on the current path
   let bgImage = "/assets/auth-man.png";
 
-  if (pathname.includes("recruiter-sign-in")) {
-    bgImage = "/assets/auth-woman.png";
-  } else if (pathname.includes("recruiter-sign-up")) {
-    bgImage = "/assets/auth-woman.png";
-  }
-
+	if (pathname.includes("recruiter-sign-in")) {
+		bgImage = "/assets/auth-woman.png";
+	} else if (pathname.includes("recruiter-sign-up")) {
+		bgImage = "/assets/auth-woman.png";
+	} else if (pathname.includes("welcome-onboarding")) {
+		bgImage = "/assets/onboarding-woman.png";
+	} else if (pathname.includes("why-onboarding")) {
+		bgImage = "/assets/onboarding-woman.png";
+	} else if (pathname.includes("recruiter-onboarding")) {
+		bgImage = "/assets/onboarding-man.png";
+	}
   return (
     <div className="text-white flex h-screen">
       <div
@@ -30,7 +35,7 @@ export const AuthLayout = ({ children }: { children: React.ReactNode }) => {
             alt="Portgig Logo"
             width={150}
             height={150}
-            //   className="max-lg:w-[80px] max-lg:h-[80px] "
+              className="max-lg:w-[80px] max-lg:h-[80px] "
           />
         </Link>
       </div>
