@@ -34,7 +34,6 @@ const Jobs = () => {
                 <p className="text-sm">by {job.companyName}</p>
               </div>
             </div>
-
             <div className="flex flex-col gap-2 mt-auto">
               <div className="flex justify-between text-sm font-bold">
                 <h2>{job.location}</h2>

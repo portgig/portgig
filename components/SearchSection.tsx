@@ -5,7 +5,7 @@ import { AiOutlineSearch } from "react-icons/ai";
 import { Buttons } from "./export_components";
 const SearchSection = () => {
   return (
-    <section className="bodyMargin  border border-gray flex max-lg:hidden">
+    <section className="bodyMargin  border border-gray flex max-lg:hidden bg-white">
       <div className="flex text-textColor items-center w-full">
         <AiOutlineSearch className="h-5 w-5" />
         <input

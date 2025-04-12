@@ -41,5 +41,7 @@ export { default as ProfileAnalytics } from "./creative-dashboard/ProfileAnalyti
 export { default as JobApplied } from "./creative-dashboard/JobApplied";
 export { default as CreativeCommunity } from "./creative-dashboard/CreativeCommunity";
 
-//edit profile
-
+//Job profile
+export { default as JobProfile } from "./job-description/JobProfile";
+export { default as OtherJobs } from "./job-description/OtherJobs";
+export { default as EmailSubscription } from "./job-description/EmailSubscription";
