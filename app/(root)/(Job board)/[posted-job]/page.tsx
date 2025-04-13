@@ -4,7 +4,7 @@ import React from "react";
 
 const Jobs = () => {
   const params = useParams();
-  const jobSlug = params.jobs; 
+  const jobSlug = params.jobs;
 
   return (
     <div className="p-6">
