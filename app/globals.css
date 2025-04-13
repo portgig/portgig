@@ -30,6 +30,7 @@ body {
   --color-secondary: #00489a;
   --color-textColor: #00489a;
   --color-gray100: #f3f4f6;
+  --color-gray200: #e5e7eb;
 }
 
 @layer base {
@@ -55,11 +56,13 @@ body {
     @apply text-2xl md:text-3xl lg:text-4xl font-black;
   }
 
-  .authStyles{
-	@apply flex flex-col justify-center 
+  .authStyles {
+    @apply flex flex-col justify-center;
+  }
+  .center {
+    @apply flex justify-center items-center;
   }
 }
-
 
 /* Hide arrows in number input for Chrome, Safari, Edge, Opera */
 input[type="number"]::-webkit-inner-spin-button,

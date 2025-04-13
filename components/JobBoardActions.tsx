@@ -3,7 +3,6 @@ import Link from "next/link";
 import React from "react";
 import { Buttons } from "./export_components";
 import { usePathname, useRouter } from "next/navigation";
-import { FiMenu } from "react-icons/fi";
 import clsx from "clsx";
 const JobBoardActions = () => {
   const navigate = useRouter();
@@ -42,7 +41,7 @@ const JobBoardActions = () => {
           path: "/shortlisted-candidate",
         },
         {
-          itemLabel: "selected candidates",
+          itemLabel: "Selected candidates",
           path: "/selected-candidate",
         },
       ],
@@ -74,14 +73,15 @@ const JobBoardActions = () => {
   ];
 
   return (
-    <main className="relative flex flex-col ">
-      <div className="relative">
-        <FiMenu
-          className="lg:hidden text-5xl  w-fit p-2 text-primary"
+    <main className="relative flex  min-h-screen flex-col ">
+      <div className="relative min-h-screen">
+        <Buttons
+          label="Menu"
+          className="lg:hidden text-xl  w-fit p-2 text-white !bg-primary "
           onClick={() => setShowSidebar((prev) => !prev)}
         />
         <aside
-          className={`bg-primary fixed top-0 left-0 h-full w-64 transform transition-transform duration-300 z-50 text-white p-4 flex-col gap-5
+          className={`bg-primary h-full fixed top-0 left-0 w-64 transform transition-transform duration-300 z-50 text-white p-4 flex-col gap-5
           ${showSidebar ? "translate-x-0 fixed" : "-translate-x-full"}
           lg:translate-x-0 lg:static lg:flex lg:w-full lg:h-full`}>
           {DashboardHeadings.map((heading, index) => (
