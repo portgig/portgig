@@ -2,11 +2,12 @@
 import Link from "next/link";
 import React from "react";
 import { Buttons } from "./export_components";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { FiMenu } from "react-icons/fi";
-
+import clsx from "clsx";
 const JobBoardActions = () => {
   const navigate = useRouter();
+  const pathname = usePathname();
   const [showSidebar, setShowSidebar] = React.useState(false);
 
   const DashboardHeadings = [
@@ -51,12 +52,12 @@ const JobBoardActions = () => {
       link: "",
       items: [
         {
-          itemLabel: "OvervieNew applicationsw",
-          path: "",
+          itemLabel: "New Applicants",
+          path: "/new-applicant",
         },
         {
           itemLabel: "Job Performance",
-          path: "",
+          path: "/job-performance",
         },
       ],
     },
@@ -85,19 +86,22 @@ const JobBoardActions = () => {
           lg:translate-x-0 lg:static lg:flex lg:w-full lg:h-full`}>
           {DashboardHeadings.map((heading, index) => (
             <div key={index} className="">
-              <Link href={"/"}>
+              <Link href={""}>
                 <h2 className="text-center font-bold text-sm   ">
                   {heading.label}
                 </h2>
               </Link>
               <hr className="border-t border-white mx-3 " />
-              <ul className="max-lg:">
+              <ul className="space-y-[2px]">
                 {heading.items.map((item, index) => (
                   <li key={index} className="text-center">
                     {" "}
                     <Buttons
                       label={item.itemLabel}
-                      className="!bg-primary text-[10px] !rounded-none"
+                      className={clsx(
+                        "!bg-primary text-[10px] !rounded-none",
+                        pathname === item.path && "!bg-secondary"
+                      )}
                       onClick={() => {
                         navigate.push(item.path);
                         setShowSidebar((prev) => !prev);

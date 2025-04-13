@@ -1,7 +1,7 @@
 import React from 'react'
 
 const NewApplicant = () => {
-  return <div>new-applicant</div>;
+  return <div>job-performance</div>;
 }
 
 export default NewApplicant
