@@ -24,15 +24,14 @@ const ShortlistedCandidate = () => {
           height={150}
         />
       </div>
-      <div className="flex justify-between items-center">
-        <h2 className=" text-primary text-[12px] font-bold">
+      <div
+        className="flex justify-between items-center text-sm md:text-xl lg:text-2xl">
+        <h2 className=" text-primary  font-bold">
           Graphics Designer Application
         </h2>
         <div>
           {" "}
-          <h2 className=" text-primary text-[12px] font-bold">
-            Shortlisted Talents (50)
-          </h2>
+          <h2 className=" text-primary  font-bold">Shortlisted Talents (50)</h2>
         </div>
       </div>
       <hr className="border-t border-black" />
@@ -113,24 +112,24 @@ const ShortlistedCandidate = () => {
             <p className=" ">Cover </p>
           </div>
           {/* buttons */}
-          <div className="bg-gray100 flex flex-wrap gap-5  p-4 rounded-lg">
+          <div className="bg-gray100 flex flex-wrap gap-5  p-5 rounded-lg">
             <Buttons
-              className="!bg-primary rounded-sm text-white w-[calc(50%-0.625rem)]"
+              className="!bg-primary py-3 rounded-sm text-white w-[calc(50%-0.625rem)]"
               label="Not Qualified"
               onClick={() => {}}
             />
             <Buttons
-              className="!bg-primary rounded-sm text-white w-[calc(50%-0.625rem)]"
+              className="!bg-primary py-3 rounded-sm text-white w-[calc(50%-0.625rem)]"
               label="Shortlist"
               onClick={() => {}}
             />
             <Buttons
-              className="!bg-primary rounded-sm text-white w-[calc(50%-0.625rem)]"
+              className="!bg-primary py-3 rounded-sm text-white w-[calc(50%-0.625rem)]"
               label="Download CV"
               onClick={() => {}}
             />
             <Buttons
-              className="!bg-primary rounded-sm text-white w-[calc(50%-0.625rem)]"
+              className="!bg-primary py-3 rounded-sm text-white w-[calc(50%-0.625rem)]"
               label="Chat Up"
               onClick={() => {}}
             />
