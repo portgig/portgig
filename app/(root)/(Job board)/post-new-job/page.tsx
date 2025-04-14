@@ -38,7 +38,7 @@ const PostJob = () => {
   const inputDiv = "flex flex-col gap-2";
   const lableStyles = "block text-sm lg:text-xl font-medium";
   const inputStyles =
-    '"w-full bg-gray100 p-3 rounded  focus:border-1 focus:outline-none focus:border-secondary transition-colors duration-200"';
+    "w-full bg-gray100 p-3 rounded  focus:border-1 focus:outline-none focus:border-secondary transition-colors duration-200";
 
   return (
     <main className="flex flex-col py-10">

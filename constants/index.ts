@@ -373,3 +373,10 @@ export const employmentTypes = [
   { id: 5, type: "Remote" },
   { id: 6, type: "Hybrid" },
 ];
+
+export const activeJobs = [
+  { jobName: "Graphic Design", numberOfApplicants: "100" },
+  { jobName: "Social Media Manager", numberOfApplicants: "59" },
+  { jobName: "Frontend developer", numberOfApplicants: "54" },
+  { jobName: "Video Editor", numberOfApplicants: "120" },
+];
