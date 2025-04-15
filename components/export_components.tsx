@@ -5,6 +5,8 @@ export { default as ExploreCreative } from "./creativeHome_sections/ExploreCreat
 export { default as SearchSection } from "./SearchSection";
 export { default as Community } from "./Community";
 export { default as Actions } from "./Actions";
+export { default as RecruiterActions } from "./RecruiterActions";
+export { default as JobBoardActions } from "./JobBoardActions";
 // Home sections
 export { default as HeroSection } from "./home_sections/HeroSection";
 export { default as Banner } from "./home_sections/Banner";
@@ -40,5 +42,10 @@ export { default as ProfileAnalytics } from "./creative-dashboard/ProfileAnalyti
 export { default as JobApplied } from "./creative-dashboard/JobApplied";
 export { default as CreativeCommunity } from "./creative-dashboard/CreativeCommunity";
 
-//edit profile
+//Job profile
+export { default as JobProfile } from "./job-description/JobProfile";
+export { default as OtherJobs } from "./job-description/OtherJobs";
+export { default as EmailSubscription } from "./job-description/EmailSubscription";
+
+//job board
 

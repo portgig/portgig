@@ -221,6 +221,7 @@ export const creatives = [
     level: "Expert",
     introduction:
       "Hi, I'm Adeoluwa. Happy to be here—let’s connect! How are you doing today?",
+    email: "ademaxgraph@portgig.com",
   },
   {
     id: 2,
@@ -232,6 +233,7 @@ export const creatives = [
     level: "Intermediate",
     introduction:
       "Hello everyone! I'm an illustrator passionate about colorful storytelling.",
+    email: "chidicreates@portgig.com",
   },
   {
     id: 3,
@@ -243,6 +245,7 @@ export const creatives = [
     level: "Advanced",
     introduction:
       "Design is more than art—it's strategy. Let’s collaborate on your next project!",
+    email: "tobidesigns@portgig.com",
   },
   {
     id: 4,
@@ -254,6 +257,7 @@ export const creatives = [
     level: "Expert",
     introduction:
       "I love bringing visuals to life with movement. Let’s make magic together.",
+    email: "fatifx@portgig.com",
   },
   {
     id: 5,
@@ -265,6 +269,7 @@ export const creatives = [
     level: "Intermediate",
     introduction:
       "Hey! I'm Emeka. I design products that are simple, elegant, and user-focused.",
+    email: "emekacodes@portgig.com",
   },
   {
     id: 6,
@@ -276,6 +281,7 @@ export const creatives = [
     level: "Advanced",
     introduction:
       "Let’s create a brand that stands out. Excited to connect with other creatives!",
+    email: "zainabdesigns@portgig.com",
   },
   {
     id: 7,
@@ -287,6 +293,7 @@ export const creatives = [
     level: "Expert",
     introduction:
       "3D is the future—let me help you visualize it. Happy to collaborate!",
+    email: "davinci@portgig.com",
   },
   {
     id: 8,
@@ -298,6 +305,7 @@ export const creatives = [
     level: "Beginner",
     introduction:
       "Just getting started with digital art. Looking forward to learning and growing here!",
+    email: "ifeodoodles@portgig.com",
   },
   {
     id: 9,
@@ -309,6 +317,7 @@ export const creatives = [
     level: "Intermediate",
     introduction:
       "My focus is on user empathy and improving product usability. Let’s chat!",
+    email: "kelvcode@portgig.com",
   },
   {
     id: 10,
@@ -320,6 +329,7 @@ export const creatives = [
     level: "Advanced",
     introduction:
       "From flyers to books—I design for print that speaks. Glad to be here!",
+    email: "ngozigraphix@portgig.com",
   },
   {
     id: 11,
@@ -331,6 +341,7 @@ export const creatives = [
     level: "Expert",
     introduction:
       "Capturing moments that matter. Let’s shoot something amazing together!",
+    email: "sampixels@portgig.com",
   },
   {
     id: 12,
@@ -342,6 +353,7 @@ export const creatives = [
     level: "Intermediate",
     introduction:
       "Designing intuitive user experiences one pixel at a time. Happy to connect!",
+    email: "amara_ui@portgig.com",
   },
 ];
 
@@ -360,4 +372,11 @@ export const employmentTypes = [
   { id: 4, type: "One off Projects" },
   { id: 5, type: "Remote" },
   { id: 6, type: "Hybrid" },
+];
+
+export const activeJobs = [
+  { jobName: "Graphic Design", numberOfApplicants: "100" },
+  { jobName: "Social Media Manager", numberOfApplicants: "59" },
+  { jobName: "Frontend developer", numberOfApplicants: "54" },
+  { jobName: "Video Editor", numberOfApplicants: "120" },
 ];

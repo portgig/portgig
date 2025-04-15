@@ -90,18 +90,19 @@ const AuthForm = ({ type }: AuthFormProps) => {
       return;
     } else {
       // Login or sign up logic
+
       if (isSignin || isRecruiterSignin) {
         handleSignIn(formData);
         if (isSignin) {
           navigate.push("/creative-homepage");
-        } else if (isRecruiterSignin) {
+        } else {
           navigate.push("/recruiter-homepage");
         }
       } else {
         handleSignUp(formData);
         if (isSignup) {
           navigate.push("/creative-homepage");
-        } else if (isRecruiterSignup) {
+        } else {
           navigate.push("/recruiter-homepage");
         }
       }
@@ -125,13 +126,13 @@ const AuthForm = ({ type }: AuthFormProps) => {
   const isRecruiterSignin = type === "recruiter-sign-in";
   const isSignup = type === "sign-up";
   const isRecruiterSignup = type === "recruiter-sign-up";
-  const labelStyles = "block text-lg md:text-xl font-medium";
+  const labelStyles = "block max-lg:text-sm text-lg  font-medium";
   const inputStyles =
-    "text-secondary mt-2 w-full py-3 px-10 bg-white rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary";
+    "text-secondary mt-2 w-full max-sm:py-2 py-3 px-10 bg-white rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary";
   return (
     <form
       onSubmit={handleSubmit}
-      className="px-5 md:px-30 lg:px-10 xl:px-20 2xl:px-30 space-y-5 flex flex-col">
+      className="px-5 md:px-30 lg:px-10 xl:px-20 2xl:px-30 space-y-3 flex flex-col">
       <div className="max-lg:block lg:hidden self-center w-fit cursor-pointer ">
         {/* Logo */}
         <Link href="/">
@@ -147,23 +148,19 @@ const AuthForm = ({ type }: AuthFormProps) => {
       {/* page label */}
       <div className="space-y-4">
         {(isSignin || isRecruiterSignin) && (
-          <p className=" max-lg:text-3xl text-5xl">Sign in</p>
+          <p className=" max-lg:text-xl text-3xl">Sign in</p>
         )}
         {(isSignup || isRecruiterSignup) && (
-          <p className=" text-5xl">Sign up</p>
+          <p className=" max-lg:text-xl text-3xl">Sign up</p>
         )}
 
-        {isSignin && (
-          <p className=" text-lg md:text-xl">Welcome Creative, sign in</p>
-        )}
-        {isSignup && (
-          <p className=" text-lg md:text-xl">Welcome creative, sign up</p>
-        )}
+        {isSignin && <p className=" text-lg ">Welcome Creative, sign in</p>}
+        {isSignup && <p className=" text-lg ">Welcome creative, sign up</p>}
         {isRecruiterSignin && (
-          <p className=" text-lg md:text-xl">Welcome Recruiter, sign in</p>
+          <p className=" text-lg ">Welcome Recruiter, sign in</p>
         )}
         {isRecruiterSignup && (
-          <p className=" text-lg md:text-xl">Welcome Recruiter, sign up</p>
+          <p className=" text-lg ">Welcome Recruiter, sign up</p>
         )}
       </div>
 
@@ -418,7 +415,7 @@ const AuthForm = ({ type }: AuthFormProps) => {
 
       {/* sign up chekcbox and sign up buttobn */}
       {(isSignup || isRecruiterSignup) && (
-        <div className="flex gap-5 items-center justify-end">
+        <div className="flex gap-2 items-center justify-end">
           <div className="flex items-center space-x-2 text-white">
             <input
               type="checkbox"
@@ -437,8 +434,8 @@ const AuthForm = ({ type }: AuthFormProps) => {
           {/* button */}
           <AuthButton
             type="submit"
-            className="border border-white  text-white mt-2  py-3 px-4  rounded-lg ">
-            <p className="max-sm:text-[12px] lg:text-[text-14px]">Sign up</p>
+            className="border border-white  text-white mt-2  py-3 px-2  rounded-lg ">
+            <p className="text-[10px]">Sign up</p>
           </AuthButton>
         </div>
       )}
