@@ -42,7 +42,7 @@ export default function CreativeEmailConfirmed() {
             Thank you
           </p>
           <Buttons
-            className="!bg-primary text-white rounded-none px-20 py-3 text-2xl lg:text-3xl"
+            className="!bg-primary text-white rounded-none px-20 py-3 text-2xl lg:text-3xl cursor-pointer"
             label="Get started"
             onClick={() => {
               navigate.push("/creative-homepage");

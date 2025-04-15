@@ -31,7 +31,7 @@ const Page = () => {
             onClick={() => {
               navigate.push('/sign-up');
             }}
-            className="text-black text-xl sm:text-3xl !rounded-xl w-96 sm:w-[500px] h-16 sm:h-20"
+            className="text-black text-xl sm:text-3xl !rounded-xl w-96 sm:w-[500px] h-16 sm:h-20 cursor-pointer"
           />
         </div>
         {/* recruiter */}

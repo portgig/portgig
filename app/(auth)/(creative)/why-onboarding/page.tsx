@@ -32,7 +32,7 @@ const WhyOnboarding = () => {
         </ul>
         <Buttons
           label="Go to Dashboard"
-          className="max-lg:bg-primary max-lg:text-white lg:text-primary rounded-sm !px-15  sm:text-3xl"
+          className="max-lg:bg-primary max-lg:text-white lg:text-primary rounded-sm !px-15 sm:text-3xl"
           onClick={() => {}}
         />
       </div>
