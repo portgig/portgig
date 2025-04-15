@@ -5,7 +5,7 @@ interface buttonProps {
   className: string;
   label: string;
   type?: "submit" | "button" | "reset";
-  onClick: () => void;
+  onClick?: () => void;
 }
 
 const Buttons = ({ className, label, type, onClick }: buttonProps) => {

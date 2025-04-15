@@ -30,6 +30,8 @@ body {
   --color-secondary: #00489a;
   --color-textColor: #00489a;
   --color-gray100: #f3f4f6;
+  --color-gray200: #e5e7eb;
+  --color-red500: #fb2c36;
 }
 
 @layer base {
@@ -54,12 +56,19 @@ body {
   .subHeading {
     @apply text-2xl md:text-3xl lg:text-4xl font-black;
   }
-
-  .authStyles{
-	@apply flex flex-col justify-center 
+  .smallHeading {
+    @apply text-sm  md:text-lg lg:text-xl 2xl:text-2xl font-black;
+  }
+  .authStyles {
+    @apply flex flex-col justify-center;
+  }
+  .center {
+    @apply flex justify-center items-center;
+  }
+  .center-flexCol {
+    @apply flex flex-col justify-center items-center;
   }
 }
-
 
 /* Hide arrows in number input for Chrome, Safari, Edge, Opera */
 input[type="number"]::-webkit-inner-spin-button,
