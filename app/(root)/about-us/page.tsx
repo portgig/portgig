@@ -13,7 +13,7 @@ const AboutUs = () => {
       <div className="bg-gray200 center-flexCol py-7">
         <h2 className="heading">About Us</h2>
         <h2 className="text-xs md:text-sm lg:text-lg">
-          Home <span className="text-textColor"> &gt; Privacy Policy</span>
+          Home <span className="text-textColor"> &gt; About Us</span>
         </h2>
       </div>
       {/* about us */}

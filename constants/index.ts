@@ -63,7 +63,7 @@ export const footerSupport = [
   },
   {
     label: "Contact",
-    link: "/",
+    link: "/contact-us",
   },
   {
     label: "Status",
@@ -395,9 +395,9 @@ export const spaceWhere = [
   "Connect with peers and grow together",
 ];
 export const webuiltThisFor = [
- 'The ones without connections but with undeniable talent' ,
-'The ones whose work lives on WhatsApp or in drive links' ,
-'The ones who’ve been ghosted, underpaid, or overlooked' ,
+  "The ones without connections but with undeniable talent",
+  "The ones whose work lives on WhatsApp or in drive links",
+  "The ones who’ve been ghosted, underpaid, or overlooked",
 ];
 
 export const extraText = [
@@ -405,5 +405,43 @@ export const extraText = [
 ];
 
 export const ourStory = [
-	"This platform was born out of a conversation — a longing to see more Nigerian (and African) creatives represented and respected. \n It started small: a few Google Docs, some Figma files, voice notes.Then it became a movement — because too many of us were tired of being unseen.",
+  "This platform was born out of a conversation — a longing to see more Nigerian (and African) creatives represented and respected. \n It started small: a few Google Docs, some Figma files, voice notes.Then it became a movement — because too many of us were tired of being unseen.",
+];
+
+/// private policy
+
+export const infoCollection = [
+  "We may collect personal information such as your name, email address, contact details, and portfolio submissions when you interact with our website. Additionally, we gather non-personal data, including browser type, IP address, device type, and browsing activity. This information is used to showcase your creative work (if submitted), respond to inquiries, improve user experience, send updates or newsletters (with consent), and analyze website traffic trends.",
+];
+export const infoCollection2 = [
+  "We do not sell or share your personal information with third parties except when required by law, to protect our rights and safety, with service providers assisting in website maintenance, or with your consent for portfolio showcases or collaborations. We implement security measures to safeguard your information, though no online data transmission method is 100% secure.",
+];
+export const cookies = [
+  "We use cookies and tracking technologies to enhance your browsing experience, and you can control cookie preferences through your browser settings. Our website may also contain third-party links, for which we are not responsible, so we encourage you to review their privacy policies before sharing any personal data.",
+];
+export const cookies2 = [
+  "Depending on your location, you may have rights regarding your personal information, including access, updates, data deletion, withdrawal of consent, opt-out of marketing communications, and requesting a copy of collected data. To exercise these rights, contact us at portgig@gmail.com ",
+];
+export const policyUpdate = [
+  "We reserve the right to update this Privacy Policy at any time, with changes posted on this page along with the revised effective date. If you have any questions or concerns, please reach out to us at:Email: portgig@gmail.comWebsite: portgig.com",
+];
+
+//contact
+
+import { IoLocationOutline } from "react-icons/io5";
+import { FiPhone, FiMail } from "react-icons/fi";
+
+export const contactInfor = [
+  {
+    info: "9, Ciston Jones close, Ikeja Lagos State.",
+    icon: IoLocationOutline,
+  },
+  {
+    info: "+(234) 9012345678",
+    icon: FiPhone,
+  },
+  {
+    info: "Portgig@gmail.com",
+    icon: FiMail,
+  },
 ];
