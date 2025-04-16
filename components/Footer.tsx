@@ -69,7 +69,7 @@ const Footer = () => {
             <FaFacebook />
             <FaYoutube />
           </div>
-          <p>© 2025 Portgig. All rights reserved.</p>
+          <p className="text-xs">© 2025 Portgig. All rights reserved.</p>
         </div>
       </div>
     </div>

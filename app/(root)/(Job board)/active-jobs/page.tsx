@@ -115,7 +115,7 @@ const ActiveJob = () => {
 
             <button
               className="bg-primary text-white px-5 py-2 rounded"
-              type="submit">
+              type="submit"> 
               Close Job
             </button>
           </form>
