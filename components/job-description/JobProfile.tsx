@@ -2,8 +2,10 @@
 import { Buttons } from "@/components/export_components";
 import React from "react";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 const JobProfile = () => {
+	  const navigate = useRouter();
   return (
     <section className="h-fit pt-20 bodyMargin my-10 flex flex-col  gap-5 shadow p-5 md:p-10 lg:items-center">
       <div className="flex items-center gap-5">
@@ -36,8 +38,10 @@ const JobProfile = () => {
         </div>
         <Buttons
           label="Apply Now"
-          className="!bg-primary text-white rounded-sm"
-          onClick={() => {}}
+          className="!bg-primary text-white rounded-sm cursor-pointer"
+          onClick={() => {
+            navigate.push("/job-hub/apply");
+          }}
         />
       </div>
     </section>
