@@ -5,7 +5,7 @@ export const navigationItems = [
   },
   {
     label: "About",
-    link: "/",
+    link: "/about-us",
   },
   {
     label: "Jobs",
@@ -24,7 +24,7 @@ export const navigationItems = [
 export const footerInfo = [
   {
     label: "About us",
-    link: "/",
+    link: "/about-us",
   },
   {
     label: "Jobs",
@@ -379,4 +379,31 @@ export const activeJobs = [
   { jobName: "Social Media Manager", numberOfApplicants: "59" },
   { jobName: "Frontend developer", numberOfApplicants: "54" },
   { jobName: "Video Editor", numberOfApplicants: "120" },
+];
+
+// about us
+
+export const forCreativeText = [
+  "We’re building more than just a portfolio platform — we’re building a space where creatives can be seen, heard, and hired. In a world where talent often gets overlooked without the “right” packaging, we’re here to change the story. We believe a strong portfolio shouldn’t be complicated, and that getting the right job shouldn’t feel like a miracle.",
+];
+
+export const spaceWhere = [
+  "	Build beautiful portfolios effortlessly",
+  "Download impactful CVs that stand out",
+  "Apply for jobs that speak their language",
+  "Showcase their work without feeling small",
+  "Connect with peers and grow together",
+];
+export const webuiltThisFor = [
+ 'The ones without connections but with undeniable talent' ,
+'The ones whose work lives on WhatsApp or in drive links' ,
+'The ones who’ve been ghosted, underpaid, or overlooked' ,
+];
+
+export const extraText = [
+  "Whether you’re a designer, photographer, writer, editor, or a creative soul figuring it out — you belong here. We’re creatives ourselves. We know what it’s like to hustle without structure, pitch yourself over and over again, and doubt your own voice. That’s why we’re creating the tools we wish we had and the support that still carries us today.",
+];
+
+export const ourStory = [
+	"This platform was born out of a conversation — a longing to see more Nigerian (and African) creatives represented and respected. \n It started small: a few Google Docs, some Figma files, voice notes.Then it became a movement — because too many of us were tired of being unseen.",
 ];
