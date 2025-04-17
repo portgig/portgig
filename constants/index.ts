@@ -445,3 +445,60 @@ export const contactInfor = [
     icon: FiMail,
   },
 ];
+
+//terms and condition
+
+export const termsAndConditions = [
+  {
+    heading: "Use of Website and Content",
+    content: [
+      "The content on this website, including images, designs, and text, is for informational and portfolio showcase purposes only.",
+      "You may not copy, modify, distribute, or use any content without prior written permission.",
+      "Unauthorized use of this website may give rise to legal claims or be considered a criminal offense.",
+    ],
+  },
+  {
+    heading: "User Conduct and Submissions",
+    content: [
+      "Users submitting portfolios, comments, or other content must ensure they own or have the rights to the material.",
+      "We reserve the right to remove or modify any submitted content that violates these Terms or is deemed inappropriate.",
+      "Users must not engage in harmful activities, including hacking, distributing malware, or violating the rights of others.",
+    ],
+  },
+  {
+    heading: "Limitation of Liability and Modifications",
+    content: [
+      "We do not guarantee uninterrupted access to the website or error-free content and disclaim all liabilities arising from website use.",
+      " We are not responsible for third-party links or content found on external websites. ",
+      "We reserve the right to update these Terms and Conditions at any time, with changes taking effect upon posting on this page.",
+    ],
+  },
+  {
+    heading: "Privacy and Data Protection",
+    content: [
+      "We are committed to protecting your personal information in accordance with our Privacy Policy.",
+      " By using this website, you consent to our collection and use of information as described in the Privacy Policy. ",
+      "Users must not misuse or share others' personal information without consent.",
+    ],
+  },
+  {
+    heading: "Intellectual Property Rights",
+    content: [
+      " All trademarks, logos, and intellectual property on this website belong to their respective owners.",
+      " Users may not use any branding elements for commercial purposes without permission. ",
+      " Unauthorized reproduction or distribution of intellectual property may result in legal action.",
+    ],
+  },
+  {
+    heading: "Governing Law and Contact Information",
+    content: [
+      " These Terms and Conditions shall be governed by and interpreted in accordance with the laws of Nigeria.",
+      "Any disputes arising from these Terms shall be resolved through appropriate legal channels in Nigeria. ",
+      " If you have any questions or concerns, please contact us at:",
+    ],
+  },
+];
+
+
+
+
