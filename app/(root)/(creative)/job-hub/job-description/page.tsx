@@ -4,10 +4,12 @@ import {
   JobProfile,
   OtherJobs,
   EmailSubscription,
+  Buttons,
 } from "@/components/export_components";
 import React from "react";
-
+import { useRouter } from "next/navigation";
 const JobDescription = () => {
+  const navigate = useRouter();
   return (
     <main className="flex flex-col text-primary ">
       <div className="w-full p-5 bg-primary  max-lg:hidden">
@@ -29,6 +31,15 @@ const JobDescription = () => {
         </div>
       </div>
       {/* IMPELEMENT FULL JOB DESCRIPTION HERE LATER */}
+      <div className="flex flex-col bodyMargin">
+        <Buttons
+          label="Apply Now"
+          className="!bg-primary text-white rounded-sm w-fit self-end cursor-pointer"
+          onClick={() => {
+            navigate.push("/job-hub/apply");
+          }}
+        />
+      </div>
       <OtherJobs />
       <EmailSubscription />
     </main>
