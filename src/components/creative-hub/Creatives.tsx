@@ -1,7 +1,6 @@
 "use client";
 import React, { useState } from "react";
 import { creatives } from "@/src/constants";
-import { Buttons } from "@/src/components/export_components";
 import Image from "next/image";
 import { IoIosArrowForward } from "react-icons/io";
 const Creatives = () => {
@@ -18,17 +17,21 @@ const Creatives = () => {
   return (
     <section className="p-5">
       <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-5">
-        {currentCreatives.map((creative) => (
+        {currentCreatives.map((creative, index) => (
           <div
             key={creative.id}
-            className="flex flex-col gap-3 pb-5 pr-2 rounded-lg border-2 border-secondary text-secondary min-h-[400px] ">
+            className={`flex flex-col gap-2 pb-5 px-5 rounded-lg shadow-lg   ${
+              index % 3 === 1
+                ? "bg-primary text-white"
+                : "bg-white text-primary"
+            }`}>
             <div className="flex justify-between items-center">
-              <div className="h-[150px] w-[150px] overflow-hidden">
+              <div className="h-[100px] w-[100px] overflow-hidden">
                 <Image
                   src={creative.creativeImage}
                   alt={creative.name}
-                  width={150}
-                  height={150}
+                  width={100}
+                  height={100}
                   className="object-cover h-full w-full"
                 />
               </div>
@@ -36,26 +39,37 @@ const Creatives = () => {
                 {creative.level}
               </div>
             </div>
-            <h2 className="text-primary font-bold text-sm px-5 line-clamp-1">
+            <h2 className=" font-bold text-sm px-5 line-clamp-1">
               {creative.name} ({creative.username})
             </h2>
             <h2 className="text-primary font-extralight  text-sm px-5 line-clamp-1">
               {creative.field} / {creative.location}
             </h2>
-            <div className=" bg-gray100 h-20 ml-2 p-1 border border-secondary text-sm line-clamp-3">
+            <div
+              className={`   h-14  p-1 border    text-xs line-clamp-3 ${
+                index % 3 === 1
+                  ? "bg-primary text-white"
+                  : "bg-gray50 text-primary border-gray100"
+              }`}>
               {creative.introduction}
             </div>
-            <div className="flex justify-between pl-2 text-white">
-              <Buttons
-                label="View profile"
-                className="!bg-primary w-fit self-end rounded-lg text-sm font-extralight "
-                onClick={() => {}}
-              />
-              <Buttons
-                label="Contact Me"
-                className="!bg-primary w-fit self-end rounded-lg text-sm font-extralight "
-                onClick={() => {}}
-              />
+            <div className="flex justify-between px-2 mt-5 ">
+              <button
+                className={`py-2 px-3 w-fit self-end rounded-lg text-sm font-extralight ${
+                  index % 3 === 1
+                    ? "bg-white text-primary"
+                    : "bg-primary text-white"
+                }`}>
+                View Profile
+              </button>
+              <button
+                className={`py-2 px-3 w-fit self-end rounded-lg text-sm font-extralight ${
+                  index % 3 === 1
+                    ? "bg-white text-primary"
+                    : "bg-primary text-white"
+                }`}>
+                Contact Me
+              </button>
             </div>
           </div>
         ))}

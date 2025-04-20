@@ -13,7 +13,7 @@ export const navigationItems = [
   },
   {
     label: "Portfolio",
-    link: "/portfolio",
+    link: "/",
   },
   {
     label: "Join Community",
@@ -214,7 +214,7 @@ export const creatives = [
   {
     id: 1,
     name: "Adewale",
-    creativeImage: "/assets/creativeImage.png",
+    creativeImage: "/assets/creativeImage.svg",
     username: "ademaxgraph",
     field: "UX/UI Design",
     location: "Lagos State",
@@ -226,7 +226,7 @@ export const creatives = [
   {
     id: 2,
     name: "Chidinma",
-    creativeImage: "/assets/creativeImage.png",
+    creativeImage: "/assets/creativeImage.svg",
     username: "chidicreates",
     field: "Illustration",
     location: "Enugu State",
@@ -238,7 +238,7 @@ export const creatives = [
   {
     id: 3,
     name: "Tobi",
-    creativeImage: "/assets/creativeImage.png",
+    creativeImage: "/assets/creativeImage.svg",
     username: "tobidesigns",
     field: "Graphic Design",
     location: "Lagos State",
@@ -250,7 +250,7 @@ export const creatives = [
   {
     id: 4,
     name: "Fatima",
-    creativeImage: "/assets/creativeImage.png",
+    creativeImage: "/assets/creativeImage.svg",
     username: "fatifx",
     field: "Motion Graphics",
     location: "Kaduna State",
@@ -262,7 +262,7 @@ export const creatives = [
   {
     id: 5,
     name: "Emeka",
-    creativeImage: "/assets/creativeImage.png",
+    creativeImage: "/assets/creativeImage.svg",
     username: "emekacodes",
     field: "Product Design",
     location: "Abuja",
@@ -274,7 +274,7 @@ export const creatives = [
   {
     id: 6,
     name: "Zainab",
-    creativeImage: "/assets/creativeImage.png",
+    creativeImage: "/assets/creativeImage.svg",
     username: "zainabdesigns",
     field: "Brand Identity",
     location: "Kano State",
@@ -286,7 +286,7 @@ export const creatives = [
   {
     id: 7,
     name: "David",
-    creativeImage: "/assets/creativeImage.png",
+    creativeImage: "/assets/creativeImage.svg",
     username: "davinci",
     field: "3D Design",
     location: "Ibadan",
@@ -298,7 +298,7 @@ export const creatives = [
   {
     id: 8,
     name: "Ifeoma",
-    creativeImage: "/assets/creativeImage.png",
+    creativeImage: "/assets/creativeImage.svg",
     username: "ifeodoodles",
     field: "Illustration",
     location: "Owerri",
@@ -310,7 +310,7 @@ export const creatives = [
   {
     id: 9,
     name: "Kelvin",
-    creativeImage: "/assets/creativeImage.png",
+    creativeImage: "/assets/creativeImage.svg",
     username: "kelvcode",
     field: "UX Research",
     location: "Benin City",
@@ -322,7 +322,7 @@ export const creatives = [
   {
     id: 10,
     name: "Ngozi",
-    creativeImage: "/assets/creativeImage.png",
+    creativeImage: "/assets/creativeImage.svg",
     username: "ngozigraphix",
     field: "Print Design",
     location: "Awka",
@@ -334,7 +334,7 @@ export const creatives = [
   {
     id: 11,
     name: "Samuel",
-    creativeImage: "/assets/creativeImage.png",
+    creativeImage: "/assets/creativeImage.svg",
     username: "sampixels",
     field: "Photography",
     location: "Abeokuta",
@@ -346,7 +346,7 @@ export const creatives = [
   {
     id: 12,
     name: "Amara",
-    creativeImage: "/assets/creativeImage.png",
+    creativeImage: "/assets/creativeImage.svg",
     username: "amara_ui",
     field: "UX/UI Design",
     location: "Port Harcourt",

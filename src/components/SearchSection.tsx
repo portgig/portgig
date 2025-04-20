@@ -6,7 +6,7 @@ import { Buttons } from "./export_components";
 const SearchSection = () => {
   return (
     <section className="bodyMargin  border border-gray flex max-lg:hidden bg-white">
-      <div className="flex text-textColor items-center w-full">
+      <div className="flex gap-5 pl-5 text-textColor items-center w-full">
         <AiOutlineSearch className="h-5 w-5" />
         <input
           type="text"
@@ -16,7 +16,7 @@ const SearchSection = () => {
           className=" w-full h-full border-none outline-none focus:outline-none focus:border-none focus:ring-0"
         />
       </div>
-      <div className="flex text-textColor items-center w-full">
+      <div className="flex gap-5 pl-5 text-textColor items-center w-full">
         <AiOutlineSearch className="h-5 w-5" />
         <input
           type="text"
@@ -26,7 +26,7 @@ const SearchSection = () => {
           className=" w-full h-full border-none outline-none focus:outline-none focus:border-none focus:ring-0"
         />
       </div>
-      <div className="flex text-textColor items-center w-full">
+      <div className="flex gap-5 pl-5 text-textColor items-center w-full">
         <AiOutlineSearch className="h-5 w-5" />
         <input
           type="text"
