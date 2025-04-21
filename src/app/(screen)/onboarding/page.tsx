@@ -34,11 +34,7 @@ const Page = () => {
             onClick={() => {
               navigate.push("/sign-up");
             }}
-<<<<<<< HEAD:app/(screen)/onboarding/page.tsx
-            className="text-black text-xl sm:text-3xl !rounded-xl w-96 sm:w-[500px] h-16 sm:h-20 cursor-pointer"
-=======
             className="transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg text-black text-xl sm:text-3xl !rounded-xl w-96 sm:w-[500px] h-16 sm:h-20 cursor-pointer hover:bg-black hover:text-white"
->>>>>>> main:src/app/(screen)/onboarding/page.tsx
           />
         </div>
 
