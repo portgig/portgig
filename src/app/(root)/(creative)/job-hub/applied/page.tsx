@@ -21,7 +21,7 @@ const Applied = () => {
       {" "}
       <h2 className="px-5 subHeading">Graphics Designer</h2>
       <h2 className="px-5 text-xs lg:text-lg">by Uxper Group of Companies</h2>
-      <div className="bg-primary px-5 py-5 text-white text-xl font-inter">
+      <div className="bg-primary px-5 py-5 text-white text-2xl font-inter">
         Application sent
       </div>
       <div className="bodyMargin flex flex-col items-center justify-center my-20 gap-5 text-white">
