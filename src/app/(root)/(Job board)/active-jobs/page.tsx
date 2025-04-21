@@ -30,7 +30,7 @@ const ActiveJob = () => {
   };
 
   return (
-    <main className="flex flex-col py-10 gap-3">
+    <main className="flex flex-col py-10 gap-3 font-raleway">
       <div className="flex justify-between items-end max-sm:h-20 h-30  border-b-2 border-primary pb-2">
         <div className="flex flex-col justify-between h-full">
           <h2 className="text-sm  md:text-lg lg:text-xl  font-black text-primary">
@@ -93,7 +93,7 @@ const ActiveJob = () => {
       {/* Modal */}
       {isOpen && (
         <div
-          className="fixed inset-0 z-50 flex  items-center justify-center bg-secondary/40 bg-opacity-50"
+          className="fixed inset-0 z-50 flex  items-center justify-center bg-secondary/40 bg-opacity-50 font-raleway"
           onClick={() => setIsOpen(false)}>
           <form
             onSubmit={handleSubmit(onSubmit)}
@@ -115,7 +115,7 @@ const ActiveJob = () => {
 
             <button
               className="bg-primary text-white px-5 py-2 rounded"
-              type="submit"> 
+              type="submit">
               Close Job
             </button>
           </form>
