@@ -29,7 +29,7 @@ const HeroSection = () => {
         <Buttons
           onClick={() => {}}
           label="Get started"
-          className="self-center text-black font-medium text-sm sm:text-lg xl:text-2xl w-fit "
+          className="self-center text-black font-medium text-sm sm:text-lg xl:text-2xl w-fit cursor-pointer"
         />
       </div>
       <div className="flex gap-2">
