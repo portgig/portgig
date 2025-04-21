@@ -2,7 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
-import { navigationItems } from "@/src/constants/index";
+import { navigationItems } from "../constants";
 import { Buttons } from "@/src/components/export_components";
 import Link from "next/link";
 import { useRouter, usePathname } from "next/navigation";
