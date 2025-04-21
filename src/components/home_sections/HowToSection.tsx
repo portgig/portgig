@@ -50,7 +50,7 @@ const HowToSection = () => {
               Create your portfolio
             </h2>
             <div className="h-15 bg-primary w-fit flex justify-center items-center">
-              <h2 className="text-sm md:text-lg font-bold px-3 md:px-10  py-2 md:py-5">
+              <h2 className="text-sm md:text-lg font-bold px-3 md:px-10  py-2 md:py-5 cursor-pointer">
                 {" "}
                 Get started
               </h2>
@@ -61,7 +61,7 @@ const HowToSection = () => {
               Create your portfolio
             </h2>
             <div className="h-15 bg-primary w-fit flex justify-center items-center">
-              <h2 className="text-sm md:text-lg font-bold px-3 md:px-10 py-2 md:py-5">
+              <h2 className="text-sm md:text-lg font-bold px-3 md:px-10 py-2 md:py-5 cursor-pointer">
                 {" "}
                 Get started
               </h2>
