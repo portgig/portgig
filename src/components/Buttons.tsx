@@ -8,7 +8,7 @@ interface buttonProps {
   onClick?: () => void;
 }
 
-const Buttons = ({ className, label, type, onClick }: buttonProps) => {
+const Buttons = ({ className, label, type = "button", onClick }: buttonProps) => {
   return (
     <button
       type={type}
