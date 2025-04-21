@@ -8,14 +8,13 @@ interface buttonProps {
   onClick?: () => void;
 }
 
-const Buttons = ({ className, label, type, onClick }: buttonProps) => {
+const Buttons = ({ className, label, type = "button", onClick }: buttonProps) => {
   return (
     <button
       type={type}
-<
       className={`${className} bg-white rounded-full py-2 px-5 cursor-pointer`}
-
-      onClick={onClick}>
+      onClick={onClick}
+    >
       {label}
     </button>
   );
