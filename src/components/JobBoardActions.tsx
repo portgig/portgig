@@ -13,11 +13,12 @@ const JobBoardActions = () => {
     { label: "Profile & Account", link: "", items: [] },
     {
       label: "Job Posting",
-      link: "",
+		link: "",
+	  //dynamic route needed here
       items: [
-        { itemLabel: "Graphic Design", path: "/graphic-design" },
-        { itemLabel: "Social Media Manager", path: "/social-media-manager" },
-        { itemLabel: "Video Editor", path: "/video-editor" },
+        { itemLabel: "Graphic Design", path: "" },
+        { itemLabel: "Social Media Manager", path: "" },
+        { itemLabel: "Video Editor", path: "" },
       ],
     },
     {

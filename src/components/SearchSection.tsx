@@ -5,8 +5,8 @@ import { AiOutlineSearch } from "react-icons/ai";
 import { Buttons } from "./export_components";
 const SearchSection = () => {
   return (
-    <section className="bodyMargin  border border-gray flex max-lg:hidden bg-white">
-      <div className="flex text-textColor items-center w-full">
+    <section className="bodyMargin  border border-gray100 flex max-lg:hidden bg-white">
+      <div className="flex gap-5 pl-5 text-textColor items-center w-full border border-gray100 ">
         <AiOutlineSearch className="h-5 w-5" />
         <input
           type="text"
@@ -16,7 +16,7 @@ const SearchSection = () => {
           className=" w-full h-full border-none outline-none focus:outline-none focus:border-none focus:ring-0"
         />
       </div>
-      <div className="flex text-textColor items-center w-full">
+      <div className="flex gap-5 pl-5 text-textColor items-center w-full border border-gray100">
         <AiOutlineSearch className="h-5 w-5" />
         <input
           type="text"
@@ -26,7 +26,7 @@ const SearchSection = () => {
           className=" w-full h-full border-none outline-none focus:outline-none focus:border-none focus:ring-0"
         />
       </div>
-      <div className="flex text-textColor items-center w-full">
+      <div className="flex gap-5 pl-5 text-textColor items-center w-full border border-gray100">
         <AiOutlineSearch className="h-5 w-5" />
         <input
           type="text"
@@ -40,7 +40,7 @@ const SearchSection = () => {
       <div className="w-full flex justify-center">
         <Buttons
           label="Search"
-          className="!bg-primary lg:text-xl lg:font-bold w-fit text-white rounded-lg"
+          className="!bg-primary lg:text-xl lg:font-bold px-8 w-fit text-white rounded-xl"
           onClick={() => {}}
         />
       </div>

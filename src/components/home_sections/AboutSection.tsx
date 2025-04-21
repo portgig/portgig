@@ -51,7 +51,9 @@ const AboutSection = () => {
         <div className="flex sm:flex-col items-start sm:justify-center gap-2">
           <div>
             {" "}
-            <h2 className="subHeading  mt-5 text-primary">Find Jobs That Fit You</h2>
+            <h2 className="subHeading  mt-5 text-primary">
+              Find Jobs That Fit You
+            </h2>
             <p className="text-sm md:text-lg leading-6 my-2">
               Discover gigs and job postings that match your expertise. <br />
               With just one click, apply using your comprehensive portfolio,{" "}
@@ -60,12 +62,12 @@ const AboutSection = () => {
           </div>
           <div />
           <div className="flex flex-col">
-            <div className="h-15 bg-secondary flex justify-start items-center mt-5 px-4">
-              <p className="text-white font-bold">
+            <div className=" bg-secondary flex justify-start items-center mt-5 px-4 py-2">
+              <p className="text-white font-bold text-xs md:text-sm lg:text-xl">
                 Seamless Hiring for Recruiters
               </p>
             </div>
-            <h2 className="text-primary subHeading  mt-5">
+            <h2 className="text-primary smallHeading   mt-5">
               Hire the Right Talent, Fast
             </h2>
             <p className="text-textColor text-sm md:text-lgmy-2">

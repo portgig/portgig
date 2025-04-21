@@ -11,10 +11,10 @@ const Home = () => {
   return (
     <main>
       <HeroSection />
-      <Banner />
+      <Banner label="Sign up/Log in"/>
       <AboutSection />
       <HowToSection />
-      <Banner />
+      <Banner label="Get started" />
       <CommunitySection />
     </main>
   );
