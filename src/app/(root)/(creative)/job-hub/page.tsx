@@ -10,7 +10,7 @@ import {
 
 const JobHub = () => {
   return (
-    <main>
+    <main className="font-raleway">
       <JobHero />
       <SearchSection />
       <div className="flex gap-5 bodyMargin ">

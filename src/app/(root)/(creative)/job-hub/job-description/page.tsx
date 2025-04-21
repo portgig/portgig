@@ -11,7 +11,7 @@ import { useRouter } from "next/navigation";
 const JobDescription = () => {
   const navigate = useRouter();
   return (
-    <main className="flex flex-col text-primary ">
+    <main className="flex flex-col text-primary font-raleway ">
       <div className="w-full p-5 bg-primary  max-lg:hidden">
         <SearchSection />
       </div>
