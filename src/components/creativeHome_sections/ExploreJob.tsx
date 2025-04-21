@@ -8,14 +8,14 @@ import { useRouter } from "next/navigation";
 const ExploreJob = () => {
   const navigate = useRouter();
   return (
-    <section className="bodyMargin flex flex-col gap-5">
+    <section className="bodyMargin flex flex-col gap-5 ">
       <div className="flex justify-between text-secondary">
         {" "}
         <h2 className="font-bold">Explore Jobs</h2>
         <h2 className="underline">View all jobs </h2>
       </div>
       {/* Jobs */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 font-raleway">
         {jobs.map((job) => (
           <div
             key={job.id}

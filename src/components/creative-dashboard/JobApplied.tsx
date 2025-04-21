@@ -7,9 +7,9 @@ import Image from "next/image";
 const JobApplied = () => {
   const navigate = useRouter();
   return (
-    <section className=" flex flex-col gap-5">
-      <div className="h-15 bg-linear-gradient w-full flex justify-center items-center">
-        <h2 className="heading"> Job Applied</h2>
+    <section className=" flex flex-col gap-5 font-raleway">
+      <div className="h-15 bg-linear-gradient w-full flex items-center bodyMargin">
+        <h2 className="subHeading"> Job Applied</h2>
       </div>
       <div className=" bodyMargin grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
         {jobs.map((job) => (

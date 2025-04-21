@@ -14,7 +14,7 @@ const HeroSection = () => {
           </h1>
           {/* <span className="text-xl md:hidden">Thrive.</span> */}
         </div>
-        <div className="flex flex-col gap-5">
+        <div className="flex flex-col gap-5 font-raleway">
           <p className="text-sm sm:text-[16px]  font-medium max-sm:hidden ">
             Get a stunning portfolio that speaks for you. <br />
             Showcase your skills, impress recruiters, and <br />

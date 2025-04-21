@@ -7,10 +7,10 @@ const AboutSection = () => {
         <div className="flex flex-col">
           <h1 className="text-textColor heading">What is this all about?</h1>
           <hr className="border-3 border-primary w-45 mt-2" />
-          <h2 className="text-lg md:text-xl lg:text-2xl 2xl:text-3xl font-black mt-5 text-primary">
+          <h2 className="text-lg md:text-xl lg:text-2xl 2xl:text-3xl font-black mt-5 text-primary font-raleway">
             Redefining How Creatives Present Themselves
           </h2>
-          <p className="text-sm md:text-lg leading-6 my-2 text-primary">
+          <p className="text-sm md:text-lg leading-6 my-2 text-primary font-raleway">
             We understand the struggles creatives face in presenting their
             skills. Generic CVs don’t cut it anymore. That’s why we’re here to
             help you create a professional portfolio tailored to your craft.
@@ -49,9 +49,9 @@ const AboutSection = () => {
         </div>
         {/* /// */}
         <div className="flex sm:flex-col items-start sm:justify-center gap-2">
-          <div>
+          <div className="font-raleway">
             {" "}
-            <h2 className="subHeading  mt-5 text-primary">
+            <h2 className="subHeading  mt-5 text-primary ">
               Find Jobs That Fit You
             </h2>
             <p className="text-sm md:text-lg leading-6 my-2">
@@ -67,10 +67,10 @@ const AboutSection = () => {
                 Seamless Hiring for Recruiters
               </p>
             </div>
-            <h2 className="text-primary smallHeading   mt-5">
+            <h2 className="text-primary smallHeading   mt-5 font-raleway">
               Hire the Right Talent, Fast
             </h2>
-            <p className="text-textColor text-sm md:text-lgmy-2">
+            <p className="text-textColor text-sm md:text-lg my-2 font-raleway">
               Access profiles with detailed portfolios and <br />
               work histories. Post jobs, track applications, <br /> and connect
               with professionals in a few clicks.

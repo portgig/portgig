@@ -8,7 +8,7 @@ const DiscoverMore = () => {
   const navigate = useRouter();
   return (
     <section className=" md:flex gap-10 bodyMargin  bg-primary my-5 p-8 rounded-2xl text-white">
-      <div className="flex-2/3 flex flex-col gap-5 ">
+      <div className="flex-2/3 flex flex-col gap-5 font-raleway">
         <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black">
           Discover and Connect with Creatives in your Industry.
         </h2>
@@ -17,7 +17,7 @@ const DiscoverMore = () => {
         </h2>
         <Buttons
           label="Visit creative Hub"
-          className="rounded-lg text-black lg:text-xl w-fit font-bold"
+          className="rounded-lg text-black lg:text-xl w-fit font-bold font-urbanist"
           onClick={() => {
             navigate.push("/creative-hub");
           }}

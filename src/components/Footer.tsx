@@ -12,7 +12,7 @@ const Footer = () => {
           <div className="flex flex-col gap-5  w-full">
             <div className="grid grid-cols-3 w-full py-5 text-sm">
               {/* 1 */}
-              <div className="flex flex-col gap-3 ">
+              <div className="flex flex-col gap-3 font_inter ">
                 <p className="font-bold">Information</p>
                 {footerInfo.map((info) => (
                   <Link key={info.label} href={info.link}>
@@ -21,7 +21,7 @@ const Footer = () => {
                 ))}
               </div>
               {/* 2 */}
-              <div className="flex flex-col gap-3">
+              <div className="flex flex-col gap-3 font-inter">
                 <p className="font-bold">Social media</p>
                 {socialMedia.map((media) => (
                   <Link key={media.label} href={media.link}>
@@ -30,7 +30,7 @@ const Footer = () => {
                 ))}
               </div>
               {/* 3 */}
-              <div className="flex flex-col gap-3">
+              <div className="flex flex-col gap-3 font-inter">
                 <p className="font-bold">Supprt</p>
                 {footerSupport.map((support) => (
                   <Link key={support.label} href={support.link}>
@@ -50,10 +50,10 @@ const Footer = () => {
               />
               <Buttons
                 label="Subcribe"
-                className="!bg-secondary !rounded-lg !py-1 !px-6 text-sm"
+                className="!bg-secondary !rounded-lg !py-1 !px-6 text-sm font-inter"
               />
             </div>
-            <h2 className="text-sm  w-52">
+            <h2 className="text-sm  w-52 font-inter">
               Subscribe to our newsletter for the latest blog insights, creative
               tips, industry news, and exclusive updates delivered straight to
               your inbox.
@@ -61,7 +61,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="flex justify-center gap-20 items-center w-full">
+        <div className="inter flex justify-center gap-20 items-center w-full font_inter">
           <div className="flex gap-2 text-white">
             <FaLinkedin />
             <FaTwitter />
