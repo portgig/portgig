@@ -43,17 +43,17 @@ const Footer = () => {
 
           <div className="gap-5  flex flex-col  items-center w-full text-sm">
             <h2 className="text-2xl font-black">Sign up for our newsletter</h2>
-            <div className="w-66 h-10 bg-white flex gap-1 px-2 py-1">
+            <div className="w-68 h-12 bg-white flex gap-1 px-2 py-1">
               <input
                 type="text"
                 className="w-full outline-none bg-transparent text-secondary"
               />
               <Buttons
                 label="Subcribe"
-                className="!bg-secondary !rounded-lg !py-1 text-[10px]"
+                className="!bg-secondary !rounded-lg !py-1 !px-6 text-sm"
               />
             </div>
-            <h2 className="text-[8px]  w-52">
+            <h2 className="text-sm  w-52">
               Subscribe to our newsletter for the latest blog insights, creative
               tips, industry news, and exclusive updates delivered straight to
               your inbox.
