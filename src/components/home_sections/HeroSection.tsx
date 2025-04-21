@@ -4,12 +4,12 @@ import Image from "next/image";
 import { Buttons } from "../export_components";
 const HeroSection = () => {
   return (
-    <main className="sm:mx-3 2xl:mx-auto 2xl:w-[1300px] bg-primary md:rounded-3xl flex justify-between text-white gap-2 ">
-      <div className="my-5 md:my-20 ml-5 md:ml-10 xl:ml-20 flex flex-col max-lg:gap-10 gap-10 text-6xl  ">
-        <div className="flex flex-col gap-3">
+    <main className="bodyMargin bg-primary md:rounded-3xl flex justify-between text-white gap-2 ">
+      <div className="my-5 md:my-20 ml-5 md:ml-10 xl:ml-20 flex flex-col max-lg:gap-10 gap-15  text-6xl  ">
+        <div className="flex flex-col gap-3 ">
           {" "}
           <h1 className="">Connect.</h1>
-          <h1 className="lg:ml-10">
+          <h1 className="lg:ml-15">
             Create. <span className="text-xl sm:text-3xl">Thrive.</span>
           </h1>
           {/* <span className="text-xl md:hidden">Thrive.</span> */}
