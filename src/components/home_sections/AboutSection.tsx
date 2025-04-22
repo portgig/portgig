@@ -1,9 +1,12 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import { Buttons } from "../export_components";
+
 const AboutSection = () => {
   return (
     <section className="bodyMargin my-5 text-textColor">
+      {/* Top Section */}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 sm:gap-0 mt-3">
         <div className="flex flex-col">
           <h1 className="text-textColor heading">What is this all about?</h1>
@@ -18,23 +21,25 @@ const AboutSection = () => {
             Whether you’re a designer, writer, developer, or artist.
           </p>
         </div>
-        {/* /// */}
-        <div className="flex items-start justify-center">
+
+        {/* Image + Mobile Text */}
+        <div className="flex items-start justify-center flex-col sm:flex-row gap-3">
           <p className="sm:hidden text-sm font-bold">
             Get a stunning portfolio that speaks for you. Showcase your skills,
             impress recruiters, and land your next big opportunity.
           </p>
           <Image
             src="/assets/about-image.png"
-            alt="about-image.png"
+            alt="Creative presentation"
             width={300}
             height={400}
             className="w-56 h-60 sm:w-60 sm:h-72 lg:h-96 lg:w-80 object-cover"
           />
         </div>
       </div>
-      {/* share */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 sm:gap-10 mt-3 ">
+
+      {/* Share Section */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 sm:gap-10 mt-10">
         <div className="flex flex-col">
           <h2 className="text-lg md:text-xl lg:text-4xl font-black text-primary">
             All your works in one place, easy to share. easy to impress.
@@ -42,53 +47,53 @@ const AboutSection = () => {
           <hr className="border-5 border-primary w-45 my-3" />
           <Image
             src="/assets/about-man.png"
-            alt="about-image.png"
+            alt="About man"
             width={659}
             height={300}
-            className=" "
+            className="w-full h-auto"
           />
         </div>
-        {/* /// */}
-        <div className="flex flex-col items-start sm:justify-center gap-3 font-raleway">
-          <div className="">
-            {" "}
-            <h2 className="subHeading  mt-2 text-primary ">
+
+        {/* Job + Shop Info */}
+        <div className="flex flex-col items-start sm:justify-center gap-5 font-raleway">
+          <div>
+            <h2 className="subHeading mt-2 text-primary">
               Find Jobs That Fit You
             </h2>
-            <p className="text-sm md:text-lg font-semibold leading-6 my-2 text-primary">
-            <p className="text-sm md:text-lg leading-6 my-2 font-bold">
+            <p className="text-sm md:text-lg leading-6 my-2 font-bold text-primary">
               Discover gigs and job postings that match your expertise. <br />
-              With just one click, apply using your comprehensive portfolio,{" "}
-              <br /> no CVs required.
+              With just one click, apply using your comprehensive portfolio, <br />
+              no CVs required.
             </p>
           </div>
-          {/* shop */}
-          <div className="bg-primary w-fit  lg:w-115 rounded-2xl flex flex-col gap-5 text-white  p-10">
+
+          {/* Shop Box */}
+          <div className="bg-primary w-fit lg:w-115 rounded-2xl flex flex-col gap-5 text-white p-10">
             <h2 className="font-black text-xl lg:text-3xl">
               Sell on Portgig Shop
             </h2>
             <p className="font-bold">
               As a creative, do you have any digital product you would like to
-              sell or would you like to shop for items ?
+              sell or would you like to shop for items?
             </p>
             <Buttons
               label="Visit Shop"
               className="w-fit text-black font-urbanist self-end font-bold !px-10"
             />
           </div>
-          <div />
         </div>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 sm:gap-10 mt-3    ">
-        {" "}
+
+      {/* Recruiter Section */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 sm:gap-10 mt-10">
         <div className="flex flex-col">
-          <div className="lg:w-120 bg-secondary flex justify-start items-center mt-5 px-4 py-4 ">
-            <p className="text-white font-bold text-xl">
+          <div className="lg:w-120 bg-secondary flex justify-start items-center mt-5 px-4 py-4">
+            <p className="text-white font-extrabold text-3xl">
               Seamless Hiring for Recruiters
             </p>
           </div>
-          <div className="flex flex-col  ml-5">
-            <h2 className="text-primary  text-2xl  font-black  mt-5 font-raleway">
+          <div className="flex flex-col ml-5">
+            <h2 className="text-primary text-3xl font-black mt-5 font-raleway">
               Hire the Right Talent, Fast
             </h2>
             <p className="text-primary text-lg my-2 font-raleway font-bold w-fit lg:w-96">
@@ -98,13 +103,14 @@ const AboutSection = () => {
             </p>
           </div>
         </div>
-        <div className="flex  items-center  ">
+
+        <div className="flex items-center">
           <Image
             src="/assets/ellipse-woman.png"
-            alt="Ellipse-woman.png"
-            width={350}
-            height={300}
-            className=" object-filll"
+            alt="Ellipse woman"
+            width={550}
+            height={500}
+            className="object-fill"
           />
         </div>
       </div>

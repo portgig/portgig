@@ -16,7 +16,7 @@ const CommunitySection = () => {
           <h2 className="text-primary text-xl lg:text-2xl font-black">
             I bet it’s not just you, Join your community
           </h2>
-          <p className="text-textColor text-sm md:text-sm font-bold leading-6 ">
+          <p className="text-textColor text-sm md:text-xl font-bold leading-6 ">
             Get inspired by like-minded individuals, exchange ideas, <br /> and
             build meaningful connections that propel your career forward.
           </p>
@@ -25,7 +25,7 @@ const CommunitySection = () => {
           <h2 className="text-primary text-xl lg:text-2xl font-black">
             What’s inside?
           </h2>
-          <p className="text-textColor text-sm md:text-sm font-bold leading-6 ">
+          <p className="text-textColor text-sm md:text-xl font-bold leading-6 ">
             Private forums tailored to your creative field. Networking <br />
             opportunities with top professionals. <br /> Access to exclusive
             events, workshops, and job postings.
@@ -46,8 +46,8 @@ const CommunitySection = () => {
         <Image
           src="/assets/women-group.png"
           alt="Ellipse-woman.png"
-          width={320}
-          height={360}
+          width={470}
+          height={460}
           className=" object-filll"
         />
       </div>
