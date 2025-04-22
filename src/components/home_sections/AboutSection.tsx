@@ -39,7 +39,7 @@ const AboutSection = () => {
           <h2 className="text-lg md:text-xl lg:text-4xl font-black text-primary">
             All your works in one place, easy to share. easy to impress.
           </h2>
-          <hr className="border-3 border-primary w-45 my-3" />
+          <hr className="border-5 border-primary w-45 my-3" />
           <Image
             src="/assets/about-man.png"
             alt="about-image.png"
@@ -56,6 +56,7 @@ const AboutSection = () => {
               Find Jobs That Fit You
             </h2>
             <p className="text-sm md:text-lg font-semibold leading-6 my-2 text-primary">
+            <p className="text-sm md:text-lg leading-6 my-2 font-bold">
               Discover gigs and job postings that match your expertise. <br />
               With just one click, apply using your comprehensive portfolio,{" "}
               <br /> no CVs required.
