@@ -12,8 +12,9 @@ export const navigationItems = [
     link: "/job-hub",
   },
   {
-    label: "Portfolio",
-    link: "",
+ 
+    link: "/portfolio",
+
   },
   {
     label: "Join Community",
