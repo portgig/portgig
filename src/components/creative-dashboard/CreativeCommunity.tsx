@@ -2,7 +2,7 @@ import React from "react";
 
 const CreativeCommunity = () => {
   return (
-    <section className=" flex flex-col gap-5 my-5">
+    <section className=" flex flex-col gap-5 my-5 font-raleway">
       <div className=" flex-col h-20 bg-linear-gradient w-full flex justify-center items-center">
         <h2 className="text-sm md:text-xl lg:text-2xl font-bold">
           {" "}

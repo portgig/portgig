@@ -20,7 +20,7 @@ const DashboardSection = () => {
       <div className="flex flex-col lg:flex-row gap-10 bodyMargin">
         {" "}
         <div className="flex-2/3   bg-primary  rounded-lg p-10 flex justify-center items-center ">
-          <p className="text-center text-xl sm:text-2xl lg:text-4xl 2xl:text-5xl  font-bold">
+          <p className="text-center text-xl sm:text-2xl lg:text-4xl 2xl:text-5xl  font-bold font-ralway">
             {" "}
             Access your dashboard to showcase your work, track job applications,
             and connect with top recruiters. Your creative journey starts here!
@@ -29,7 +29,7 @@ const DashboardSection = () => {
         <div className="flex-1/3   mx-3 ">
           <div
             key={creative.id}
-            className="flex flex-col gap-3 pb-5 pr-2 rounded-lg border-2 border-secondary text-secondary">
+            className="flex flex-col gap-3 pb-5 pr-2 rounded-lg border-2 border-secondary text-secondary font-raleway">
             <div className="flex justify-between items-center">
               <Image
                 src={creative.creativeImage}
@@ -37,7 +37,7 @@ const DashboardSection = () => {
                 width={150}
                 height={150}
               />
-              <div className="bg-secondary/80 text-white py-2 px-5">
+              <div className="bg-secondary/80 text-white py-2 px-5 font-ramaraja">
                 {creative.level}
               </div>
             </div>
@@ -71,9 +71,9 @@ const DashboardSection = () => {
         <Buttons
           label="Go to Dashboard"
           className=" !bg-primary w-fit self-end rounded-lg font-bold text-xl"
-				  onClick={() => {
-			  navigate.push('/creative-dashboard')
-		  }}
+          onClick={() => {
+            navigate.push("/creative-dashboard");
+          }}
         />
       </div>
     </section>

@@ -9,7 +9,7 @@ import { useRouter } from "next/navigation";
 export default function CreativeEmailConfirmed() {
   const navigate = useRouter();
   return (
-    <main className="min-h-screen flex flex-col items-center bg-[url('/assets/email-man.png')] bg-no-repeat bg-cover bg-center p-4 sm:p-8 md:p-10">
+    <main className="min-h-screen flex flex-col items-center bg-[url('/assets/email-man.png')] bg-no-repeat bg-cover bg-center p-4 sm:p-8 md:p-10 font-raleway">
       {/* Logo */}
       <div className="self-start mb-6">
         <Link href="/">
@@ -35,14 +35,14 @@ export default function CreativeEmailConfirmed() {
 
         <div className="flex flex-col gap-5">
           {" "}
-          <h2 className="font-bold text-xl sm:text-2xl lg:text-4xl text-center">
+          <h2 className="font-bold text-xl sm:text-2xl lg:text-4xl text-center font-ramaraja">
             Email Confirmed
           </h2>
-          <p className="text-[12px] sm:text-xl text-center font-medium">
+          <p className="text-[12px] sm:text-xl text-center font-medium font-raleway">
             Thank you
           </p>
           <Buttons
-            className="!bg-primary text-white rounded-none px-20 py-3 text-2xl lg:text-3xl cursor-pointer"
+            className="!bg-primary text-white rounded-none px-20 py-3 text-2xl lg:text-3xl font-inter"
             label="Get started"
             onClick={() => {
               navigate.push("/creative-homepage");

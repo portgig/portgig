@@ -17,11 +17,13 @@ const Applied = () => {
   const buttonStyles =
     "!bg-primary  rounded-lg w-42 md:w-62 py-3 text-sm md:text-lg cursor-pointer";
   return (
-    <main className="bodyMargin shadow my-10 py-5 text-primary flex flex-col gap-2">
+    <main className="bodyMargin shadow my-10 py-5 text-primary flex flex-col gap-2 font-raleway">
       {" "}
       <h2 className="px-5 subHeading">Graphics Designer</h2>
       <h2 className="px-5 text-xs lg:text-lg">by Uxper Group of Companies</h2>
-      <div className="bg-primary px-5 py-10 text-white">Application sent</div>
+      <div className="bg-primary px-5 py-5 text-white text-2xl font-inter">
+        Application sent
+      </div>
       <div className="bodyMargin flex flex-col items-center justify-center my-20 gap-5 text-white">
         <div className="bg-primary rounded-full w-44 h-44 lg:w-60 lg:h-60 flex justify-center items-center">
           <IoCheckmarkDone className="font-black  text-5xl lg:text-7xl" />

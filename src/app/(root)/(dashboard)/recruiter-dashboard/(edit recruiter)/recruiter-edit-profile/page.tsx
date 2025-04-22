@@ -53,7 +53,7 @@ const RecruiterEditProfile = () => {
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
-      className="flex flex-col text-black gap-5">
+      className="flex flex-col text-black gap-5 font-inter">
       <h2 className="subHeading">Edit profile</h2>
       {/* profile image */}
       <div className="w-full bg-white p-3 rounded-lg shadow">
@@ -110,7 +110,9 @@ const RecruiterEditProfile = () => {
                 placeholder="Full Name"
               />
               {errors.fullName && (
-                <p className="text-red-500 text-xs">{errors.fullName.message}</p>
+                <p className="text-red-500 text-xs">
+                  {errors.fullName.message}
+                </p>
               )}
             </div>
             <div className="flex flex-col gap-2">
@@ -155,7 +157,9 @@ const RecruiterEditProfile = () => {
                 placeholder="Location"
               />
               {errors.location && (
-                <p className="text-red-500 text-xs">{errors.location.message}</p>
+                <p className="text-red-500 text-xs">
+                  {errors.location.message}
+                </p>
               )}
             </div>
             <div className="flex flex-col gap-2">
@@ -253,7 +257,7 @@ const RecruiterEditProfile = () => {
         <Buttons
           type="submit"
           label="Save changes"
-          className="!bg-primary w-fit text-white self-end rounded-sm"
+          className="!bg-primary w-fit text-white self-end rounded-sm font-raleway"
         />
       </div>
     </form>

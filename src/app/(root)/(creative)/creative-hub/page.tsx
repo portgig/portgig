@@ -10,7 +10,7 @@ import {
 
 const CreativeHub = () => {
   return (
-    <main>
+    <main className="font-raleway">
       <CreativeHero />
       <SearchSection />
       <div className="flex gap-5 bodyMargin ">

@@ -14,7 +14,7 @@ const Banner = ({ label }: BannerPropType) => {
       <div className="px-8 py-4 bg-primary rounded-full md:rounded-4xl flex items-center justify-between shadow">
         {/* creatuve */}
         <div className="flex items-center justify-center  gap-5">
-          <h2 className="font-bold">Create your portfolio</h2>
+          <h2 className="font-bold font-raleway">Create your portfolio</h2>
           <Buttons
             label={label}
             className=" text-black font-medium text-sm not-odd:w-fit !py-2 cursor-pointer"
@@ -25,7 +25,7 @@ const Banner = ({ label }: BannerPropType) => {
         </div>
         {/* hire */}
         <div className="flex items-center justify-center  gap-5">
-          <h2 className="font-bold">Hiring creative</h2>
+          <h2 className="font-bold font-raleway">Hiring creative</h2>
           <Buttons
             label={label}
             className=" text-black font-medium text-sm not-odd:w-fit !py-2 cursor-pointer"

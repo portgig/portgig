@@ -13,8 +13,7 @@ const Buttons = ({ className, label, type = "button", onClick }: buttonProps) =>
     <button
       type={type}
       className={`${className} bg-white rounded-full py-2 px-5 cursor-pointer`}
-      onClick={onClick}
-    >
+      onClick={onClick}>
       {label}
     </button>
   );

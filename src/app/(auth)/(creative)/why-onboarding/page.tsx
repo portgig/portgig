@@ -27,12 +27,14 @@ const WhyOnboarding = () => {
         </Link>
       </div>
       <div className="h-full flex flex-col gap-10 lg:gap-20 justify-center items-center max-lg:bg-white max-lg:text-primary mx-3 md:mx-10 rounded-3xl px-5 md:px-10 py-20 xl:w-8/12 lg:mx-auto">
-        <h2 className="font-bold text-2xl md:text-3xl text-center">
+        <h2 className="font-bold text-2xl md:text-3xl lg:text-5xl text-center font-ramaraja">
           Why Portgig?
         </h2>
         <ul className="leading-10 text-sm md:text-xl font-bold">
           {whyOnboarding.map((item) => (
-            <li key={item} className="self-start flex items-baseline gap-5">
+            <li
+              key={item}
+              className="self-start flex items-baseline gap-5 font-raleway">
               <IoCheckmarkDone className="font-black" />
               {item}
             </li>
@@ -40,7 +42,7 @@ const WhyOnboarding = () => {
         </ul>
         <Buttons
           label="Go to Dashboard"
-          className="max-lg:bg-primary max-lg:text-white lg:text-primary rounded-sm !px-15 sm:text-3xl"
+          className="max-lg:bg-primary max-lg:text-white lg:text-primary rounded-sm !px-15 sm:text-3xl font-inter"
           onClick={() => {}}
         />
       </div>

@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function CreativeEmail() {
   return (
-    <main className="min-h-screen flex flex-col items-center bg-[url('/assets/email-man.png')] bg-no-repeat bg-cover bg-center p-4 sm:p-8 md:p-10">
+    <main className="min-h-screen flex flex-col items-center bg-[url('/assets/email-man.png')] bg-no-repeat bg-cover bg-center p-4 sm:p-8 md:p-10 font-raleway">
       {/* Logo */}
       <div className="self-start mb-6">
         <Link href="/">
@@ -28,7 +28,7 @@ export default function CreativeEmail() {
           className="w-full max-w-md h-auto"
         />
 
-        <h2 className="font-bold text-xl sm:text-2xl text-center">
+        <h2 className="font-bold text-xl sm:text-2xl lg:text-4xl text-center font-ramaraja">
           Email Confirmation
         </h2>
 

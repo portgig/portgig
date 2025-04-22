@@ -13,7 +13,7 @@ const ExploreCreative = () => {
         <h2 className="font-bold text-2xl">Meet creatives</h2>
       </div>
       {/* Jobs */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 font-raleway">
         {creatives.map((creative, index) => (
           <div
             key={creative.id}
@@ -32,7 +32,7 @@ const ExploreCreative = () => {
                   className="object-cover h-full w-full"
                 />
               </div>
-              <div className="bg-secondary/70 text-white py-2 px-5">
+              <div className="bg-secondary/70 text-white py-2 px-5 font-ramaraja">
                 {creative.level}
               </div>
             </div>

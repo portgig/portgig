@@ -8,7 +8,7 @@ const Community = () => {
       <div className="h-15 bg-linear-gradient w-full flex justify-center items-center">
         <h2 className="heading"> Feeling overwhelmed?</h2>
       </div>
-      <div className=" md:flex gap-10 bodyMargin  bg-primary my-5 p-8 rounded-2xl text-white">
+      <div className=" md:flex gap-10 bodyMargin  bg-primary my-5 p-8 rounded-2xl text-white font-raleway">
         <div className=" flex flex-col gap-15  ">
           <p className="font-bold">
             Get inspired by like-minded individuals, exchange ideas, and build
@@ -28,7 +28,7 @@ const Community = () => {
             <h2 className="text-xl font-bold">Join the Community</h2>
             <Buttons
               label="Click here"
-              className="rounded-lg text-black lg:text-xl w-fit font-bold"
+              className="rounded-lg text-black lg:text-xl w-fit font-bold font-urbanist"
               onClick={() => {}}
             />
           </div>

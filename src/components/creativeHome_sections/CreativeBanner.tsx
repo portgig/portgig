@@ -4,7 +4,7 @@ const CreativeBanner = () => {
   return (
     <section className="bodyMargin  h-40 bg-primary my-5 max-md:hidden rounded-2xl">
       <div className="bodyMargin h-full flex gap-5">
-        <div className="flex-2/3 flex flex-col justify-center items-start gap-5  py-5 px-3">
+        <div className="flex-2/3 flex flex-col justify-center items-start gap-5  py-5 px-3 font-raleway">
           <h2 className="text-xl lg:text-2xl font-bold">
             Take the Next Step – Find Opportunities, Build Your Network, Get
             Hired!

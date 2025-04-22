@@ -3,7 +3,10 @@ import React, { useState } from "react";
 import Image from "next/image";
 import { jobs } from "@/src/constants";
 import { IoIosArrowForward } from "react-icons/io";
+import { Buttons } from "../export_components";
+import { useRouter } from "next/navigation";
 const Jobs = () => {
+	const navigate=useRouter()
   const jobsPerPage = 12;
   const [currentPage, setCurrentPage] = useState(0);
   const totalPages = Math.ceil(jobs.length / jobsPerPage);
@@ -13,12 +16,28 @@ const Jobs = () => {
   const currentJobs = jobs.slice(startIndex, endIndex);
 
   return (
-    <section className="p-5">
+    <section className="p-5 flex flex-col gap-3">
+      <div className="flex justify-between">
+        <div className="flex flex-col">
+          <h2 className="text-textColor text-xl font-bold">Latest jobs</h2>
+          <p className="text-primary text-xs">50 new jobs added</p>
+        </div>
+
+        <Buttons
+          label="View all jobs"
+          className=" text-textColor underline font-bold cursor-pointer"
+          onClick={() => {}}
+        />
+      </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-5">
         {currentJobs.map((job) => (
           <div
             key={job.id}
-            className="flex flex-col justify-between gap-5 h-full px-5 py-3 rounded-lg border-2 border-secondary text-secondary">
+				className="flex flex-col justify-between gap-5 h-full px-5 py-3 rounded-lg border-2 border-secondary text-secondary cursor-pointer"
+				onClick={() => {
+					navigate.push('/job-hub/job-description')
+				}}
+			>
             <div className="flex items-center gap-4">
               <Image
                 src={job.comapnyImage}
@@ -57,7 +76,7 @@ const Jobs = () => {
           <button
             key={index}
             onClick={() => setCurrentPage(index)}
-            className={`h-10 w-10 flex items-center justify-center rounded-full font-semibold ${
+            className={`h-10 w-10 flex items-center justify-center rounded-full font-semibold font-inter ${
               currentPage === index
                 ? "bg-primary text-white cursor-not-allowed"
                 : "text-secondary hover:bg-accents"

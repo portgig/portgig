@@ -4,8 +4,11 @@ import Image from "next/image";
 import Buttons from "@/src/components/Buttons";
 const ProfileCard = () => {
   return (
-    <main className="my-30 bodyMargin text-primary">
-      <div className="w-full flex flex-col gap-30 h-fit shadow rounded-sm p-10 lg:px-20">
+    <main className="my-30 bodyMargin text-primary font-raleway">
+      <div className="relative w-full flex flex-col gap-30 h-fit shadow rounded-sm p-10 lg:px-20">
+        <div className="absolute -top-5 right-2 bg-secondary/70 center text-white px-10 py-2 text-sm lg:text-2xl font-ramaraja">
+          Expert
+        </div>
         {/* name */}
         <div className="flex flex-col md:flex-row gap-20">
           {" "}
