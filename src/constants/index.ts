@@ -13,7 +13,7 @@ export const navigationItems = [
   },
   {
     label: "Portfolio",
-    link: "/",
+    link: "",
   },
   {
     label: "Join Community",
