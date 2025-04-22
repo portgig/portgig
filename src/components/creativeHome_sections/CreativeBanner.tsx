@@ -2,19 +2,19 @@ import React from "react";
 import Image from "next/image";
 const CreativeBanner = () => {
   return (
-    <section className="bodyMargin  h-40 bg-primary my-5 max-md:hidden rounded-2xl">
-      <div className="bodyMargin h-full flex gap-5">
-        <div className="flex-2/3 flex flex-col justify-center items-start gap-5  py-5 px-3 font-raleway">
-          <h2 className="text-xl lg:text-2xl font-bold">
+    <section className="bg-primary h-fit my-5 max-md:hidden ">
+      <div className="bodyMargin flex gap-5">
+        <div className="flex-3/5 w-full flex flex-col justify-center items-start gap-5  py-5 px-10 font-raleway">
+          <h2 className="text-xl lg:text-3xl font-bold">
             Take the Next Step – Find Opportunities, Build Your Network, Get
             Hired!
           </h2>
-          <p className="text-[12px] ">
+          <p className="text-sm font-bold ">
             Explore top jobs, showcase your portfolio, and connect with
             different people in your field.
           </p>
         </div>
-        <div className=" flex items-center justify-start max-md:hidden relative ">
+        <div className="flex-2/5 w-full flex items-center justify-center max-md:hidden relative ">
           <Image
             src="/assets/bell.png"
             alt="creativehero"

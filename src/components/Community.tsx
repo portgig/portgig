@@ -5,8 +5,8 @@ import { Buttons } from "./export_components";
 const Community = () => {
   return (
     <section className=" my-10 flex flex-col gap-5">
-      <div className="h-15 bg-linear-gradient w-full flex justify-center items-center">
-        <h2 className="heading"> Feeling overwhelmed?</h2>
+      <div className="h-15 bg-secondary w-full px-5 flex  items-center bodyMargin">
+        <h2 className="subHeading"> Feeling overwhelmed</h2>
       </div>
       <div className=" md:flex gap-10 bodyMargin  bg-primary my-5 p-8 rounded-2xl text-white font-raleway">
         <div className=" flex flex-col gap-15  ">
@@ -28,7 +28,7 @@ const Community = () => {
             <h2 className="text-xl font-bold">Join the Community</h2>
             <Buttons
               label="Click here"
-              className="rounded-lg text-black lg:text-xl w-fit font-bold font-urbanist"
+              className="rounded-none px-10 py-1 text-black lg:text-xl w-fit font-bold font-urbanist"
               onClick={() => {}}
             />
           </div>
