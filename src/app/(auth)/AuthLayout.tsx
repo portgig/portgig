@@ -48,7 +48,7 @@ export const AuthLayout = ({ children }: { children: React.ReactNode }) => {
 
       {/* Background for smaller screens */}
       <div
-        className="w-full h-fit max-lg:block lg:hidden bg-cover bg-center bg-no-repeat pt-20"
+        className="w-full max-lg:block lg:hidden bg-cover bg-center bg-no-repeat pt-20"
         style={{
           backgroundImage: `url('${bgImage}')`,
           backgroundSize: "cover",

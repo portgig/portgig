@@ -5,7 +5,7 @@ const ProfileAnalytics = () => {
   const navigate = useRouter();
 
   return (
-    <section className="bodyMargin py-5 text-primary">
+    <section className="bodyMargin py-5 text-primary font-raleway">
       <div className="flex justify-between">
         <div className="flex flex-col gap-3 items-center">
           <h2 className="font-bold">Profile Analytics</h2>

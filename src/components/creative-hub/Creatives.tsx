@@ -35,7 +35,7 @@ const Creatives = () => {
                   className="object-cover h-full w-full"
                 />
               </div>
-              <div className="bg-secondary/80 text-white py-2 px-5">
+              <div className="bg-secondary/80 text-white py-1 px-5 font-ramaraja">
                 {creative.level}
               </div>
             </div>
@@ -80,7 +80,7 @@ const Creatives = () => {
           <button
             key={index}
             onClick={() => setCurrentPage(index)}
-            className={`h-10 w-10 flex items-center justify-center rounded-full font-semibold ${
+            className={`h-10 w-10 flex items-center justify-center rounded-full font-semibold font-inter ${
               currentPage === index
                 ? "bg-primary text-white cursor-not-allowed"
                 : "text-secondary hover:bg-accents"

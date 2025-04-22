@@ -1,16 +1,38 @@
 import type { Metadata } from "next";
-// import { Geist, Geist_Mono } from "next/font/google";
+import {
+  Urbanist,
+  Inter,
+  Raleway,
+  Vesper_Libre,
+  Ramaraja,
+} from "next/font/google";
 import "./globals.css";
 
-// const geistSans = Geist({
-//   variable: "--font-geist-sans",
-//   subsets: ["latin"],
-// });
-
-// const geistMono = Geist_Mono({
-//   variable: "--font-geist-mono",
-//   subsets: ["latin"],
-// });
+const urbanist = Urbanist({
+  variable: "--font-urbanist",
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+});
+const inter = Inter({
+  variable: "--font-inter",
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+});
+const raleway = Raleway({
+  variable: "--font-raleway",
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+});
+const vesper = Vesper_Libre({
+  variable: "--font-vesper",
+  subsets: ["latin"],
+  weight: ["400", "500", "700", "900"],
+});
+const ramaraja = Ramaraja({
+  variable: "--font-ramaraja",
+  subsets: ["latin"],
+  weight: ["400"],
+});
 
 export const metadata: Metadata = {
   title: "Portgig",
@@ -24,7 +46,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="h-full ">
-      <body className={` antialiased bg-white`} cz-shortcut-listen="true">
+      <body
+        className={`${urbanist.variable} ${inter.variable} ${raleway.variable} ${vesper.variable} ${ramaraja.variable}  antialiased bg-white`}
+        cz-shortcut-listen="true">
         {children}
       </body>
     </html>

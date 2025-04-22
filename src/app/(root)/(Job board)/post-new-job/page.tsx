@@ -41,7 +41,7 @@ const PostJob = () => {
     "w-full bg-gray100 p-3 rounded  focus:border-1 focus:outline-none focus:border-secondary transition-colors duration-200";
 
   return (
-    <main className="flex flex-col py-10">
+    <main className="flex flex-col py-10 font-raleway">
       <div className="flex justify-between items-end max-sm:h-20 h-30  border-b-2 border-primary pb-2">
         <div className="flex flex-col justify-between h-full">
           <h2 className="text-sm  md:text-lg lg:text-xl  font-black text-primary">

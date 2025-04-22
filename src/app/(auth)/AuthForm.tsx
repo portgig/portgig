@@ -126,13 +126,13 @@ const AuthForm = ({ type }: AuthFormProps) => {
   const isRecruiterSignin = type === "recruiter-sign-in";
   const isSignup = type === "sign-up";
   const isRecruiterSignup = type === "recruiter-sign-up";
-  const labelStyles = "block max-lg:text-sm text-lg  font-medium";
+  const labelStyles = "block max-lg:text-sm text-lg  font-medium font-raleway";
   const inputStyles =
-    "text-secondary mt-2 w-full max-sm:py-2 py-3 px-10 bg-white rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary";
+    "text-secondary mt-2 w-full max-sm:py-2 py-3 px-10 bg-white rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary font-raleway";
   return (
     <form
       onSubmit={handleSubmit}
-      className="px-5 md:px-30 lg:px-10 xl:px-20 2xl:px-30 space-y-3 flex flex-col">
+      className="px-5 md:px-30 lg:px-10 xl:px-20 2xl:px-30 space-y-3 flex flex-col font-raleway">
       <div className="max-lg:block lg:hidden self-center w-fit cursor-pointer ">
         {/* Logo */}
         <Link href="/">
@@ -148,14 +148,18 @@ const AuthForm = ({ type }: AuthFormProps) => {
       {/* page label */}
       <div className="space-y-4">
         {(isSignin || isRecruiterSignin) && (
-          <p className=" max-lg:text-xl text-3xl">Sign in</p>
+          <p className=" max-lg:text-xl text-3xl font-inter">Sign in</p>
         )}
         {(isSignup || isRecruiterSignup) && (
-          <p className=" max-lg:text-xl text-3xl">Sign up</p>
+          <p className=" max-lg:text-xl text-3xl font-inter">Sign up</p>
         )}
 
-        {isSignin && <p className=" text-lg ">Welcome Creative, sign in</p>}
-        {isSignup && <p className=" text-lg ">Welcome creative, sign up</p>}
+        {isSignin && (
+          <p className=" text-lg font-raleway ">Welcome Creative, sign in</p>
+        )}
+        {isSignup && (
+          <p className=" text-lg font-raleway ">Welcome creative, sign up</p>
+        )}
         {isRecruiterSignin && (
           <p className=" text-lg ">Welcome Recruiter, sign in</p>
         )}
@@ -378,7 +382,7 @@ const AuthForm = ({ type }: AuthFormProps) => {
         <AuthButton
           type="submit"
           className="bg-white w-full text-primary mt-2  py-3  rounded-lg ">
-          <p className="max-md:text-lg text-2xl font-bold">Sign In</p>
+          <p className="max-md:text-lg text-2xl font-bold ">Sign In</p>
         </AuthButton>
       )}
       {(isSignin || isRecruiterSignin) && (
@@ -408,7 +412,7 @@ const AuthForm = ({ type }: AuthFormProps) => {
         <p className="text-center  font-light">
           Don’t have an account wit Portgig?{" "}
           <Link href={isSignin ? "/sign-up" : "/recruiter-sign-up"}>
-            <span className="font-black underline">Sign Up</span>
+            <span className="font-black underline ">Sign Up</span>
           </Link>
         </p>
       )}
@@ -425,7 +429,7 @@ const AuthForm = ({ type }: AuthFormProps) => {
             />
             <label
               htmlFor="keepLoggedIn"
-              className="text-[5px] sm:text-[12px] font-medium">
+              className="text-[5px] sm:text-xs font-medium w-96">
               By signing up, you agree to receive emails about updates, job
               offers, and more from PortGig.
             </label>
@@ -433,13 +437,12 @@ const AuthForm = ({ type }: AuthFormProps) => {
 
           {/* button */}
           <AuthButton
-  type="submit"
-  className="border border-white text-white mt-2 py-3 px-4 rounded-lg cursor-pointer 
+            type="submit"
+            className="border border-white text-white mt-2 py-3 px-4 rounded-lg cursor-pointer 
              transition-all duration-300 ease-in-out transform 
              hover:bg-white hover:text-black hover:shadow-md hover:scale-105">
-  <p className="text-[14px]">Sign up</p>
-</AuthButton>
-
+            <p className="text-xs md:text-sm font-inter">Sign up</p>
+          </AuthButton>
         </div>
       )}
     </form>

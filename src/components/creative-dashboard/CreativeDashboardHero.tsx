@@ -19,10 +19,12 @@ const CreativeDashboardHero = () => {
   return (
     <section className="bodyMargin bg-primary py-10 text-white p-3 lg:p-10">
       <div className=" flex flex-col gap-5">
-        <div className="flex max-sm:justify-center">
-          <div className="border-2 border-white rounded-lg p-3 max-sm:w-82">
-            <h2 className="text-2xl lg:text-4xl font-bold">Hi, Sophia</h2>
-            <p className="text-[10px] lg:text-sm">
+        <div className="flex max-sm:justify-center lg:justify-between">
+          <div className="border-2 border-white rounded-lg p-10 max-sm:w-82">
+            <h2 className="text-sky-300xl lg:text-5xl font-bold font-raleway">
+              Hi, Sophia
+            </h2>
+            <p className="text-sm lg:text-lg font-inter lg:w-200">
               Your creativity is your superpower! 🚀 Keep building, keep
               innovating, and let your work speak for itself. The right
               opportunity is just around the corner—go grab it!
@@ -37,14 +39,14 @@ const CreativeDashboardHero = () => {
             />
           </div>
         </div>
-        <h2 className="text-[10px] lg:text-sm">Let’s dive in</h2>
+        <h2 className="text-[10px] lg:text-sm font-raleway">Let’s dive in</h2>
         <div className="flex  flex-wrap gap-5 justify-between ">
           {" "}
-          {links.map((link) => (
+          {links.map((link, index) => (
             <Buttons
-              key={link.path}
+              key={index}
               label={link.label}
-              className=" !text-primary text-[10px] md:text-sm lg:text-lg cursor-pointer"
+              className=" !text-primary text-[10px] md:text-sm lg:text-lg cursor-pointer font-raleway"
               onClick={() => {
                 navigate.push(link.path);
               }}

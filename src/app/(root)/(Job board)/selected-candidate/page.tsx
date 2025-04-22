@@ -14,7 +14,7 @@ const SelectedCandidate = () => {
   const endIndex = startIndex + creativesPerPage;
   const currentCreatives = creatives.slice(startIndex, endIndex);
   return (
-    <main className="flex flex-col gap-5 my-10">
+    <main className="flex flex-col gap-5 my-10 font-raleway">
       <div className="flex justify-between items-center">
         <h2 className="subHeading text-primary">Dashboard</h2>
         <Image
@@ -44,7 +44,7 @@ const SelectedCandidate = () => {
               key={creative.id}
               onClick={() => setSelectedCreative(creative)}
               className="relative p-2 bg-gray100 rounded-lg cursor-pointer hover:bg-gray200">
-              <div className="absolute bg-secondary text-white text-[10px] px-5 py-1 -top-2 right-5">
+              <div className="absolute bg-secondary text-white text-sm px-5 py-1 -top-2 right-5 font-ramaraja">
                 {creative.level}
               </div>
               <div className="flex items-center gap-3">
@@ -141,7 +141,7 @@ const SelectedCandidate = () => {
           <button
             key={index}
             onClick={() => setCurrentPage(index)}
-            className={`h-10 w-10 flex items-center justify-center rounded-full font-semibold ${
+            className={`h-10 w-10 flex items-center justify-center rounded-full font-semibold font-inter ${
               currentPage === index
                 ? "bg-primary text-white cursor-not-allowed"
                 : "text-secondary hover:bg-accents"

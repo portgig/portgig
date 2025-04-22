@@ -33,8 +33,8 @@ const EditProfile = () => {
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
-      className="flex flex-col text-black gap-5">
-      <h2 className="subHeading">Edit profile</h2>
+      className="flex flex-col text-black gap-5 font-inter">
+      <h2 className="subHeading ">Edit profile</h2>
       {/* profile image */}
       <div className="w-full bg-white p-3 rounded-lg shadow">
         <div className=" flex items-center gap-5 px-3 py-3">
@@ -175,7 +175,7 @@ const EditProfile = () => {
         <Buttons
           type="submit"
           label="Save changes"
-          className="!bg-primary w-fit text-white self-end rounded-sm"
+          className="!bg-primary w-fit text-white self-end rounded-sm font-raleway"
         />
       </div>
     </form>

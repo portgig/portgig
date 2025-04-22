@@ -7,11 +7,11 @@ const EmailSubscription = () => {
       <h2 className="self-center font-black text-primary text-sm md:text-lg lg:text-3xl">
         Want to get notified on you Jobs, Gigs, Offers?
       </h2>
-      <h2 className="self-center font-extralight text-primary text-sm md:text-lg ">
+      <h2 className="self-center font-extralight text-primary text-sm md:text-lg font-inter">
         Get them straight in your mail
       </h2>
       {/* input */}
-      <div className=" flex flex-col md:flex-row  gap-2 ">
+      <div className=" flex flex-col md:flex-row  gap-2 font-inter ">
         <div className=" text-textColor  w-full border border-primary rounded-sm">
           <input
             type="text"

@@ -7,12 +7,12 @@ const CommunitySection = () => {
     <section className="bodyMargin flex gap-5">
       <div className="flex flex-col gap-3 w-full">
         {" "}
-        <div className="h-15 w-full bg-secondary flex justify-start items-center mt-5 px-4">
+        <div className="h-15 w-full bg-secondary flex justify-start items-center mt-5 px-4 ">
           <p className="text-white font-bold subHeading">
             Feeling overwhelmed?{" "}
           </p>
         </div>
-        <div className="flex flex-col gap-3">
+        <div className="flex flex-col gap-3 font-raleway">
           <h2 className="text-primary text-xl lg:text-2xl font-black">
             I bet it’s not just you, Join your community
           </h2>
@@ -21,7 +21,7 @@ const CommunitySection = () => {
             build meaningful connections that propel your career forward.
           </p>
         </div>
-        <div className="flex flex-col gap-3">
+        <div className="flex flex-col gap-3 font-raleway">
           <h2 className="text-primary text-xl lg:text-2xl font-black">
             What’s inside?
           </h2>
@@ -32,7 +32,7 @@ const CommunitySection = () => {
           </p>
         </div>
         <div className="flex flex-col gap-3">
-          <h2 className="text-primary text-lg md:text-xl lg:text-2xl font-black">
+          <h2 className="text-primary text-lg md:text-xl lg:text-2xl font-black font-raleway">
             Join the Community
           </h2>
           <Buttons

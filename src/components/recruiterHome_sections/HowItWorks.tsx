@@ -10,7 +10,7 @@ const HowItWorks = () => {
         <h2 className="heading"> How it works?</h2>
       </div>
       <div className="bodyMargin flex">
-        <div className="text-primary text-center lg:text-xl  font-black flex flex-col items-center justify-center gap-5 ">
+        <div className="text-primary text-center lg:text-xl  font-black flex flex-col items-center justify-center gap-5 font-raleway ">
           <h2>Step 1: Post a Job – Create job listings in minutes.</h2>
           <h2>
             Step 2: Explore Talent – Browse creative profiles and portfolios.
@@ -34,7 +34,7 @@ const HowItWorks = () => {
       </div>
       {/* streamline hiring */}
       <div className="bodyMargin flex bg-primary">
-        <div className="text-white lg:text-xl  font-black flex flex-col items-center justify-center gap-5 p-5 ">
+        <div className="text-white lg:text-lg  font-black flex flex-col items-center justify-center gap-5 p-5 font-raleway">
           <h1>Streamline Your Hiring – All in One Place</h1>
           <h2>
             Manage job listings, track applications, and communicate with
@@ -63,7 +63,7 @@ const HowItWorks = () => {
       <div className="h-15 bg-linear-gradient w-full flex justify-center items-center">
         <h2 className="heading"> Need Help Finding the right Talent?</h2>
       </div>
-      <div className=" md:flex gap-10 bodyMargin  bg-primary my-5 p-8 rounded-2xl text-white">
+      <div className=" md:flex gap-10 bodyMargin  bg-primary my-5 p-8 rounded-2xl text-white font-raleway">
         <div className=" flex flex-col gap-15  ">
           <p className="font-bold">
             Finding the perfect creative professional can be overwhelming, but

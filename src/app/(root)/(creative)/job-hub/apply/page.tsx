@@ -26,10 +26,10 @@ const Apply = () => {
     reset();
   };
   return (
-    <main className="bodyMargin shadow my-10 py-5 text-primary flex flex-col gap-2">
+    <main className="bodyMargin shadow my-10 py-5 text-primary flex flex-col gap-2 font-raleway">
       <h2 className="px-5 subHeading">Graphics Designer</h2>
       <h2 className="px-5 text-xs lg:text-lg">by Uxper Group of Companies</h2>
-      <div className="bg-primary px-5 py-10 text-white">
+      <div className="bg-primary px-5 py-10 text-white font-inter">
         Kindly review your Application
       </div>
 
