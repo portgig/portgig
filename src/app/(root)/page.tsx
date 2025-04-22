@@ -16,6 +16,7 @@ const Home = () => {
       <HowToSection />
       <Banner label="Get started" />
       <CommunitySection />
+	  
     </main>
   );
 };

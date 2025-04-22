@@ -5,10 +5,10 @@ const CreativeHeroSection = () => {
   return (
     <section className="bodyMargin  h-fit bg-primary my-5 rounded-2xl ">
       <div className="bodyMargin h-full flex">
-        <div className="flex-1/2 flex flex-col justify-center gap-10 text-center py-5">
-          <h2 className="text-xl ">Welcome to Portgig </h2>
-          <h1 className="">Your Creative Hub for Work & Talent</h1>
-          <p>
+        <div className="flex-1/2 flex flex-col justify-center gap-8 py-5 px-10">
+          <h2 className="text-xl font-bold">Welcome to Portgig </h2>
+          <h1 className="text-3xl lg:text-5xl font-bold">Your Creative Hub for Work & Talent</h1>
+          <p className="lg:text-xl">
             Connect, collaborate, and create. Whether you&aposre looking for
             jobs or hiring top creatives, start exploring today.
           </p>
@@ -31,6 +31,6 @@ const CreativeHeroSection = () => {
       </div>
     </section>
   );
-};
+}; 
 
 export default CreativeHeroSection;

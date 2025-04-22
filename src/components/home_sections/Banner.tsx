@@ -14,10 +14,12 @@ const Banner = ({ label }: BannerPropType) => {
       <div className="px-8 py-4 bg-primary rounded-full md:rounded-4xl flex items-center justify-between shadow">
         {/* creatuve */}
         <div className="flex items-center justify-center  gap-5">
-          <h2 className="font-bold font-raleway">Create your portfolio</h2>
+          <h2 className="font-black text-xl font-raleway">
+            Create your portfolio
+          </h2>
           <Buttons
             label={label}
-            className=" text-black font-medium text-sm not-odd:w-fit !py-2 cursor-pointer"
+            className=" text-black font-semibold text-sm not-odd:w-fit py-4 px-8 cursor-pointer"
             onClick={() => {
               navigate.push("/sign-up");
             }}
@@ -25,10 +27,10 @@ const Banner = ({ label }: BannerPropType) => {
         </div>
         {/* hire */}
         <div className="flex items-center justify-center  gap-5">
-          <h2 className="font-bold font-raleway">Hiring creative</h2>
+          <h2 className="font-black text-xl  font-raleway">Hiring creative</h2>
           <Buttons
             label={label}
-            className=" text-black font-medium text-sm not-odd:w-fit !py-2 cursor-pointer"
+            className=" text-black font-semibold text-sm not-odd:w-fit py-4  px-8 cursor-pointer"
             onClick={() => {
               navigate.push("/recruiter-sign-up");
             }}
