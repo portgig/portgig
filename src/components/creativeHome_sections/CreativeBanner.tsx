@@ -5,7 +5,7 @@ const CreativeBanner = () => {
     <section className="bg-primary h-fit my-5 max-md:hidden ">
       <div className="bodyMargin flex gap-5">
         <div className="flex-3/5 w-full flex flex-col justify-center items-start gap-5  py-5 px-10 font-raleway">
-          <h2 className="text-xl lg:text-3xl font-bold">
+          <h2 className="text-xl lg:text-3xl font-extrabold">
             Take the Next Step – Find Opportunities, Build Your Network, Get
             Hired!
           </h2>
@@ -16,9 +16,9 @@ const CreativeBanner = () => {
         </div>
         <div className="flex-2/5 w-full flex items-center justify-center max-md:hidden relative ">
           <Image
-            src="/assets/bell.png"
+            src="/assets/speaker.svg"
             alt="creativehero"
-            width={200}
+            width={300}
             height={200}
           />
         </div>
