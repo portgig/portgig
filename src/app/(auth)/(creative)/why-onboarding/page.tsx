@@ -3,7 +3,6 @@ import Buttons from "@/src/components/Buttons";
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { IoCheckmarkDone } from "react-icons/io5";
 
 const whyOnboarding = [
   "Create a Stunning Portfolio – Professionally designed templates tailored to your field.",
@@ -26,23 +25,22 @@ const WhyOnboarding = () => {
           />
         </Link>
       </div>
-      <div className="h-full flex flex-col gap-10 lg:gap-20 justify-center items-center max-lg:bg-white max-lg:text-primary mx-3 md:mx-10 rounded-3xl px-5 md:px-10 py-20 xl:w-8/12 lg:mx-auto">
-        <h2 className="font-bold text-2xl md:text-3xl lg:text-5xl text-center font-ramaraja">
+      <div className="h-full flex flex-col gap-10 lg:gap-10 justify-center items-center max-lg:bg-white max-lg:text-primary mx-3 md:mx-10 rounded-3xl px-5 md:px-10 py-20 xl:w-8/12 lg:mx-auto">
+        <h2 className="font-normal text-2xl md:text-3xl lg:text-6xl text-center font-ramaraja">
           Why Portgig?
         </h2>
-        <ul className="leading-10 text-sm md:text-xl font-bold">
+        <ul className="leading-10 text-sm md:text-2xl gap-20 font-bold space-y-10">
           {whyOnboarding.map((item) => (
             <li
               key={item}
               className="self-start flex items-baseline gap-5 font-raleway">
-              <IoCheckmarkDone className="font-black" />
               {item}
             </li>
           ))}
         </ul>
         <Buttons
           label="Go to Dashboard"
-          className="max-lg:bg-primary max-lg:text-white lg:text-primary rounded-sm !px-15 sm:text-3xl font-inter"
+          className="max-lg:bg-primary max-lg:text-white lg:text-primary rounded-sm !px-15 sm:text-xl font-inter py-4"
           onClick={() => {}}
         />
       </div>
