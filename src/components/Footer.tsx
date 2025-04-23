@@ -53,7 +53,7 @@ const Footer = () => {
                 className="!bg-secondary !rounded-lg !py-1 !px-6 text-sm font-inter"
               />
             </div>
-            <h2 className="text-sm  w-52 font-inter">
+            <h2 className="text-sm  w-sm font-inter">
               Subscribe to our newsletter for the latest blog insights, creative
               tips, industry news, and exclusive updates delivered straight to
               your inbox.

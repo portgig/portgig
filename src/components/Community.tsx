@@ -10,7 +10,7 @@ const Community = () => {
       </div>
       <div className=" md:flex gap-10 bodyMargin  bg-primary my-5 p-8 rounded-2xl text-white font-raleway">
         <div className=" flex flex-col gap-15  ">
-          <p className="font-bold">
+          <p className="font-bold text-xl">
             Get inspired by like-minded individuals, exchange ideas, and build
             meaningful connections that propel your career forward.
           </p>
@@ -18,7 +18,7 @@ const Community = () => {
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black">
               What’s inside?
             </h2>
-            <p className=" font-bold">
+            <p className=" font-bold text-xl">
               Private forums tailored to your creative field. Networking
               opportunities with top professionals. Access to exclusive events,
               workshops, and job postings.
