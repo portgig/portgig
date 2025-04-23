@@ -60,8 +60,8 @@ const HowItWorks = () => {
         />
       </div>
       {/* find the right talent */}
-      <div className="h-15 bg-linear-gradient w-full flex justify-center items-center">
-        <h2 className="heading"> Need Help Finding the right Talent?</h2>
+      <div className="bodyMargin h-17 w-[912px] bg-linear-gradient flex justify-start items-center">
+        <h2 className="heading text-center pl-3"> Need Help Finding the right Talent?</h2>
       </div>
       <div className=" md:flex gap-10 bodyMargin  bg-primary my-5 p-8 rounded-2xl text-white font-raleway">
         <div className=" flex flex-col gap-15  ">
