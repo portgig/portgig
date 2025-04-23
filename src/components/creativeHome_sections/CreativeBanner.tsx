@@ -16,7 +16,7 @@ const CreativeBanner = () => {
         </div>
         <div className="flex-2/5 w-full flex items-center justify-center max-md:hidden relative ">
           <Image
-            src="/assets/bell.png"
+            src="/assets/bell.svg"
             alt="creativehero"
             width={200}
             height={200}

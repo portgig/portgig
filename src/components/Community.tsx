@@ -36,7 +36,7 @@ const Community = () => {
 
         <div className=" max-md:hidden h-96 w-full ">
           <Image
-            src="/assets/two-woman.png"
+            src="/assets/two-women.svg"
             alt="Discover more creatives"
             width={500}
             height={450}

@@ -29,7 +29,7 @@ const AboutSection = () => {
             impress recruiters, and land your next big opportunity.
           </p>
           <Image
-            src="/assets/about-image.png"
+            src="/assets/about-image.svg"
             alt="Creative presentation"
             width={300}
             height={400}
@@ -46,7 +46,7 @@ const AboutSection = () => {
           </h2>
           <hr className="border-5 border-primary w-45 my-3" />
           <Image
-            src="/assets/about-man.png"
+            src="/assets/about-man.svg"
             alt="About man"
             width={659}
             height={300}
@@ -106,7 +106,7 @@ const AboutSection = () => {
 
         <div className="flex items-center">
           <Image
-            src="/assets/ellipse-woman.png"
+            src="/assets/ellipse-woman.svg"
             alt="Ellipse woman"
             width={550}
             height={500}

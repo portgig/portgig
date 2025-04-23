@@ -12,9 +12,9 @@ const Page = () => {
     <div className="flex h-[100dvh]">
       <div
         className="flex-2/3 bg-no-repeat bg-cover max-lg:hidden"
-        style={{ backgroundImage: `url('/assets/onboarding.png')` }}>
+        style={{ backgroundImage: `url('/assets/onboarding.svg')` }}>
         <Image
-          src="/assets/portgig-2.png"
+          src="/assets/portgig-2.svg"
           alt="Portgig Logo"
           width={150}
           height={150}
@@ -22,7 +22,7 @@ const Page = () => {
       </div>
 
       {/* Right side */}
-      <div className="flex-3/3 lg:bg-primary max-lg:opacity-50 flex flex-col items-center justify-center gap-10 sm:gap-20 text-white max-lg:bg-[url('/assets/onboarding.png')] bg-cover bg-no-repeat">
+      <div className="flex-3/3 lg:bg-primary max-lg:opacity-50 flex flex-col items-center justify-center gap-10 sm:gap-20 text-white max-lg:bg-[url('/assets/onboarding.svg')] bg-cover bg-no-repeat">
         <h2 className="text-4xl font-bold max-lg:hidden font-vesper">
           Welcome
         </h2>

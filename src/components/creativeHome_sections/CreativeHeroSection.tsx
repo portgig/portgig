@@ -15,13 +15,13 @@ const CreativeHeroSection = () => {
         </div>
         <div className="flex-1/2 flex items-end max-md:hidden relative ">
           <Image
-            src="/assets/creativehero-1.png"
+            src="/assets/creativehero-1.svg"
             alt="creativehero"
             width={400}
             height={400}
           />
           <Image
-            src="/assets/creativehero-2.png"
+            src="/assets/creativehero-2.svg"
             alt="creativehero"
             width={400}
             height={400}

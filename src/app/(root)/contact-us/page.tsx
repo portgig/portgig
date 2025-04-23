@@ -103,7 +103,7 @@ const ContactUS = () => {
               </div>
               <div className="px-5 w-full  rounded-lg ">
                 <Image
-                  src="/assets/map.png"
+                  src="/assets/map.svg"
                   alt="profile image"
                   width={700}
                   height={150}
