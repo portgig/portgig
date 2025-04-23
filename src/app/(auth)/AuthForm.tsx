@@ -126,7 +126,7 @@ const AuthForm = ({ type }: AuthFormProps) => {
   const isRecruiterSignin = type === "recruiter-sign-in";
   const isSignup = type === "sign-up";
   const isRecruiterSignup = type === "recruiter-sign-up";
-  const labelStyles = "block max-lg:text-sm text-lg  font-medium font-raleway";
+  const labelStyles = "block max-lg:text-sm text-lg  font-bold font-raleway";
   const inputStyles =
     "text-secondary mt-2 w-full max-sm:py-2 py-3 px-10 bg-white rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary font-raleway";
   return (

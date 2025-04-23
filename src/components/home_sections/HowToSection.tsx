@@ -13,7 +13,7 @@ const HowToSection = () => {
       <div className="flex flex-col lg:flex-row gap-5 justify-evenly font-raleway">
         <div className="flex flex-col">
           <h2 className="text-textColor text-xl lg:text-3xl font-black mt-5 text-center">
-            For creatives
+            For Creatives
           </h2>
           <div className="bg-primary py-10 px-5 rounded-lg h-fit">
             <ul>
