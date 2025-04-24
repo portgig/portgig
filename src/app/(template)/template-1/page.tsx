@@ -12,8 +12,8 @@ const page = () => {
       <TemplateOneHero />
       <TemplateOneAboutme />
       <div className="bg-white h-15"></div>
-		  <TemplateOnePortfolio />
-		  <MadeByportgig className="bg-purpleBg" />
+      <TemplateOnePortfolio />
+      <MadeByportgig className="bg-purpleBg" />
     </main>
   );
 };

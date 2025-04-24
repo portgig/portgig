@@ -7,7 +7,7 @@ export default function TemplateOnePortfolio() {
     <>
       <section className="bodyMargin bg-purpleBg flex flex-col gap-10 p-5 lg:p-15">
         {" "}
-        <h2 className="font-bold text-2xl lg:text-4xl">
+        <h2 className="font-bold text-2xl lg:text-3xl">
           My
           <span className="text-gold">Portfolio</span>
         </h2>
@@ -18,7 +18,7 @@ export default function TemplateOnePortfolio() {
               className="bg-white  flex flex-col gap-5 h-120"></div>
           ))}
         </div>
-        <h2 className="font-bold text-xl lg:text-4xl">
+        <h2 className="font-bold text-xl lg:text-3xl">
           More on
           <span className="text-gold">Behance/ </span>
           Pintrest
@@ -27,7 +27,7 @@ export default function TemplateOnePortfolio() {
           label="Click here"
           className="text-primary lg:text-2xl w-fit rounded-xl font-bold px-20"
         />
-        <h2 className="font-bold text-xl lg:text-4xl text-center">
+        <h2 className="font-bold text-xl lg:text-3xl text-center">
           Other
           <span className="text-gold">Services/ </span>
           Skills
@@ -38,7 +38,7 @@ export default function TemplateOnePortfolio() {
           {services.map((service, index) => (
             <h2
               key={index}
-              className="font-bold text-sm lg:text-4xl text-purpleBg ">
+              className="font-bold text-sm lg:text-2xl text-purpleBg ">
               {service}
             </h2>
           ))}
@@ -46,13 +46,13 @@ export default function TemplateOnePortfolio() {
       </section>
       {/* work with me */}
       <div className="h-20  flex items-center p-10">
-        <h2 className="font-bold text-xl lg:text-4xl ">
+        <h2 className="font-bold text-xl lg:text-3xl ">
           What you get working
           <span className="text-gold">with me </span>
         </h2>
       </div>
-      <div className=" bg-white flex items-center p-10 text-center">
-        <h2 className="font-bold text-primary text-xl lg:text-4xl ">
+      <div className=" bg-white flex items-center px-20 py-10 text-center">
+        <h2 className="font-bold text-primary text-xl lg:text-2xl ">
           Available for all kind of gigs, projects, jobs, collaboration, kindly
           reach out to me. Looking forward to working with you.
         </h2>
