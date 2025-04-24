@@ -12,9 +12,7 @@ export const navigationItems = [
     link: "/job-hub",
   },
   {
- 
     link: "/portfolio",
-
   },
   {
     label: "Join Community",
@@ -500,6 +498,20 @@ export const termsAndConditions = [
   },
 ];
 
+export const skills = [
+  "Social Media Graphics",
+  "Branding & Identity Design",
+  "Web & Mobile UI Design",
+  "Wireframing & Prototyping",
+];
+export const services = [
+  "Custom Graphics & Branding",
 
+  "Website & App UI/UX Design",
 
+  "Website Redesign & Optimization",
 
+  "E-commerce & CMS Development",
+
+  "Social Media Graphics & Ad Design",
+];

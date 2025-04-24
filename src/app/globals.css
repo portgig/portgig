@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Ramaraja&family=Vesper+Libre:wght@400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Ramaraja&family=Vesper+Libre:wght@400;500;700;900&display=swap');
 @import "tailwindcss";
 
 :root {
@@ -35,6 +35,10 @@ body {
   --color-gray100: #f3f4f6;
   --color-gray200: #e5e7eb;
   --color-red500: #fb2c36;
+  --color-purpleLight: #58337F;
+  --color-gold: #F17500;
+  --color-grayBg: #D9D9D9;
+  --color-purpleBg: #2C0358
 }
 
 @layer base {
@@ -89,6 +93,9 @@ body {
   }
   .font-urbanist {
     font-family: var(--font-urbanist);
+  }
+   .font-montserrat {
+    font-family: var(--font-montserrat);
   }
 
 }
