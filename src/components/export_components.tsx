@@ -54,3 +54,10 @@ export { default as TemplateOneHero } from "./template-1/TemplateOneHero";
 export { default as TemplateOneAboutme } from "./template-1/TemplateOneAboutme";
 export { default as TemplateOnePortfolio } from "./template-1/TemplateOnePortfolio";
 
+//template 2
+export { default as TemplateTwoHero } from "./template-2/TemplateTwoHero";
+export { default as TemplateTwoAboutMe } from "./template-2/TemplateTwoAboutMe";
+export { default as TemplateTwoEvent } from "./template-2/TemplateTwoEvent";
+export { default as TemplateTwoService } from "./template-2/TemplateTwoService";
+export { default as TemplateTwoPortfolio } from "./template-2/TemplateTwoPortfolio";
+

@@ -515,3 +515,11 @@ export const services = [
 
   "Social Media Graphics & Ad Design",
 ];
+
+
+export const services1 = [
+  " Camera Operation & Cinematography",
+  " Lighting & Composition",
+  " Audio Recording & Mixing",
+  " Drone Videography ",
+];
