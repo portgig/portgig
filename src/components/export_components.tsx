@@ -48,7 +48,6 @@ export { default as JobProfile } from "./job-description/JobProfile";
 export { default as OtherJobs } from "./job-description/OtherJobs";
 export { default as EmailSubscription } from "./job-description/EmailSubscription";
 
-
 //template 1
 export { default as TemplateOneHero } from "./template-1/TemplateOneHero";
 export { default as TemplateOneAboutme } from "./template-1/TemplateOneAboutme";
@@ -61,3 +60,8 @@ export { default as TemplateTwoEvent } from "./template-2/TemplateTwoEvent";
 export { default as TemplateTwoService } from "./template-2/TemplateTwoService";
 export { default as TemplateTwoPortfolio } from "./template-2/TemplateTwoPortfolio";
 
+//template 3
+export { default as TemplateThreeHero } from "./template-3/TemplateThreeHero";
+export { default as TemplateThreeAboutMe } from "./template-3/TemplateThreeAboutMe";
+export { default as TemplateThreePortfolio } from "./template-3/TemplateThreePortfolio";
+export { default as TemplateThreeAvailabilty } from "./template-3/TemplateThreeAvailabilty";

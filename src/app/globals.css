@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
 
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Ramaraja&family=Vesper+Libre:wght@400;500;700;900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Lalezar&display=swap");
+@import url("https://fonts.cdnfonts.com/css/the-next-font");
 @import "tailwindcss";
-
-@import url('https://fonts.cdnfonts.com/css/the-next-font');
-
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -43,8 +43,10 @@ body {
   --color-purpleBg: #2c0358;
   --color-semiBlack: #121212;
   --color-lightBrown: #292929;
-  --color-brownLight: #231E1A;
-  --color-yellowGold: #FF7F00;
+  --color-brownLight: #231e1a;
+  --color-yellowGold: #ff7f00;
+  --color-yellow: #fcc92f;
+  --color-bb: #1e2234c7;
 }
 
 @layer base {
@@ -103,9 +105,12 @@ body {
   .font-montserrat {
     font-family: var(--font-montserrat);
   }
+  .font-lalezar {
+    font-family: var(--font-lalezar);
+  }
   .font-next {
-  font-family: 'The Next Font', sans-serif;
-}
+    font-family: "The Next Font", sans-serif;
+  }
 }
 
 /* Hide arrows in number input for Chrome, Safari, Edge, Opera */
