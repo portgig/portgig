@@ -15,11 +15,23 @@ const Actions = () => {
     { label: "Change Password", path: "/creative-dashboard/change-password" },
   ];
 
-  const buttonStyles =
-    "border border-black max-md:px-2 rounded-lg max-md:w-fit md:w-full max-md:text-[10px] sm:text-sm md:text-lg cursor-pointer";
+  const buttonStyles = `
+    border border-black 
+    max-md:px-2 
+    rounded-lg 
+    max-md:w-fit 
+    md:w-full 
+    max-md:text-[10px] 
+    sm:text-sm 
+    md:text-lg 
+    cursor-pointer 
+    transition-all duration-300 
+    hover:bg-primary hover:text-white 
+    hover:scale-105
+  `;
 
   return (
-    <aside className="flex max-md:justify-between max-md:items-center max-md:gap-5   md:flex-col gap-5 text-primary font-raleway">
+    <aside className="flex max-md:justify-between max-md:items-center max-md:gap-5 md:flex-col gap-5 text-primary font-raleway">
       {links.map((link) => (
         <Buttons
           key={link.path}
