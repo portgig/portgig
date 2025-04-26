@@ -12,7 +12,7 @@ export const navigationItems = [
     link: "/job-hub",
   },
   {
- 
+    label: "Portfolio",
     link: "/portfolio",
 
   },

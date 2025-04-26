@@ -9,7 +9,7 @@ const JobApplied = () => {
   return (
     <section className=" flex flex-col gap-5 font-raleway">
       <div className="h-15 p-3 bg-linear-gradient w-full flex items-center bodyMargin">
-        <h2 className="subHeading "> Job Applied</h2>
+        <h2 className="subHeading lg:text-3xl font-raleway pl-10"> Job Applied</h2>
       </div>
       <div className=" bodyMargin grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
         {jobs.map((job) => (
