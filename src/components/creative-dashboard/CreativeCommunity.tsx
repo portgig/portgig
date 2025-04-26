@@ -18,13 +18,13 @@ const CreativeCommunity = () => {
           <div className="flex flex-col gap-3 items-center">
             <h2 className="text-2xl font-bold">Telegram community</h2>
             <div className="flex flex-col py-3 px-36 justify-center bg-primary  text-white">
-              <h2 className="text-[10px] sm:text-sm md:text-xl font-bold">Join Here</h2>
+              <h2 className="text-[10px] sm:text-sm md:text-xl font-bold cursor-pointer">Join Here</h2>
             </div>
           </div>
           <div className="flex flex-col gap-3 items-center">
             <h2 className="text-2xl font-bold">Discord community</h2>
             <div className="flex flex-col py-3 px-36 justify-center bg-primary  text-white">
-              <h2 className="text-[10px] sm:text-sm md:text-xl font-bold">Join Here</h2>
+              <h2 className="text-[10px] sm:text-sm md:text-xl font-bold cursor-pointer">Join Here</h2>
             </div>
           </div>
         </div>
