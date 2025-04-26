@@ -34,17 +34,18 @@ const HeroSection = () => {
       </div>
       <div className="flex gap-2">
         <Image
-          src="/assets/hero-woman.png"
+          src="/assets/hero-woman.svg"
           alt="Portgig Logo"
           width={300}
-          height={300}
-          className="max-lg:hidden "
+          height={500}
+          className="max-lg:hidden h-full w-auto "
         />
         <Image
-          src="/assets/hero-man.png"
+          src="/assets/hero-man.svg"
           alt="Portgig Logo"
           width={300}
-          height={300}
+          height={500}
+          className="h-full w-auto "
         />
       </div>
     </main>

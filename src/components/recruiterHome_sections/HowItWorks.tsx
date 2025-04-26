@@ -24,7 +24,7 @@ const HowItWorks = () => {
         </div>
         <div className=" w-full flex justify-center items-center max-md:hidden ">
           <Image
-            src="/assets/questionMark.png"
+            src="/assets/questionMark.svg"
             alt="creativehero"
             width={400}
             height={400}
@@ -43,7 +43,7 @@ const HowItWorks = () => {
         </div>
         <div className=" w-full flex justify-center items-center max-md:hidden ">
           <Image
-            src="/assets/newJob.png"
+            src="/assets/newJob.svg"
             alt="creativehero"
             width={400}
             height={400}
@@ -98,7 +98,7 @@ const HowItWorks = () => {
 
         <div className=" max-md:hidden h-96 w-full ">
           <Image
-            src="/assets/two-woman.png"
+            src="/assets/two-women.svg"
             alt="Discover more creatives"
             width={500}
             height={450}

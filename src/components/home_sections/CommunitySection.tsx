@@ -44,8 +44,8 @@ const CommunitySection = () => {
       </div>
       <div className="flex justify-center items-center  w-full max-md:hidden ">
         <Image
-          src="/assets/women-group.png"
-          alt="Ellipse-woman.png"
+          src="/assets/women-group.svg"
+          alt="women group.png"
           width={470}
           height={460}
           className=" object-filll"

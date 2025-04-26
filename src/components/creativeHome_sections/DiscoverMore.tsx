@@ -25,21 +25,13 @@ const DiscoverMore = () => {
       </div>
 
       <div className=" w-full  max-md:hidden center">
-        <div className="relative   h-72 w-64">
-          <Image
-            src="/assets/dis-man.png"
-            alt="discover more creative"
-            width={200}
-            height={200}
-          />
-          <Image
-            src="/assets/dis-woman.png"
-            alt="discover more creative"
-            width={120}
-            height={120}
-            className="absolute right-0 bottom-0"
-          />
-        </div>
+        <Image
+          src="/assets/about-image.svg"
+          alt="discover more creative"
+          width={300}
+          height={300}
+          className=""
+        />
       </div>
     </section>
   );

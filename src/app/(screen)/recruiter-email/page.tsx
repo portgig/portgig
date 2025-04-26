@@ -4,12 +4,12 @@ import Link from "next/link";
 
 export default function RecruiterEmail() {
   return (
-    <main className="min-h-screen flex flex-col items-center bg-[url('/assets/email-woman.png')] bg-no-repeat bg-cover bg-center p-4 sm:p-8 md:p-10 font-raleway">
+    <main className="min-h-screen flex flex-col items-center bg-[url('/assets/email-woman.svg')] bg-no-repeat bg-cover bg-center p-4 sm:p-8 md:p-10 font-raleway">
       {/* Logo */}
       <div className="self-start mb-6">
         <Link href="/">
           <Image
-            src="/assets/portgig-2.png"
+            src="/assets/portgig-2.svg"
             alt="Portgig Logo"
             width={120}
             height={120}
@@ -21,7 +21,7 @@ export default function RecruiterEmail() {
       {/* Content Box */}
       <div className=" bg-white p-5 sm:p-8 rounded-lg shadow-lg flex flex-col gap-6 items-center justify-center text-primary my-auto">
         <Image
-          src="/assets/email-confirmation.png"
+          src="/assets/email-confirmation.svg"
           alt="Email Confirmation"
           width={400}
           height={300}

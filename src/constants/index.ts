@@ -12,9 +12,7 @@ export const navigationItems = [
     link: "/job-hub",
   },
   {
- 
     link: "/portfolio",
-
   },
   {
     label: "Join Community",
@@ -124,7 +122,7 @@ export const jobs = [
     id: 1,
     companyName: "Uxper Group of Companies",
     jobTitle: "Graphic Designer",
-    comapnyImage: "/assets/companyImage.png",
+    comapnyImage: "/assets/companyImage.svg",
     location: "Mainland, Lagos State",
     level: "Intermediate",
     type: "Full Time",
@@ -134,7 +132,7 @@ export const jobs = [
     id: 2,
     companyName: "PixelPoint Studios",
     jobTitle: "UI/UX Designer",
-    comapnyImage: "/assets/companyImage.png",
+    comapnyImage: "/assets/companyImage.svg",
     location: "Victoria Island, Lagos State",
     level: "Entry Level",
     type: "Part Time",
@@ -144,7 +142,7 @@ export const jobs = [
     id: 3,
     companyName: "BrandLab Nigeria",
     jobTitle: "Digital Marketer",
-    comapnyImage: "/assets/companyImage.png",
+    comapnyImage: "/assets/companyImage.svg",
     location: "Lekki Phase 1, Lagos State",
     level: "Intermediate",
     type: "Contract",
@@ -154,7 +152,7 @@ export const jobs = [
     id: 4,
     companyName: "Creativo Agency",
     jobTitle: "Motion Graphics Designer",
-    comapnyImage: "/assets/companyImage.png",
+    comapnyImage: "/assets/companyImage.svg",
     location: "Ikeja, Lagos State",
     level: "Advanced",
     type: "Remote",
@@ -164,7 +162,7 @@ export const jobs = [
     id: 5,
     companyName: "VisualWorks Studio",
     jobTitle: "Video Editor",
-    comapnyImage: "/assets/companyImage.png",
+    comapnyImage: "/assets/companyImage.svg",
     location: "Yaba, Lagos State",
     level: "Entry Level",
     type: "Internship",
@@ -174,7 +172,7 @@ export const jobs = [
     id: 6,
     companyName: "NextGen Creatives",
     jobTitle: "Product Designer",
-    comapnyImage: "/assets/companyImage.png",
+    comapnyImage: "/assets/companyImage.svg",
     location: "Surulere, Lagos State",
     level: "Intermediate",
     type: "Full Time",
@@ -184,7 +182,7 @@ export const jobs = [
     id: 7,
     companyName: "Elite Studios",
     jobTitle: "Brand Strategist",
-    comapnyImage: "/assets/companyImage.png",
+    comapnyImage: "/assets/companyImage.svg",
     location: "GRA, Port Harcourt",
     level: "Advanced",
     type: "Full Time",
@@ -194,7 +192,7 @@ export const jobs = [
     id: 8,
     companyName: "InnovateX",
     jobTitle: "Creative Director",
-    comapnyImage: "/assets/companyImage.png",
+    comapnyImage: "/assets/companyImage.svg",
     location: "Wuse II, Abuja",
     level: "Expert",
     type: "Remote",
@@ -204,7 +202,7 @@ export const jobs = [
     id: 9,
     companyName: "CoreLab Digital",
     jobTitle: "Social Media Manager",
-    comapnyImage: "/assets/companyImage.png",
+    comapnyImage: "/assets/companyImage.svg",
     location: "Ring Road, Ibadan",
     level: "Intermediate",
     type: "Contract",
@@ -500,6 +498,28 @@ export const termsAndConditions = [
   },
 ];
 
+export const skills = [
+  "Social Media Graphics",
+  "Branding & Identity Design",
+  "Web & Mobile UI Design",
+  "Wireframing & Prototyping",
+];
+export const services = [
+  "Custom Graphics & Branding",
+
+  "Website & App UI/UX Design",
+
+  "Website Redesign & Optimization",
+
+  "E-commerce & CMS Development",
+
+  "Social Media Graphics & Ad Design",
+];
 
 
-
+export const services1 = [
+  " Camera Operation & Cinematography",
+  " Lighting & Composition",
+  " Audio Recording & Mixing",
+  " Drone Videography ",
+];
