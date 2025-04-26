@@ -22,7 +22,7 @@ const RecruiterHeroSection = () => {
         </div>
         <div className=" w-full flex justify-end items-end max-md:hidden ">
           <Image
-            src="/assets/creativehero-1.png"
+            src="/assets/creativehero-1.svg"
             alt="creativehero"
             width={400}
             height={400}

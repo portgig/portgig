@@ -4,7 +4,9 @@ import {
   Inter,
   Raleway,
   Vesper_Libre,
-  Ramaraja,
+	Ramaraja,
+	Montserrat,
+  Lalezar
 } from "next/font/google";
 import "./globals.css";
 
@@ -33,6 +35,16 @@ const ramaraja = Ramaraja({
   subsets: ["latin"],
   weight: ["400"],
 });
+const montserrat = Montserrat({
+  variable: "--font-montserrat",
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+});
+const lalezar = Lalezar({
+  variable: "--font-lalezar",
+  subsets: ["latin"],
+  weight: ['400'],
+});
 
 export const metadata: Metadata = {
   title: "Portgig",
@@ -47,7 +59,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="h-full ">
       <body
-        className={`${urbanist.variable} ${inter.variable} ${raleway.variable} ${vesper.variable} ${ramaraja.variable}  antialiased bg-white`}
+        className={`${urbanist.variable} ${inter.variable} ${raleway.variable} ${vesper.variable} ${ramaraja.variable} ${montserrat.variable} ${lalezar.variable}   antialiased bg-white`}
         cz-shortcut-listen="true">
         {children}
       </body>

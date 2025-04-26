@@ -9,19 +9,19 @@ export const AuthLayout = ({ children }: { children: React.ReactNode }) => {
   const pathname = usePathname();
 
   // Default background image
-  let bgImage = "/assets/auth-man.png";
+  let bgImage = "/assets/auth-man.svg";
 
   // Set background image based on the path
   if (pathname.includes("recruiter-sign-in")) {
-    bgImage = "/assets/auth-woman.png";
+    bgImage = "/assets/auth-woman.svg";
   } else if (pathname.includes("recruiter-sign-up")) {
-    bgImage = "/assets/auth-woman.png";
+    bgImage = "/assets/auth-woman.svg";
   } else if (pathname.includes("welcome-onboarding")) {
-    bgImage = "/assets/onboarding-woman.png";
+    bgImage = "/assets/onboarding-woman.svg";
   } else if (pathname.includes("why-onboarding")) {
-    bgImage = "/assets/onboarding-woman.png";
+    bgImage = "/assets/onboarding-woman.svg";
   } else if (pathname.includes("recruiter-onboarding")) {
-    bgImage = "/assets/onboarding-man.png";
+    bgImage = "/assets/onboarding-man.svg";
   }
 
   return (
@@ -37,7 +37,7 @@ export const AuthLayout = ({ children }: { children: React.ReactNode }) => {
         {/* Logo */}
         <Link href="/">
           <Image
-            src="/assets/portgig-2.png"
+            src="/assets/portgig-2.svg"
             alt="Portgig Logo"
             width={150}
             height={150}

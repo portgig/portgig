@@ -7,6 +7,7 @@ export { default as Community } from "./Community";
 export { default as Actions } from "./Actions";
 export { default as RecruiterActions } from "./RecruiterActions";
 export { default as JobBoardActions } from "./JobBoardActions";
+export { default as MadeByportgig } from "./MadeByportgig";
 // Home sections
 export { default as HeroSection } from "./home_sections/HeroSection";
 export { default as Banner } from "./home_sections/Banner";
@@ -47,5 +48,20 @@ export { default as JobProfile } from "./job-description/JobProfile";
 export { default as OtherJobs } from "./job-description/OtherJobs";
 export { default as EmailSubscription } from "./job-description/EmailSubscription";
 
-//job board
+//template 1
+export { default as TemplateOneHero } from "./template-1/TemplateOneHero";
+export { default as TemplateOneAboutme } from "./template-1/TemplateOneAboutme";
+export { default as TemplateOnePortfolio } from "./template-1/TemplateOnePortfolio";
 
+//template 2
+export { default as TemplateTwoHero } from "./template-2/TemplateTwoHero";
+export { default as TemplateTwoAboutMe } from "./template-2/TemplateTwoAboutMe";
+export { default as TemplateTwoEvent } from "./template-2/TemplateTwoEvent";
+export { default as TemplateTwoService } from "./template-2/TemplateTwoService";
+export { default as TemplateTwoPortfolio } from "./template-2/TemplateTwoPortfolio";
+
+//template 3
+export { default as TemplateThreeHero } from "./template-3/TemplateThreeHero";
+export { default as TemplateThreeAboutMe } from "./template-3/TemplateThreeAboutMe";
+export { default as TemplateThreePortfolio } from "./template-3/TemplateThreePortfolio";
+export { default as TemplateThreeAvailabilty } from "./template-3/TemplateThreeAvailabilty";

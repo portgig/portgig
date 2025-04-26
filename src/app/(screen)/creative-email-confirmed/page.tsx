@@ -9,12 +9,12 @@ import { useRouter } from "next/navigation";
 export default function CreativeEmailConfirmed() {
   const navigate = useRouter();
   return (
-    <main className="min-h-screen flex flex-col items-center bg-[url('/assets/email-man.png')] bg-no-repeat bg-cover bg-center p-4 sm:p-8 md:p-10 font-raleway">
+    <main className="min-h-screen flex flex-col items-center bg-[url('/assets/email-man.svg')] bg-no-repeat bg-cover bg-center p-4 sm:p-8 md:p-10 font-raleway">
       {/* Logo */}
       <div className="self-start mb-6">
         <Link href="/">
           <Image
-            src="/assets/portgig-2.png"
+            src="/assets/portgig-2.svg"
             alt="Portgig Logo"
             width={120}
             height={120}
@@ -26,7 +26,7 @@ export default function CreativeEmailConfirmed() {
       {/* Content Box */}
       <div className="  bg-white w-full lg:w-10/12 p-5 sm:p-8 rounded-lg shadow-lg flex flex-col  items-center justify-center text-primary my-auto">
         <img
-          src="/assets/checkmark.png"
+          src="/assets/checkmark.svg"
           alt="Email Confirmation"
           width={300}
           height={40}
