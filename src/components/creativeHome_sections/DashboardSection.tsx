@@ -53,12 +53,12 @@ const DashboardSection = () => {
             <div className="flex justify-between px-5 text-white">
               <Buttons
                 label="View profile"
-                className="!bg-primary w-fit self-end rounded-lg text-sm sm:text-xl md:text-sm font-extralight "
+                className="!bg-primary w-fit self-end rounded-lg text-sm sm:text-xl md:text-sm font-medium"
                 onClick={() => {}}
               />
               <Buttons
                 label="Contact Me"
-                className="!bg-primary w-fit self-end rounded-lg text-sm sm:text-xl md:text-sm font-extralight "
+                className="!bg-primary w-fit self-end rounded-lg text-sm sm:text-xl md:text-sm font-medium6 "
                 onClick={() => {}}
               />
             </div>
