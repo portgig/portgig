@@ -11,7 +11,7 @@ const DashboardSection = () => {
   return (
     <section className="flex flex-col gap-5 my-10">
       <div className="h-15 bg-secondary px-5  flex  items-center bodyMargin">
-        <h2 className="text-2xl md:text-3xl lg:text-5xl font-bold">
+        <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold">
           {" "}
           Your Portfolio, Your Stage – Take Control Now!
         </h2>
