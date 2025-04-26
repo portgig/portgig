@@ -32,10 +32,10 @@ const CreativeDashboardHero = () => {
           </div>
           <div>
             <Image
-              src="/assets/creativeImage.png"
+              src="/assets/creative.svg"
               alt="Discover more creatives"
-              width={100}
-              height={100}
+              width={200}
+              height={200}
             />
           </div>
         </div>
@@ -46,7 +46,8 @@ const CreativeDashboardHero = () => {
             <Buttons
               key={index}
               label={link.label}
-              className=" !text-primary text-[10px] md:text-sm lg:text-lg cursor-pointer font-raleway"
+              className="w-[150px] md:w-[200px] lg:w-[250px] !text-primary text-[10px] md:text-sm lg:text-xl font-bold cursor-pointer font-raleway"
+
               onClick={() => {
                 navigate.push(link.path);
               }}

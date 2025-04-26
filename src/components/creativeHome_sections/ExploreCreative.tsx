@@ -54,16 +54,16 @@ const ExploreCreative = () => {
               <button
                 className={`py-2 px-5 w-fit self-end rounded-lg text-sm font-extralight ${
                   index % 4 === 1
-                    ? "bg-white text-primary"
-                    : "bg-primary text-white"
+                    ? "bg-white text-primary font-medium"
+                    : "bg-primary text-white font-medium"
                 }`}>
                 View Profile
               </button>
               <button
                 className={`py-2 px-5 w-fit self-end rounded-lg text-sm font-extralight ${
                   index % 4 === 1
-                    ? "bg-white text-primary"
-                    : "bg-primary text-white"
+                    ? "bg-white text-primary font-medium"
+                    : "bg-primary text-white font-medium"
                 }`}>
                 Contact Me
               </button>
