@@ -144,7 +144,7 @@ const SelectedCandidate = () => {
             className={`h-10 w-10 flex items-center justify-center rounded-full font-semibold font-inter ${
               currentPage === index
                 ? "bg-primary text-white cursor-not-allowed"
-                : "text-secondary hover:bg-accents"
+                : "text-secondary hover:bg-accents cursor-pointer"
             }`}>
             {index + 1}
           </button>
@@ -158,7 +158,7 @@ const SelectedCandidate = () => {
           className={`h-10 w-10 flex items-center justify-center rounded-full font-semibold border border-accents ${
             currentPage >= totalPages - 1
               ? "bg-accents cursor-not-allowed"
-              : "text-secondary hover:bg-accents"
+              : "text-secondary hover:bg-accents cursor-pointer"
           }`}
           disabled={currentPage >= totalPages - 1}>
           <IoIosArrowForward />
