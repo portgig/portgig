@@ -3,7 +3,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Ramaraja&family=Vesper+Libre:wght@400;500;700;900&display=swap");
 
 @import url("https://fonts.googleapis.com/css2?family=Lalezar&display=swap");
-@import url("https://fonts.cdnfonts.com/css/the-next-font");
+@import url("https://fonts.googleapis.com/css2?family=Lancelot&family=Lateef:wght@200;300;400;500;600;700;800&display=swap");
+
 @import "tailwindcss";
 :root {
   --background: #ffffff;
@@ -47,6 +48,9 @@ body {
   --color-yellowGold: #ff7f00;
   --color-yellow: #fcc92f;
   --color-bb: #1e2234c7;
+  --color-darkBlue: #0a1754;
+  --font-lancelot: "Lancelot", serif;
+  --font-next: "The Next Font", sans-serif;
 }
 
 @layer base {
@@ -108,8 +112,11 @@ body {
   .font-lalezar {
     font-family: var(--font-lalezar);
   }
-  .font-next {
-    font-family: "The Next Font", sans-serif;
+  .font-lancelot {
+    font-family: var(--font-lancelot);
+  }
+  .font-lateef {
+    font-family: var(--font-lateef);
   }
 }
 

@@ -4,9 +4,10 @@ import {
   Inter,
   Raleway,
   Vesper_Libre,
-	Ramaraja,
-	Montserrat,
-  Lalezar
+  Ramaraja,
+  Montserrat,
+  Lalezar,
+  Lancelot, Lateef
 } from "next/font/google";
 import "./globals.css";
 
@@ -43,7 +44,17 @@ const montserrat = Montserrat({
 const lalezar = Lalezar({
   variable: "--font-lalezar",
   subsets: ["latin"],
-  weight: ['400'],
+  weight: ["400"],
+});
+const lancelot = Lancelot({
+  variable: "--font-lancelot",
+  subsets: ["latin"],
+  weight: ["400"],
+});
+const lateef = Lateef({
+  variable: "--font-lateef",
+  subsets: ["latin"],
+  weight: ["400"],
 });
 
 export const metadata: Metadata = {
@@ -59,7 +70,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="h-full ">
       <body
-        className={`${urbanist.variable} ${inter.variable} ${raleway.variable} ${vesper.variable} ${ramaraja.variable} ${montserrat.variable} ${lalezar.variable}   antialiased bg-white`}
+        className={`${urbanist.variable} ${inter.variable} ${raleway.variable} ${vesper.variable} ${ramaraja.variable} ${montserrat.variable} ${lalezar.variable}   ${lancelot.variable}    ${lateef.variable} antialiased bg-white`}
         cz-shortcut-listen="true">
         {children}
       </body>

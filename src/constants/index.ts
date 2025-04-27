@@ -523,3 +523,17 @@ export const services1 = [
   " Audio Recording & Mixing",
   " Drone Videography ",
 ];
+
+
+export const myServices=['Blog & Article Writing',
+
+'Website Copywriting' ,
+
+'SEO Content Writing',
+
+'Social Media Content ',
+
+'Email & Newsletter Writing',
+
+'Scriptwriting & Storytelling',
+]

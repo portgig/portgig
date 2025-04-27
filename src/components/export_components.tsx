@@ -65,3 +65,6 @@ export { default as TemplateThreeHero } from "./template-3/TemplateThreeHero";
 export { default as TemplateThreeAboutMe } from "./template-3/TemplateThreeAboutMe";
 export { default as TemplateThreePortfolio } from "./template-3/TemplateThreePortfolio";
 export { default as TemplateThreeAvailabilty } from "./template-3/TemplateThreeAvailabilty";
+//template 
+export { default as TemplateFourHero } from "./template-4/TemplateFourHero";
+export { default as TemplateFourAboutMe } from "./template-4/TemplateFourAboutMe";
