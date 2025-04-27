@@ -55,7 +55,7 @@ const Creatives = () => {
             </div>
             <div className="flex justify-between px-2 mt-5 ">
               <button
-                className={`py-2 px-3 w-fit self-end rounded-lg text-sm font-extralight ${
+                className={`py-2 px-3 w-fit self-end rounded-lg text-sm font-medium ${
                   index % 3 === 1
                     ? "bg-white text-primary"
                     : "bg-primary text-white"
@@ -63,7 +63,7 @@ const Creatives = () => {
                 View Profile
               </button>
               <button
-                className={`py-2 px-3 w-fit self-end rounded-lg text-sm font-extralight ${
+                className={`py-2 px-3 w-fit self-end rounded-lg text-sm font-medium ${
                   index % 3 === 1
                     ? "bg-white text-primary"
                     : "bg-primary text-white"

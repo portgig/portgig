@@ -21,7 +21,8 @@ const ExploreCreative = () => {
               index % 4 === 1
                 ? "bg-primary text-white"
                 : "bg-white text-primary"
-            }`}>
+            }`}
+          >
             <div className="flex justify-between items-center">
               <div className="h-[100px] w-[100px] overflow-hidden">
                 <Image
@@ -32,7 +33,7 @@ const ExploreCreative = () => {
                   className="object-cover h-full w-full"
                 />
               </div>
-              <div className="bg-secondary/70 text-white py-2 px-5 font-ramaraja">
+              <div className="bg-secondary/70 text-white py-2 px-5 font-ramaraja w-32 md:w-36 text-center">
                 {creative.level}
               </div>
             </div>
@@ -47,7 +48,8 @@ const ExploreCreative = () => {
                 index % 4 === 1
                   ? "bg-primary text-white"
                   : "bg-gray50 text-primary border-gray100"
-              }`}>
+              }`}
+            >
               {creative.introduction}
             </div>
             <div className="flex justify-between px-2 mt-5 ">
@@ -56,7 +58,8 @@ const ExploreCreative = () => {
                   index % 4 === 1
                     ? "bg-white text-primary font-medium cursor-pointer"
                     : "bg-primary text-white font-medium cursor-pointer"
-                }`}>
+                }`}
+              >
                 View Profile
               </button>
               <button
@@ -64,7 +67,8 @@ const ExploreCreative = () => {
                   index % 4 === 1
                     ? "bg-white text-primary font-medium cursor-pointer"
                     : "bg-primary text-white font-medium cursor-pointer"
-                }`}>
+                }`}
+              >
                 Contact Me
               </button>
             </div>
