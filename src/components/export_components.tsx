@@ -68,3 +68,4 @@ export { default as TemplateThreeAvailabilty } from "./template-3/TemplateThreeA
 //template 
 export { default as TemplateFourHero } from "./template-4/TemplateFourHero";
 export { default as TemplateFourAboutMe } from "./template-4/TemplateFourAboutMe";
+export { default as TemplateFourPortfolio } from "./template-4/TemplateFourPortfolio";
